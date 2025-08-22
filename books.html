@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matt & Chai</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./style-books.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_left,arrow_right,moon_stars,star,star_half" />
+  </head>
+  <body>
+  
+    <script type="text/javascript" src="./Header.js"></script>
+    
+    <site-header></site-header>
+    <!--https://codepen.io/mimoduo/pen/VYwamv-->
+    <!--https://codepen.io/mimoduo/pen/VYwamv-->
+    <!--https://codepen.io/Alca/pen/VByeJd-->
+    <section>
+      <div class="content">
+        <h1>Recent Favorites</h1> 
+        <canvas id="canvas" width="150" height="150" style="display: none;"></canvas>
+        <div class="scrollable-content">
+        
+          <span class="material-symbols-outlined left-arrow arrow" id="favorites-left-arrow">
+            arrow_left
+          </span>
+          <div id="favorites-content"></div>
+          <span class="material-symbols-outlined right-arrow arrow" id="favorites-right-arrow">
+            arrow_right
+          </span>
+        
+        </div>
+          
+      </div>
+    </section>
+    <section>
+      <div class="content">
+          <h1>Reading Now</h1>
+          <canvas id="canvas" width="150" height="150" style="display: none;"></canvas>
+          <div class="scrollable-content">
+          
+            <span class="material-symbols-outlined left-arrow arrow" id="reading-now-left-arrow">
+              arrow_left
+            </span>
+            <div id="reading-now-content"></div>
+            <span class="material-symbols-outlined right-arrow arrow" id="reading-now-right-arrow">
+              arrow_right
+            </span>
+          
+          </div>
+        
+        </div>
+    </section>
+    <section>
+      <div class="content">
+          <h1>All Books I've Read</h1>
+          <div class="scrollable-content">
+              <div id="books-read-content"></div>
+          </div>
+      </div>
+    </section>
+    
+
+    <script type="module">
+    
+
+    function generateCard(book) {
+      return '<div class="slide">' + '' + '</div>'
+    }
+    
+    function generateCarouselHTML(bookRecords, content_div_name) {
+      
+      let cards = [];
+      
+      const content_div = document.getElementById(content_div_name);
+      
+      for (let record of bookRecords) {
+        const new_slide = document.createElement("div");
+        new_slide.className = "slide";
+        cards.push(new_slide);
+        
+        const new_cover = document.createElement("div");
+        new_cover.className = "cover";
+        
+        const cover_image = document.createElement("img");
+        cover_image.src = `./book-covers/${record.cover_url}`
+        
+        
+        new_cover.appendChild(cover_image);
+        
+        new_slide.appendChild(new_cover);
+        
+        const details = document.createElement("div");
+        
+
+        details.className = "details";
+        
+        const title = document.createElement("h3");
+        title.className="title";
+        const title_content = document.createTextNode(record.title);
+        title.appendChild(title_content);
+        
+        details.appendChild(title);
+        const author = document.createElement("h3");
+        author.className="author";
+        const author_content = document.createTextNode(record.author);
+        author.appendChild(author_content);
+        
+        details.appendChild(author);
+        
+        const rating_spans = []
+        if (record.rating) {
+          
+          
+    
+          const rating = document.createElement("div");
+          rating.className = "rating";
+          
+
+          let remainder = record.rating;
+          while (remainder >= 1) {
+            remainder -= 1;
+            const new_span = document.createElement("span");
+            new_span.className = "material-symbols-outlined"
+            const span_content = document.createTextNode("star");
+            new_span.appendChild(span_content);
+            rating.appendChild(new_span);
+            
+            rating_spans.push(new_span);
+  
+          }
+          
+          if (remainder == 0.5) {
+            const new_span = document.createElement("span");
+            new_span.className = "material-symbols-outlined"
+            const span_content = document.createTextNode("star_half");
+            new_span.appendChild(span_content);
+            rating.appendChild(new_span);
+            
+            rating_spans.push(new_span);
+            
+          }
+          
+          const rating_span = document.createElement("span");
+          const rating_text = document.createTextNode(record.rating);
+          rating_span.appendChild(rating_text);
+          
+          rating.appendChild(rating_span);
+          
+          details.appendChild(rating);
+
+        }
+        
+        const tags_reference = [];
+        
+        const tags_div = document.createElement("div");
+        tags_div.className = "tags";
+        for (let tag of record.tags) {
+          const new_span = document.createElement("span");
+          new_span.className = "tag";
+          const tag_text  = document.createTextNode(tag);
+          tags_reference.push(new_span);
+          
+          new_span.appendChild(tag_text);
+          tags_div.appendChild(new_span);
+        }
+        
+      let colors = getColors(record.cover_url).then(lightestColor => {
+          console.log("lightest color: ", lightestColor);  
+          details.style.backgroundColor =  `rgba(${lightestColor.darkestTriplet[0]}, ${lightestColor.darkestTriplet[1]}, ${lightestColor.darkestTriplet[2]}, 0.8)`
+          
+          author.style.color =  `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
+          for (let reference of tags_reference) {
+            
+            reference.style.borderColor = `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
+          }
+          
+          if (record.rating) {
+            
+            for (let rating_span of rating_spans) {
+              rating_span.style.color =   `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
+            }
+          }
+        });
+        
+        details.appendChild(tags_div);
+        new_slide.appendChild(details);
+        content_div.appendChild(new_slide);
+        
+      }
+
+      
+      console.log("CARDS: ", cards);
+      return cards;
+      
+    }
+    
+
+    
+    function generateAllBooksHTML(allBooks, content_div_name) {
+      let cards = [];
+      
+      const favorites_div = document.getElementById(content_div_name);
+      
+      for (let favorite of allBooks) {
+        const new_slide = document.createElement("div");
+        new_slide.className = "slide slide-allbooks";
+        cards.push(new_slide);
+        
+        const new_cover = document.createElement("div");
+        new_cover.className = "cover";
+        
+        const cover_image = document.createElement("img");
+        cover_image.src = `./book-covers/${favorite.cover_url}`
+        
+        
+        new_cover.appendChild(cover_image);
+        
+        new_slide.appendChild(new_cover);
+        
+
+        
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip"
+        
+        new_slide.addEventListener('mouseenter', () => {
+            console.log("showing tooltip");
+            tooltip.classList.add('tooltip-show');  
+          })
+          
+        new_slide.addEventListener('mouseleave', () => {
+            console.log("hiding tooltip");
+            tooltip.classList.remove('tooltip-show');  
+          })
+
+      
+        new_slide.appendChild(tooltip);
+        
+        // tooltip.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${cover_image.src})`;
+        
+        
+        // const details = document.createElement("div");
+        
+
+        // tooltip.className = "details";
+        
+        const title = document.createElement("h3");
+        title.className="title";
+        const title_content = document.createTextNode(favorite.title);
+        title.appendChild(title_content);
+        
+        tooltip.appendChild(title);
+        const author = document.createElement("h3");
+        author.className="author";
+        const author_content = document.createTextNode(favorite.author);
+        author.appendChild(author_content);
+        
+        tooltip.appendChild(author);
+        
+        const rating_spans = []
+        let rating_div_container;
+        if (favorite.rating) {
+          
+          
+    
+          const rating = document.createElement("div");
+          rating.className = "rating";
+          
+
+          let remainder = favorite.rating;
+          while (remainder >= 1) {
+            remainder -= 1;
+            const new_span = document.createElement("span");
+            new_span.className = "material-symbols-outlined"
+            const span_content = document.createTextNode("star");
+            new_span.appendChild(span_content);
+            rating.appendChild(new_span);
+            
+            rating_spans.push(new_span);
+  
+          }
+          
+          if (remainder == 0.5) {
+            const new_span = document.createElement("span");
+            new_span.className = "material-symbols-outlined"
+            const span_content = document.createTextNode("star_half");
+            new_span.appendChild(span_content);
+            rating.appendChild(new_span);
+            
+            rating_spans.push(new_span);
+            
+          }
+          
+          //const rating_span = document.createElement("span");
+          rating_div_container = document.createElement("div");
+          rating_div_container.className = "rating-div-container";
+          
+          const rating_text = document.createTextNode(favorite.rating);
+          //rating_span.appendChild(rating_text);
+          rating_div_container.appendChild(rating_text);
+          
+          //rating.appendChild(rating_span);
+          
+          tooltip.appendChild(rating);
+          tooltip.appendChild(rating_div_container);
+            
+            
+            
+            
+        }
+        
+        const tags_reference = [];
+        
+        const tags_div = document.createElement("div");
+        tags_div.className = "tags";
+        for (let tag of favorite.tags) {
+          const new_span = document.createElement("span");
+          new_span.className = "tag";
+          const tag_text  = document.createTextNode(tag);
+          tags_reference.push(new_span);
+          
+          new_span.appendChild(tag_text);
+          tags_div.appendChild(new_span);
+        }
+        
+        
+        let colors = getColors(favorite.cover_url).then(lightestColor => {
+          console.log("lightest color: ", lightestColor);  
+          tooltip.style.backgroundColor =  `rgba(${lightestColor.darkestTriplet[0]}, ${lightestColor.darkestTriplet[1]}, ${lightestColor.darkestTriplet[2]},1)`
+          
+          author.style.color =  `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
+          for (let reference of tags_reference) {
+            
+            reference.style.borderColor = `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
+          }
+          
+          if (favorite.rating) {
+            
+            for (let rating_span of rating_spans) {
+              rating_span.style.color =   `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
+              
+            }
+            rating_div_container.style.color =  `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
+          }
+        });
+        
+      tooltip.appendChild(tags_div);
+      //   new_slide.appendChild(details);
+        favorites_div.appendChild(new_slide);
+        
+      }
+
+      
+      console.log("CARDS: ", cards);
+      return cards;
+    }
+    
+    function getPathToImage(link) {
+        return "./book-covers/" + link;
+    }
+    
+    function linearize(x) {
+      let linearized = x/ 255;
+      linearized = linearized <= 0.03928 ? linearized / 12.92 : ((linearized + 0.055) / (1.055)) ** 2.4;
+      
+      return linearized;
+    }
+    
+    function getLuminance(r, g, b) {
+        return 0.2126 * linearize(r) + 0.7152 * linearize(g) + 0.0722 * linearize(b);
+    }
+    
+    function getContrast(lightTriplet, darkTriplet) { //(l1, l2) {
+    if (lightTriplet && darkTriplet) {
+      
+      let [r1, g1, b1] = lightTriplet;
+      let [r2, g2, b2] = darkTriplet;
+      r2 = linearize(r2);
+      g2 = linearize(g2);
+      b2 = linearize(b2);
+      
+      r1 = linearize(r1);
+      g1 = linearize(g1);
+      b1 = linearize(b1);
+      
+      let l1 = getLuminance(r1, g1, b1);
+      let l2 = getLuminance(r2, g2, b2);
+      
+      
+      return (l1 + 0.05)  / (l2 + 0.05);
+      } else {
+        return 0.1;  
+        
+      }
+    }
+    
+    
+    function getLightestColorInImage(pixels) {
+      let lightestTriplet = null;
+      let maxLightness = -1;
+      
+      let darkestTriplet = null;
+      let minLightness = Infinity;
+      
+      let contrast = 0;
+      
+      
+      
+      
+      
+        for (let i = 0; i < pixels.length; i+=4){
+          const r = pixels[i];
+          const g = pixels[i+1];
+          const b = pixels[i+2];
+          
+          const lightness = (Math.max(r, g, b) + Math.min(r, g, b)) / 2;
+          if (lightness > maxLightness && lightness < 200) {
+            
+            let newContrast = getContrast([r, g, b], darkestTriplet);
+            if (newContrast > contrast) {
+              lightestTriplet  = [r, g, b];
+              contrast = newContrast;
+              maxLightness = lightness;
+              
+            }
+
+            // if (darkestTriplet) {
+                
+            //   let darkestLuminance= getLuminance(darkestTriplet[0], darkestTriplet[1], darkestTriplet[2]);
+            //   let currentLuminance = getLuminance(r, g, b);
+            
+            // console.log("contrast: ", getContrast(currentLuminance, darkestLuminance))
+            //   if (getContrast(currentLuminance, darkestLuminance) > 4) {
+                  
+            //     maxLightness = lightness;
+            //     lightestTriplet = [r, g, b];
+            // } else {
+            //     maxLightness = lightness;
+            //     lightestTriplet = [r, g, b];
+              
+            //   }
+                
+            // }
+          }
+          
+          if (lightness < minLightness && lightness > 45) {
+            let newContrast = getContrast(lightestTriplet, [r, g, b]);
+            if (newContrast > contrast) {
+              minLightness = lightness;
+              darkestTriplet = [r, g, b];
+              contrast = newContrast;
+            }
+            
+
+          }
+        }
+        
+        console.log("lightestTriplet: ", lightestTriplet, "darkestTriplet: ", darkestTriplet);
+        
+        return {lightestTriplet, darkestTriplet};
+    }
+
+    
+    function getColors(link) {
+      
+      return new Promise((resolve, reject) => {
+      
+      
+            
+          const img = new Image();
+          img.src = getPathToImage(link);
+    
+          const canvas = document.getElementById("canvas");
+          // canvas.width = img.width;
+          // canvas.height = img.height;
+          if (canvas.getContext) {
+            const ctx = canvas.getContext("2d");
+            img.addEventListener("load", () => {
+              ctx.drawImage(img, 0, 0, 150, 150);
+              const imageData = ctx.getImageData(0, 0, 150, 150);
+        
+              const pixels = imageData.data;
+              const lightestColor = getLightestColorInImage(pixels);
+              resolve(lightestColor);
+            })
+          } else {
+          
+              reject(new Error("Canvas context not available"));  
+            
+          }
+        
+        
+      })
+
+    }
+
+
+    let allBooks;
+    let recentFavorites;
+    let currentlyReading;
+    
+    let favoritesDivs = []
+    let readingNowDivs = []
+    let allBooksDivs = []
+    
+    
+    let min_visible_index_favorites = 0;
+    let min_visible_index_reading_now = 0;
+    const scroll_amount = 1;
+    const visible_in_carousel = 3;
+    
+    
+    let visible_index_favorites = 0;
+    let visible_index_reading_now = 0;
+    const scroll_index = 1;
+    
+    const infer_scroll_pixel_amount = (card_div) => {
+      
+      const style = window.getComputedStyle(card_div);
+      const marginLeft = parseFloat(style.marginLeft) || 0;
+      const marginRight = parseFloat(style.marginRight) || 0;
+    
+      const width = card_div.getBoundingClientRect().width; 
+    
+      return width + marginLeft + marginRight;
+      
+      
+    }
+    
+    
+    const infer_scroll_x_amount = (card_div) => {
+      const cardStyle = window.getComputedStyle(card_div);
+      const transform = cardStyle.transform;
+
+          
+      
+    if (transform && transform !== 'none') {
+        const matrix = transform.match(/^matrix(3d)?\((.+)\)$/);
+        if (matrix) {
+          const is3d = matrix[1] === '3d';
+          const values = matrix[2].split(', ').map(parseFloat);
+          if (is3d) {
+            // matrix3d: translateX is at index 12
+            return values[12];
+          } else {
+            // matrix: translateX is at index 4
+            return values[4];
+          }
+        }
+      }  
+      
+      return 0;
+    }
+    
+    
+  
+    
+    const scroll_left = (start_visible_index, card_divs, arrow, other_arrow) => {
+      
+      let updated_start_visible_index = Math.max(0, start_visible_index - scroll_amount);
+      console.log(`Scrolling left. Updated start view index: ${updated_start_visible_index} Prevous start visible index: ${start_visible_index}`);
+      
+      if (updated_start_visible_index != start_visible_index) {
+        console.log("Scrolling left. If statement.");
+        for (let card_div of card_divs) {
+          
+          const scroll_amount = infer_scroll_x_amount(card_div);
+          card_div.style.transform = `translateX(${scroll_amount + infer_scroll_pixel_amount(card_div)}px)`;   
+        }  
+        
+        other_arrow.style.opacity = 1;
+      }
+      
+      if (updated_start_visible_index == 0) {
+        arrow.style.opacity = 0.5;  
+      } else {
+        
+        arrow.style.opacity = 1;  
+      }
+      
+      return updated_start_visible_index;
+    }
+    
+    const scroll_right = (start_visible_index, card_divs, arrow, other_arrow) => {
+      let updated_start_visible_index = Math.min(card_divs.length - visible_in_carousel, start_visible_index + scroll_amount);
+      console.log(`Scrolling right. Updated start view index: ${updated_start_visible_index} Prevous start visible index: ${start_visible_index}`);
+      if (updated_start_visible_index != start_visible_index) {
+        console.log("Scrolling right. If statement.");
+        for (let card_div of card_divs) {
+          // get translate amount
+
+          const scroll_amount = infer_scroll_x_amount(card_div);
+          card_div.style.transform = `translateX(${scroll_amount - infer_scroll_pixel_amount(card_div)}px)`;  
+        } 
+        
+        other_arrow.style.opacity = 1;
+      }
+      
+      if (updated_start_visible_index == card_divs.length - visible_in_carousel) {
+        arrow.style.opacity = 0.5;  
+      } else {
+        
+        arrow.style.opacity = 1;  
+      }
+      
+      return updated_start_visible_index;
+    }
+    
+
+    
+
+    
+
+    fetch('./books.json').then((res) => res.json()).then((res) => {
+
+      allBooks = res;
+      recentFavorites = res.filter((el) => el.recent_fav).reverse();
+      currentlyReading = res.filter((el) => el.progress < 100).reverse();
+      console.log("all books: ", allBooks, "recentFavorites: ", recentFavorites, "currentlyReading: ", currentlyReading);
+      
+
+      favoritesDivs = generateCarouselHTML(recentFavorites, "favorites-content");
+      //console.log("favoritesDivs: ", favoritesDivs);
+
+      //const readingNowDiv = document.getElementById("reading-now-content")
+      readingNowDivs = generateCarouselHTML(currentlyReading, "reading-now-content");
+      // readingNowDiv.innerHTML = generateReadingHTML(currentlyReading);
+      
+      allBooksDivs = generateAllBooksHTML(allBooks, "books-read-content");
+      // allBooksDiv.innerHTML = generateAllBooksHTML(allBooks);
+      
+
+    });
+    
+    
+      const left_arrow_reading = document.getElementById("reading-now-left-arrow");
+      const right_arrow_reading = document.getElementById("reading-now-right-arrow");
+      
+      left_arrow_reading.addEventListener("click", () => {
+        visible_index_reading_now = scroll_left(visible_index_reading_now, readingNowDivs, left_arrow_reading, right_arrow_reading);
+      })
+      
+      right_arrow_reading.addEventListener("click", () => {
+        
+        visible_index_reading_now = scroll_right(visible_index_reading_now, readingNowDivs, right_arrow_reading, left_arrow_reading);
+      })
+    
+    
+    
+      const left_arrow_favorites = document.getElementById("favorites-left-arrow");
+      const right_arrow_favorites = document.getElementById("favorites-right-arrow");
+      
+      left_arrow_favorites.addEventListener("click", () => {
+        visible_index_favorites = scroll_left(visible_index_favorites, favoritesDivs, left_arrow_favorites, right_arrow_favorites);
+      })
+      
+
+      right_arrow_favorites.addEventListener("click", () => {
+        
+        visible_index_favorites = scroll_right(visible_index_favorites, favoritesDivs, right_arrow_favorites, left_arrow_favorites);
+      })
+      
+
+    
+    </script>
+
+
+  </body>
+</html>

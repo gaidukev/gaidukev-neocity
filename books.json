@@ -1,0 +1,594 @@
+[
+  {
+    "title": "Tomorrow, and Tomorrow, and Tomorrow",
+    "author": "Gabrielle Zevin",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "tomorrow_and_tomorrow.jpg",
+    "recent_fav": false,
+    "tags": ["Coming of Age", "Drama", "Friendship"]
+  },
+  {
+    "title": "Wandering Souls",
+    "author": "Cecile Pin",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "wandering_souls.jpg",
+    "recent_fav": false,
+    "tags": ["Historical Fiction", "War", "Drama"]
+  },  
+  {
+    "title": "Mad Honey",
+    "author": "Jodi Picoult and Jennifer Finney Boylan",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "mad-honey.jpg",
+    "recent_fav": false,
+    "tags": ["Thriller", "Friendship", "Drama"]
+  },
+  {
+    "title": "I Have Some Questions for You",
+    "author": "Rebecca Makkai",
+    "finished": true,
+    "progress": 100,
+    "rating": 3.5,
+    "cover_url": "i_have_some_q.jpg",
+    "recent_fav": false,
+    "tags": ["Mystery", "Academia"]
+  },
+  {
+    "title": "Everything I Never Told You",
+    "author": "Celeste Ng",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "everything_i_never_told_you.jpg",
+    "recent_fav": false,
+    "tags": ["Drama", "Family"]
+  },
+  {
+    "title": "Blood Over Bright Haven",
+    "author": "M. L. Wang",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "blood_over_bright_haven.jpg",
+    "recent_fav": false,
+    "tags": ["Fantasy"]
+  },
+  {
+    "title": "The Glassmaker",
+    "author": "Tracy Chevalier",
+    "finished": true,
+    "progress": 100,
+    "rating": 2.5,
+    "cover_url": "glassmaker.jpg",
+    "recent_fav": false,
+    "tags": ["Historical Fiction", "Magical Realism", "Friendship"]
+  },
+  {
+    "title": "Hello, Beautiful",
+    "author": "Ann Napolitano",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "hello-beautiful.jpg",
+    "recent_fav": false,
+    "tags": ["Romance", "Drama", "Family"]
+  },
+  {
+    "title": "Holly",
+    "author": "Stephen King",
+    "finished": true,
+    "progress": 100,
+    "rating": 2.5,
+    "cover_url": "holly.jpg",
+    "recent_fav": false,
+    "tags": ["Crime", "Serial Killer"]
+  },
+  {
+    "title": "None of This is True",
+    "author": "Lisa Jewell",
+    "finished": true,
+    "progress": 100,
+    "rating": 4.5,
+    "cover_url": "none-of-this-is-true.jpg",
+    "recent_fav": false,
+    "tags": ["Mystery", "Podcaster"]
+  },
+  {
+    "title": "Biography of X",
+    "author": "Catherine Lacey",
+    "finished": true,
+    "progress": 40,
+    "rating": 1.5,
+    "cover_url": "biography-of-x.jpg",
+    "recent_fav": false,
+    "tags": ["Alternate History", "Dystopia", "Fictional Biography"]
+  },
+  {
+    "title": "A Thousand Splendid Suns",
+    "author": "Khaled Hosseini",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "thousand-splendid-suns.jpg",
+    "recent_fav": false,
+    "tags": ["Afghanistan", "War", "Drama"]
+  },
+  {
+    "title": "Station Eleven",
+    "author": "Emily St. John Mandel",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "station-eleven.jpg",
+    "recent_fav": false,
+    "tags": ["Dystopia", "Post Apocalyptic", "Literary"]
+  },
+  {
+    "title": "The Leftover Woman",
+    "author": "Jean Kwok",
+    "finished": true,
+    "progress": 100,
+    "rating": 4.5,
+    "cover_url": "leftover-woman.jpg",
+    "recent_fav": false,
+    "tags": ["Family", "Wealth Inequality", "Motherhood", "Romance"]
+  },
+  {
+    "title": "First Lie Wins",
+    "author": "Ashley Elston",
+    "finished": true,
+    "progress": 100,
+    "rating": 3.5,
+    "cover_url": "first-lie-wins.jpg",
+    "recent_fav": false,
+    "tags": ["Suspense", "Small Town"]
+  },
+  {
+    "title": "Real Americans",
+    "author": "Rachel Khong",
+    "finished": true,
+    "progress": 100,
+    "rating": 4.5,
+    "cover_url": "real-americans.jpg",
+    "recent_fav": false,
+    "tags": ["Family", "Race", "Wealth Inequality"]
+  },
+  {
+    "title": "All the Colors of the Dark",
+    "author": "Chris Witaker",
+    "finished": true,
+    "progress": 100,
+    "rating": 3,
+    "cover_url": "all-the-colors-of-the-dark.jpg",
+    "recent_fav": false,
+    "tags": ["Romance", "Coming of Age", "Yearning", "Serial Killer"]
+  },
+  {
+    "title": "There's Something About Mira",
+    "author": "Sonali Dev",
+    "finished": true,
+    "progress": 100,
+    "rating": 3.5,
+    "cover_url": "theres-something-about-mira.jpg",
+    "recent_fav": false,
+    "tags": ["Character Growth", "Romance"]
+  },
+  {
+    "title": "The Frozen River",
+    "author": "Ariel Lawhon",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "frozen-river.jpg",
+    "recent_fav": false,
+    "tags": ["Historical Fiction", "Diary", "Small Town", "Crime"]
+  },
+  {
+    "title": "The Briar Club",
+    "author": "Kate Quinn",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "briar-club.jpg",
+    "recent_fav": false,
+    "tags": ["Friendship", "1950s", "Character Driven"]
+  },
+  {
+    "title": "Blue Sisters",
+    "author": "Coco Mellors",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "blue-sisters.jpg",
+    "recent_fav": true,
+    "tags": ["Grief", "Family", "Bittersweet Humor"]
+  },
+  {
+    "title": "Dear Edward",
+    "author": "Ann Napolitano",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "dear-edward.jpg",
+    "recent_fav": false,
+    "tags": ["Coming of Age", "Grief", "Romance"]
+  },
+  {
+    "title": "By Any Other Name: A Novel",
+    "author": "Jodi Picoult",
+    "finished": true,
+    "progress": 100,
+    "rating": 3.5,
+    "cover_url": "any-other-name.jpg",
+    "recent_fav": false,
+    "tags": ["Gender Inequality", "Historical Fiction", "Feminism"]
+  },
+  {
+    "title": "The God of the Woods",
+    "author": "Liz Moore",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "god-of-the-woods.jpg",
+    "recent_fav": true,
+    "tags": ["Character Driven", "Crime"]
+  },
+  {
+    "title": "The Berry Pickers: A Novel",
+    "author": "Amanda Peters",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "berry-pickers.jpg",
+    "recent_fav": false,
+    "tags": ["Identity", "Indigenous", "Family"]
+  },
+  {
+    "title": "Sea of Tranquility",
+    "author": "Emily St. John Mandel",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "sea-of-tranquility.jpg",
+    "recent_fav": false,
+    "tags": ["Science Fiction", "Time Travel", "Evil 9-5"]
+  },
+  {
+    "title": "Reasons Not to Worry: How to Be Stoic in Chaotic Times",
+    "author": "Brigid Delaney",
+    "finished": true,
+    "progress": 30,
+    "rating": 2,
+    "cover_url": "reasons-not-to-worry.jpg",
+    "recent_fav": false,
+    "tags": ["Self Help", "Anxiety Help"]
+  },
+  {
+    "title": "Look Closer",
+    "author": "David Ellis",
+    "finished": true,
+    "progress": 100,
+    "rating": 4.5,
+    "cover_url": "look-closer.jpg",
+    "recent_fav": false,
+    "tags": ["Thriller", "Crime"]
+  },
+  {
+    "title": "Listen for the Lie: A Novel",
+    "author": "Amy Tintera",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "listen-for-the-lie.jpg",
+    "recent_fav": false,
+    "tags": ["Mystery", "Female Authors", "Humour"]
+  },
+  {
+    "title": "Prophet Song",
+    "author": "Paul Lynch",
+    "finished": true,
+    "progress": 30,
+    "rating": 2.5,
+    "cover_url": "prophet-song.jpg",
+    "recent_fav": false,
+    "tags": ["Dystopian", "Ireland"]
+  },
+  {
+    "title": "The Great Alone",
+    "author": "Kristin Hannah",
+    "finished": true,
+    "progress": 100,
+    "rating": 3,
+    "cover_url": "great-alone.jpg",
+    "recent_fav": false,
+    "tags": ["Romance", "Alaska", "Coming of Age", "Abuse"]
+  },
+  {
+    "title": "Kill for Me, Kill for You",
+    "author": "Steve Cavanagh",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "kill-for-me-kill-for-you.jpg",
+    "recent_fav": false,
+    "tags": ["Thriller", "Crime"]
+  },
+  {
+    "title": "The Fox Wife",
+    "author": "Yangsze Choo",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "fox-wife.jpg",
+    "recent_fav": true,
+    "tags": ["Magical Realism", "Historical Fiction", "Folklore", "Energetic"]
+  },
+  {
+    "title": "Here One Moment",
+    "author": "Liane Moriarty",
+    "finished": true,
+    "progress": 100,
+    "rating": 3.5,
+    "cover_url": "here-one-moment.jpg",
+    "recent_fav": false,
+    "tags": ["Drama"]
+  },
+  {
+    "title": "The Midnight Feast",
+    "author": "Lucy Foley",
+    "finished": true,
+    "progress": 100,
+    "rating": 4.5,
+    "cover_url": "midnight-feast.jpg",
+    "recent_fav": false,
+    "tags": ["Mystery", "Small Town"]
+  },
+  {
+    "title": "The Heiress",
+    "author": "Rachel Hawkins",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "heiress.jpg",
+    "recent_fav": false,
+    "tags": ["Family", "Mystery"]
+  },
+  {
+    "title": "A Sorceress Comes to Call",
+    "author": "Ursula Vernon",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "sorceress-comes-to-call.jpg",
+    "recent_fav": true,
+    "tags": ["Horror", "Magic"]
+  },
+  {
+    "title": "Everything I Never Told You",
+    "author": "Celeste Ng",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "everything-i-never-told-you.jpg",
+    "recent_fav": false,
+    "tags": ["Family", "Coming of Age", "Drama"]
+  },
+  {
+    "title": "The Housemaid",
+    "author": "Freida McFadden",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "housemaid.jpg",
+    "recent_fav": false,
+    "tags": ["Suspense", "Easy Read"]
+  },
+  {
+    "title": "The Vanishing Half",
+    "author": "Brit Bennett",
+    "finished": true,
+    "progress": 100,
+    "rating": 4.5,
+    "cover_url": "vanishing-half.jpg",
+    "recent_fav": false,
+    "tags": ["Family", "Race", "Drama"]
+  },
+  {
+    "title": "Little Fires Everywhere",
+    "author": "Celeste Ng",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "little-fires-everywhere.jpg",
+    "recent_fav": false,
+    "tags": ["Coming of Age", "Drama"]
+  },
+  {
+    "title": "Darling Girls",
+    "author": "Sally Hepworth",
+    "finished": true,
+    "progress": 100,
+    "rating": 3.5,
+    "cover_url": "darling-girls.jpg",
+    "recent_fav": false,
+    "tags": ["Crime"]
+  },
+  {
+    "title": "We Used to Live Here",
+    "author": "Marcus Kliewer",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "we-used-to-live-here.jpg",
+    "recent_fav": false,
+    "tags": ["Horror", "Supernatural"]
+  },
+  {
+    "title": "Strange Pictures",
+    "author": "Uketsu",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "strange-pictures.jpg",
+    "recent_fav": false,
+    "tags": ["Horror", "Pictures", "Mystery"]
+  },
+  {
+    "title": "What Happened to Ruthy Ramirez",
+    "author": "Claire Jimenez",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "what-happened-to-ruthy-ramirez.jpg",
+    "recent_fav": false,
+    "tags": ["Family", "Drama", "Wealth", "Race"]
+  },
+  {
+    "title": "Let's Go Let's Go Let's Go",
+    "author": "Cleo Qian",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "lets-go-lets-go-lets-go.jpg",
+    "recent_fav": false,
+    "tags": ["Coming of Age", "Female authors", "Short stories"]
+  },
+  {
+    "title": "Ghost Music",
+    "author": "An Yu",
+    "finished": true,
+    "progress": 40,
+    "rating": 4,
+    "cover_url": "ghost-music.jpg",
+    "recent_fav": false,
+    "tags": ["China", "Family"]
+  },
+  {
+    "title": "All the Sinners Bleed",
+    "author": "S. A. Cosby",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "all-the-sinners-bleed.jpg",
+    "recent_fav": false,
+    "tags": ["Crime", "Serial Killer", "Mystery"]
+  },
+  {
+    "title": "The Covenant of Water",
+    "author": "Abraham Verghese",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "covenant-of-water.jpg",
+    "recent_fav": false,
+    "tags": ["Historical Fiction", "India", "Generational", "Family"]
+  },
+  {
+    "title": "Diavola",
+    "author": "Jennifer Thorne",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "diavola.jpg",
+    "recent_fav": true,
+    "tags": ["Family", "Supernatural"]
+  },
+  {
+    "title": "Bunny",
+    "author": "Mona Awad",
+    "finished": false,
+    "progress": 6,
+    "cover_url": "bunny.jpg",
+    "recent_fav": false,
+    "tags": ["Drama"]
+  },
+  {
+    "title": "Margo's Got Money Troubles",
+    "author": "Rufi Thorpe",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "margos-got-money-troubles.jpg",
+    "recent_fav": true,
+    "tags": ["Humor", "Parenthood"]
+  },
+  {
+    "title": "The Tainted Cup",
+    "author": "Robert Jackson Bennett",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "tainted-cup.jpg",
+    "recent_fav": false,
+    "tags": ["Drama"]
+  },
+  {
+    "title": "Small Things Like These",
+    "author": "Claire Keegan",
+    "finished": true,
+    "progress": 100,
+    "rating": 4.5,
+    "cover_url": "small-things-like-these.jpg",
+    "recent_fav": false,
+    "tags": ["Ireland", "Christmas"]
+  },
+  {
+    "title": "The Women",
+    "author": "Kristin Hannah",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "the-women.jpg",
+    "recent_fav": false,
+    "tags": ["War", "Trauma", "Family"]
+  },
+  {
+    "title": "House of Glass",
+    "author": "Sarah Pekkanen",
+    "finished": true,
+    "progress": 100,
+    "rating": 3,
+    "cover_url": "house-of-glass.jpg",
+    "recent_fav": false,
+    "tags": ["Family", "Thriller"]
+  },
+  {
+    "title": "Water Moon: A Novel",
+    "author": "Samantha Sotto Yambao",
+    "finished": false,
+    "progress": 32,
+    "rating": 2.5,
+    "cover_url": "water-moon.jpg",
+    "recent_fav": false,
+    "tags": ["Magical Realism"]
+  },
+  {
+    "title": "Bright Young Women: A Novel",
+    "author": "Jessica Knoll",
+    "finished": false,
+    "progress": 66,
+    "rating": 5,
+    "cover_url": "bright-young-women.jpg",
+    "recent_fav": false,
+    "tags": ["Thriller", "1970s", "Serial Killer"]
+  },
+  {
+    "title": "What My Bones Know: A Memoir of Healing from Complex Trauma",
+    "author": "Stephanie Foo",
+    "finished": false,
+    "progress": 82,
+    "rating": 5,
+    "cover_url": "what-my-bones-know.jpg",
+    "recent_fav": false,
+    "tags": ["Psychology", "Family", "Non-Fiction"]
+  }
+  
+]
+
+
