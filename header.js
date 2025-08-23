@@ -119,6 +119,12 @@ class SiteHeader extends HTMLElement {
         -webkit-text-fill-color: transparent;
         background-size: cover;
       }
+
+        @media only screen and (max-width: 520px) {
+          h1 {
+          font-size: 2em;
+        }
+      }
       
       #links {
         display: flex;
