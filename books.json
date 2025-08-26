@@ -10,6 +10,16 @@
     "tags": ["Coming of Age", "Drama", "Friendship"]
   },
   {
+    "title": "Barbara Isn't Dying",
+    "author": "Alina Bronsky",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "barbara-isnt-dying.jpg",
+    "recent_fav": false,
+    "tags": ["Personal Growth", "Relationships", "Endearing"]
+  },
+  {
     "title": "Wandering Souls",
     "author": "Cecile Pin",
     "finished": true,
@@ -236,7 +246,7 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "god-of-the-woods.jpg",
-    "recent_fav": true,
+    "recent_fav": false,
     "tags": ["Character Driven", "Crime"]
   },
   {
@@ -572,7 +582,7 @@
     "title": "Bright Young Women: A Novel",
     "author": "Jessica Knoll",
     "finished": false,
-    "progress": 66,
+    "progress": 100,
     "rating": 5,
     "cover_url": "bright-young-women.jpg",
     "recent_fav": false,
@@ -581,14 +591,63 @@
   {
     "title": "What My Bones Know: A Memoir of Healing from Complex Trauma",
     "author": "Stephanie Foo",
-    "finished": false,
-    "progress": 82,
+    "finished": true,
+    "progress": 100,
     "rating": 5,
     "cover_url": "what-my-bones-know.jpg",
     "recent_fav": false,
     "tags": ["Psychology", "Family", "Non-Fiction"]
+  },
+  {
+    "title": "Bury Your Gays",
+    "author": "Chuck Tingle",
+    "finished": true,
+    "progress": 100,
+    "rating": 4.5,
+    "cover_url": "bury-your-gays.jpg",
+    "recent_fav": false,
+    "tags": ["Thriller", "Sci-fi", "Social commentary", "Bold"]
+  },
+  {
+    "title": "My Darling Dreadful Thing",
+    "author": "Johanna van Veen",
+    "finished": true,
+    "progress": 100,
+    "rating": 3.5,
+    "cover_url": "darling-dreadful-thing.jpg",
+    "recent_fav": false,
+    "tags": ["Horror", "1950s", "Cynical", "Hopeless Situations"]
+  },
+  {
+    "title": "The Ghostwriter",
+    "author": "Johanna van Veen",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "ghostwriter.jpg",
+    "recent_fav": true,
+    "tags": ["1970s", "Family", "Murder", "Relationships"]
+  },
+  {
+    "title": "I Leave It Up to You",
+    "author": "Jinwoo Chong",
+    "finished": false,
+    "progress": 31,
+    "rating": 4,
+    "cover_url": "i-leave-it-up-to-you.jpg",
+    "recent_fav": false,
+    "tags": ["Family", "Drama"]
+  },
+  {
+    "title": "Denison Avenue",
+    "author": "Daniel Innes and Christina Wong",
+    "finished": false,
+    "progress": 53,
+    "rating": 4.5,
+    "cover_url": "denison-avenue.jpg",
+    "recent_fav": false,
+    "tags": ["Immigrant", "Toronto", "Unique", "Graphic Novel"]
   }
-  
 ]
 
 

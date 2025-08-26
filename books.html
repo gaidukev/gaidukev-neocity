@@ -622,9 +622,9 @@
 
     fetch('./books.json').then((res) => res.json()).then((res) => {
 
-      allBooks = res;
-      recentFavorites = res.filter((el) => el.recent_fav).reverse();
-      currentlyReading = res.filter((el) => el.progress < 100).reverse();
+      allBooks = res.reverse();
+      recentFavorites = res.filter((el) => el.recent_fav);
+      currentlyReading = res.filter((el) => el.progress < 100);
       console.log("all books: ", allBooks, "recentFavorites: ", recentFavorites, "currentlyReading: ", currentlyReading);
       
 
