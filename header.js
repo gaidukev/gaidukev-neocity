@@ -120,7 +120,7 @@ class SiteHeader extends HTMLElement {
         background-size: cover;
       }
 
-        @media only screen and (max-width: 520px) {
+      @media only screen and (max-width: 520px) {
           h1 {
           font-size: 2em;
         }
