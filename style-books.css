@@ -250,8 +250,13 @@ div.rating > span {
   background: #1f2a5d;
   border-radius: 30px;
   padding: 0;
-  margin: 5px;
+  margin: 10px;
   user-select: none;
+  transition: transform 0.2s ease;
+}
+
+#favorites-left-arrow:active, #favorites-right-arrow:active, #reading-now-left-arrow:active, #reading-now-right-arrow:active {
+  transform: scale(1.2);
 }
 
 .left-arrow {
