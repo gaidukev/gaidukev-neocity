@@ -163,6 +163,12 @@ div.rating > span {
   /*height: 90vh;*/
 }
 
+.unscrollable-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .details .rating {
   position: relative;
   margin-bottom: 15px;
