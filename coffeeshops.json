@@ -1,0 +1,80 @@
+[
+  {
+    "Coffee Shop Name": "Anvil",
+    "Address": "6148 90 Ave NW",
+    "Coordinates": [53.525629369817516, -113.42707575767182],
+    "Time Visited": "May 2025",
+    "What we ordered": "Italian soda/Iced vanilla latte",
+    "Vibe": "Chat and have fun; good for a casual outing. A bit cramped and noisy for a deep focus session",
+    "Would I come back?": "Yes!",
+    "Seating": "Tables are a bit small for 2, probably wouldn't fit your stuff or a laptop, but can fit a glass or a small plate just fine",
+    "Wifi": "Unsure",
+    "Power Outlet": "Unsure; most tables aren't near a wall and couldn't access a power outlet anyways",
+    "Comments": "The barista was very friendly and we made small talk. Our drinks were made quick.\nThe syrup in my Italian soda was tasty. It was served with a recyclable straw (bamboo), which I appreciated.\nThe straw did leak a little, but I was able to finish my drink and I found the leaking straw slowed me down nicely (like a slow-feeder for a dog, LOL)"
+  },
+  {
+    "Coffee Shop Name": "Aspen",
+    "Address": "9951 76 Ave NW",
+    "Coordinates": [53.51219049861051, -113.48802321349226],
+    "Time Visited": "April 2025",
+    "What we ordered": "Guava Italian soda + a Fawkes donut/Seasonal coffee flight",
+    "Vibe": "Really cozy, good ambiance",
+    "Would I come back?": "Yes!",
+    "Seating": "Plenty of seating, large enough space and wasn't too cramped. Comfortable chairs. The tables could hold a book or a laptop if you want to bring one.",
+    "Wifi": "Yes",
+    "Power Outlet": "Yes",
+    "Comments": "The soda syrup was very tasty and I'd get Italian soda again.\nThe coffee flight is a creative and fun idea. You get to try some unique flavors. I wish some of them were on their regular menu as full-sized items. I really liked the Earl Grey cream soda\nThe prices felt average and not too high. The location is in a nice spot off of Whyte ave in a pretty walkable area."
+  },
+  {
+    "Coffee Shop Name": "Ayco",
+    "Address": "10551 Jasper Ave",
+    "Coordinates": [53.54085285856467, -113.50236688465634],
+    "Time Visited": "February 2025",
+    "What we ordered": "Fruit Danish and a tea/Cookie dough doughnut and a drip coffee",
+    "Vibe": "Cozy; no overhead lights; not too crowded and not too loud",
+    "Would I come back?": "Yes!",
+    "Seating": "Lots of seating and the tables are large enough to fit your things. The chairs are comfortable.",
+    "Wifi": "Unsure",
+    "Power Outlet": "Yes",
+    "Comments": "This shop is downtown: keep in mind if you come here by car, because only paid parking is available. You can of course take the train and walk as well: this cafe is not far from Corona.\nI often see people studying and getting things done in this cafe.\nThe drinks are fine; however, Ayco is famous for its pastries and sweet treats. They are very unique and there's a variety."
+  },
+  {
+    "Coffee Shop Name": "Bar oro",
+    "Address": "10550 Jasper Ave",
+    "Coordinates": [53.54126176218843, -113.50249744232819],
+    "Time Visited": "February 2025",
+    "What we ordered": "Ham sandwich and a tea/Chocolate glazed carrot cake and a latte",
+    "Vibe": "It's a small space located in a hotel. When I went, it felt very hectic and loud. They were short on seating and it felt crammed. They do have a patio, but you might not be able to sit there if it's too smokey or cold.",
+    "Would I come back?": "Unsure",
+    "Seating": "Our table felt a bit small. There wasn't enough seating when we went and we only got a table by sheer luck.",
+    "Wifi": "Unsure",
+    "Power Outlet": "Unsure; this didn't feel like the type of place you'd sit down at anyways",
+    "Comments": "This might be a fine place to get a drink if you're on the go, but I'm unsure about going there to sit down. The carrot cake was delicious."
+  },
+  {
+    "Coffee Shop Name": "BE Coffee",
+    "Address": "11015 26 Ave NW",
+    "Coordinates": [53.45671646558168, -113.51421708465635],
+    "Time Visited": "April 2025",
+    "What we ordered": "Tea and a cupcake/Honey lavender latte",
+    "Vibe": "Very nicely decorated. Plenty of seating and cozy. They do have a 2-hour seating limit.",
+    "Would I come back?": "Unsure",
+    "Seating": "Comfortable. The table was big enough to fit our stuff.",
+    "Wifi": "Yes",
+    "Power Outlet": "Unsure",
+    "Comments": "My tea was okay.\nThere is something to be said about the food at this place, especially accounting for the price. The honey lavender latte cost $7.50 but tasted like any latte: the honey or lavender wasn't detectable.\nMy cupcake looked really good on the outside. The cake was fine and did the job done. The icing was horrific, had clumps, and didn't taste sweet or like a dessert. I can guess maybe it was a new recipe gone wrong?\nIf I were to come back here, I would order a simple tea and stay away from the elaborate foods and drinks."
+  },
+  {
+    "Coffee Shop Name": "Block 1912",
+    "Address": "10361 Whyte Ave NW",
+    "Coordinates": [53.51805415329408, -113.49706465824973],
+    "Time Visited": "March 2025",
+    "What we ordered": "Large latte/Drip coffee",
+    "Vibe": "They play nice music and have exposed brick and a unique space. It's inviting",
+    "Would I come back?": "Yes!",
+    "Seating": "Lots of seating; variety of tables and chairs. Most of it can fit a laptop if you're hoping to stay and study.",
+    "Wifi": "Yes",
+    "Power Outlet": "No",
+    "Comments": "This is a really nice place to stay and sit if you're a student. The barista was very friendly. My large latte was large and tasty.\nI have a dream of trying one of their cakes because they look delicious. The cakes are $15 per cake, which is why I haven't tried one yet."
+  }
+]
