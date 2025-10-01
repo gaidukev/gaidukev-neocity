@@ -315,8 +315,17 @@ body {
   background-size: cover;
 }
 
-@media only screen and (max-width: 550px) {
-  .slide {
+@media (max-width: 550px) {
+  .tooltip {
+    width: 200px;
+    left: 5%;
+  }
+
+  #books-read-content {
+    max-width: 90%;
+  }
+
+  .scrollable-content .slide {
     height: 341px;
     width: 226px;
     min-height: 341px;
