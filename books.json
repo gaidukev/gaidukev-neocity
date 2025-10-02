@@ -506,7 +506,7 @@
     "progress": 100,
     "rating": 4,
     "cover_url": "diavola.jpg",
-    "recent_fav": true,
+    "recent_fav": false,
     "tags": ["Family", "Supernatural"]
   },
   {
@@ -631,9 +631,9 @@
   {
     "title": "I Leave It Up to You",
     "author": "Jinwoo Chong",
-    "finished": false,
-    "progress": 31,
-    "rating": 4,
+    "finished": true,
+    "progress": 100,
+    "rating": 3.5,
     "cover_url": "i-leave-it-up-to-you.jpg",
     "recent_fav": false,
     "tags": ["Family", "Drama"]
@@ -647,6 +647,46 @@
     "cover_url": "denison-avenue.jpg",
     "recent_fav": false,
     "tags": ["Immigrant", "Toronto", "Unique", "Graphic Novel"]
+  },
+  {
+    "title": "You Killed Me First",
+    "author": "John Marrs",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "you-killed-me-first.jpg",
+    "recent_fav": false,
+    "tags": ["Thriller", "Plot Twists", "Suburb"]
+  },
+  {
+    "title": "My Friends: A Novel",
+    "author": "Hisham Matar",
+    "finished": true,
+    "progress": 100,
+    "rating": 3.5,
+    "cover_url": "my-friends.jpg",
+    "recent_fav": false,
+    "tags": ["Lonely", "Lybia", "Immigrant"]
+  },
+  {
+    "title": "Woodworking",
+    "author": "Emily St. James",
+    "finished": true,
+    "progress": 100,
+    "rating": 4.5,
+    "cover_url": "woodworking.jpg",
+    "recent_fav": true,
+    "tags": ["Coming Out", "Identity", "Nice people"]
+  },
+  {
+    "title": "The Wedding People",
+    "author": "Alison Espach",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "wedding-people.jpg",
+    "recent_fav": false,
+    "tags": ["Lighthearted", "Existential", "Live laugh love"]
   }
 ]
 
