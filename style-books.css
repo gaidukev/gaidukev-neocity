@@ -322,10 +322,10 @@ body {
   }
 
   #books-read-content {
-    max-width: 90%;
+    max-width: 100%;
   }
 
-  .scrollable-content .slide {
+  .scrollable-content .slide, .slide.slide-allbooks {
     height: 341px;
     width: 226px;
     min-height: 341px;
