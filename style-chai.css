@@ -53,11 +53,28 @@
 }
 
 .chai-info-header {
-  color: white;  
+  color: #a4f8fd;  
 }
 
 .chai-info-data {
-  color: #a4f8fd;
+  color: white;
+  margin: 7px;
+}
+
+@media (max-width: 500px) {
+  .chai-info{
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .chai-info-data {
+    margin-left: 0px;
+  }
+
+  #chai-info-container {
+    grid-template-columns: 1fr;
+    justify-content: start;
+  }
 }
 
 .material-symbols-outlined {
