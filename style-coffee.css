@@ -1,4 +1,10 @@
 #map {
     height:500px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+hr {
+    width: 70%;
+    opacity: 40%;
 }

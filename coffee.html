@@ -21,6 +21,21 @@
     <h1>Edmonton Coffee Spots</h1>
     <main>
       <div id="map"></div>
+      <div id="shop-list">
+        <section class="letter-category">
+          <h2 class="shop-list-letter-header">A</h2>
+        </section>
+        <hr>
+        <section class="letter-category">
+          <h2 class="shop-list-letter-header">B</h2>
+        </section>
+        <hr>
+        <section class="letter-category">
+          <h2 class="shop-list-letter-header">C</h2>  
+        </section>
+        <hr>
+
+      </div>
     </main>
 
     <script>
@@ -29,15 +44,30 @@
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);  
 
-      // L.marker([53.525629369817516, -113.42707575767182]).addTo(map)
-      //   .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-      //   .openPopup();
-
       fetch("./coffeeshops.json").then((res) => res.json()).then((res) => {
         res.forEach((shop) => {
-          console.log(shop);
+          // add shop to shop list
+          console.log("shop: ", shop, shop["Coffee Shop Name"][0]);
+          const section = document.getElementsByClassName("letter-category")
+          const match = Array.from(section).find((el) => el.getElementsByClassName("shop-list-letter-header")[0].innerText === shop["Coffee Shop Name"][0]);
+          match.innerHTML += `
+            <div class="shop-list-item">
+              <b>${shop["Coffee Shop Name"]}</b>
+              <br>
+              ${shop["Address"]}
+              <br>${shop["Vibe"]}
+            </div>
+            <br>`;
+
+          // add shop to map
           L.marker(shop["Coordinates"]).addTo(map)
-            .bindPopup(`<b>${shop["Coffee Shop Name"]}</b><br>${shop["Address"]}<br>Visited: ${shop["Time Visited"]}<br>Ordered: ${shop["What we ordered"]}<br>Vibe: ${shop["Vibe"]}`);
+            .bindPopup(`
+            <div style="display: flex; justify-content: space-between;">
+              <b>${shop["Coffee Shop Name"]}</b>
+              <br>
+              ${shop["Address"]}
+            </div>
+            <br>${shop["Vibe"]}`);
         });
       })
 
