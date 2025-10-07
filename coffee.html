@@ -12,6 +12,7 @@
       href="https://unpkg.com/leaflet/dist/leaflet.css"
     />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=electrical_services,wifi" /> 
   </head>
   <body>
   
@@ -52,10 +53,43 @@
           const match = Array.from(section).find((el) => el.getElementsByClassName("shop-list-letter-header")[0].innerText === shop["Coffee Shop Name"][0]);
           match.innerHTML += `
             <div class="shop-list-item">
-              <b>${shop["Coffee Shop Name"]}</b>
-              <br>
-              ${shop["Address"]}
-              <br>${shop["Vibe"]}
+              <div class="shop-item-icons">
+              ${
+                shop["Wifi"] == "Yes" ? 
+                ` <span class="material-symbols-outlined">
+                  wifi
+                </span>`
+                : ""
+                }
+
+              ${
+                shop['Power Outlet'] == "Yes" ?
+                `
+                <span class="material-symbols-outlined">
+                  electrical_services
+                </span>
+                ` : ""
+              }
+
+              ${
+                shop["Would I come back?"].toLowerCase().includes("yes")
+                ? 
+                `
+                  <span class="shop-heart-icon">
+                    ♡
+                  </span>
+
+                ` : ""
+              }
+
+              </div>
+              <div>
+                <b>${shop["Coffee Shop Name"]}</b>
+                <br>
+                ${shop["Address"]}
+                <br>${shop["Vibe"]}
+              </div>
+
             </div>
             <br>`;
 
