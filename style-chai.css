@@ -8,14 +8,32 @@
 }
 
 .carousel-arrow {
+  height: fit-content;
+  padding: 15px;
+  z-index: 5;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  cursor: pointer;
+
+  color: #e9ade8;
+  background: #1f2a5d;
+  border-radius: 30px;
   margin: 10px;
+  transition: transform 0.2s ease;
+}
+
+.carousel-arrow:active {
+  transform: scale(1.2);
 }
 
 #carousel-content > img {
   display: none;  
   object-fit: cover;
-  width: 600px; 
-  height: 500px;
+  width: 80%; 
+  height: fit-content;
+  /* height: 500px; */
 }
 
 #chai-carousel {

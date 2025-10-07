@@ -7,11 +7,25 @@
 
     <link href="./style.css" rel="stylesheet" type="text/css" media="all">
     <link href="./style-coffee.css" rel="stylesheet" type="text/css" media="all">
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet/dist/leaflet.css"
-    />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    /> -->
+    <!-- <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.vectorgrid/dist/Leaflet.VectorGrid.bundled.js"></script> -->
+
+
+
+        <!-- Leaflet -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script> -->
+
+    <!-- MapTiler SDK -->
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.8.0/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.8.0/maptiler-sdk.css" rel="stylesheet" />
+    <!-- Leaflet plugin for MapTiler SDK Layers -->
+    <!-- <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v3.0.0/leaflet-maptilersdk.js"></script> -->
+
   </head>
   <body>
   
@@ -39,11 +53,19 @@
     </main>
 
     <script>
-      var map = L.map('map').setView([53.5461, -113.4938], 12);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);  
-
+      maptilersdk.config.apiKey = "9cFNVXBXNKtQP3An2JxR";
+      var map = new maptilersdk.Map({
+        container: 'map',
+        style: 'https://api.maptiler.com/maps/0199b518-5d88-7175-902d-4603961fc49f/style.json?key=9cFNVXBXNKtQP3An2JxR',
+        center: [-113.4938, 53.5461],
+        zoom: 12
+      })
+      //console.log("L: ", L, maptilersdk)
+      // const mtLayer = L.maptilerLayer({ 
+      //   style: 'https://api.maptiler.com/maps/0199b518-5d88-7175-902d-4603961fc49f/style.json?key=9cFNVXBXNKtQP3An2JxR'
+      // }).addTo(map)
+      //map.setView([53.5461, -113.4938], 12);
+      
       fetch("./coffeeshops.json").then((res) => res.json()).then((res) => {
         res.forEach((shop) => {
           // add shop to shop list
@@ -59,15 +81,19 @@
             </div>
             <br>`;
 
+            const marker = new maptilersdk.Marker()
+              .setLngLat(shop['Coordinates'][1], shop['Coordinates'][0])
+              .addTo(map);
+
           // add shop to map
-          L.marker(shop["Coordinates"]).addTo(map)
-            .bindPopup(`
-            <div style="display: flex; justify-content: space-between;">
-              <b>${shop["Coffee Shop Name"]}</b>
-              <br>
-              ${shop["Address"]}
-            </div>
-            <br>${shop["Vibe"]}`);
+          // L.marker(shop["Coordinates"]).addTo(map)
+          //   .bindPopup(`
+          //   <div style="display: flex; justify-content: space-between;">
+          //     <b>${shop["Coffee Shop Name"]}</b>
+          //     <br>
+          //     ${shop["Address"]}
+          //   </div>
+          //   <br>${shop["Vibe"]}`);
         });
       })
 

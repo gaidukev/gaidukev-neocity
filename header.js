@@ -62,8 +62,6 @@ class SiteHeader extends HTMLElement {
           const ul = links.children.item(0);
           ul.style.display = "none";
         }
-        
-        // console.log("event.target: ", target);
     
     })
     
