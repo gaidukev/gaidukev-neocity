@@ -40,3 +40,9 @@ hr {
 
     font-weight: 600;
 }
+
+.shop-name {
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 0;
+}

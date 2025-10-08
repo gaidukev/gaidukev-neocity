@@ -28,102 +28,113 @@
     </main>
 
     <script>
-      const shopListContainer = document.getElementById("shop-list");
-      for (let i = 65; i <= 90; i++) {
-        const section = document.createElement("section");
-        section.className = 'letter-category';
 
-        const header = document.createElement('h2');
-        header.className = 'shop-list-letter-header';
-        header.textContent = String.fromCharCode(i);
 
-        section.appendChild(header);
-
-        const hr = document.createElement('hr');
-
-        document.body.appendChild(section);
-        document.body.appendChild(hr);
-      }
-
-      var map = L.map('map').setView([53.5461, -113.4938], 12);
+      var map = L.map('map').setView([53.5461, -113.4938], 11);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);  
 
       fetch("./coffeeshops.json").then((res) => res.json()).then((res) => {
-        res.forEach((shop) => {
-          // add shop to shop list
-          console.log("shop: ", shop, shop["Coffee Shop Name"][0]);
-          const section = document.getElementsByClassName("letter-category")
-          const match = Array.from(section).find((el) => el.getElementsByClassName("shop-list-letter-header")[0].innerText === shop["Coffee Shop Name"][0]);
-          match.innerHTML += `
-            <div class="shop-list-item">
-              <div class="shop-item-icons">
-              ${
-                shop["Wifi"] == "Yes" ? 
-                ` <span class="material-symbols-outlined">
-                  wifi
-                </span>`
-                : ""
-                }
+        // make sections for all letters of the alphabet
+        for (let i = 65; i <= 90; i++) {
+          const currentLetter = String.fromCharCode(i);
+          const matchingShops = res.filter((shop) => shop["Coffee Shop Name"][0] == currentLetter);
+          if (matchingShops.length > 0) {
 
-              ${
-                shop['Power Outlet'] == "Yes" ?
-                `
-                <span class="material-symbols-outlined">
-                  electrical_services
-                </span>
-                ` : ""
-              }
+            // create the section
+            const section = document.createElement("section");
+            section.className = 'letter-category';
 
-              ${
-                shop["Would I come back?"].toLowerCase().includes("yes")
-                ? 
-                `
-                  <span class="shop-heart-icon">
-                    ♡
-                  </span>
+            const header = document.createElement('h2');
+            header.className = 'shop-list-letter-header';
+            header.textContent = currentLetter;
 
-                ` : ""
-              }
+            section.appendChild(header);
 
-              </div>
-              <div>
-                <b>${shop["Coffee Shop Name"]}</b>
-                <br>
-                ${shop["Address"]}
-                ${shop["Time Visited"]}
-                <br>${shop["Vibe"]}
-                <br>
-                <span class="coffee-data-line">
-                  What we ordered
-                </span>
-                ${shop["What we ordered"]}
-                <br>
-                <span class="coffee-data-line">
-                  Seating
-                </span>
-                ${shop["Seating"]}
-                <br>
-                <span class="coffee-data-line">
-                  Other comments
-                </span>
-                ${shop["Comments"]}
-              </div>
+            const hr = document.createElement('hr');
 
-            </div>
-            <br>`;
+            document.body.appendChild(section);
+            document.body.appendChild(hr);
 
-          // add shop to map
-          L.marker(shop["Coordinates"]).addTo(map)
-            .bindPopup(`
-            <div style="display: flex; justify-content: space-between;">
-              <b>${shop["Coffee Shop Name"]}</b>
-              <br>
-              ${shop["Address"]}
-            </div>
-            <br>${shop["Vibe"]}`);
-        });
+
+            matchingShops.forEach((shop) => {
+              // add shop to shop list
+              const section = document.getElementsByClassName("letter-category")
+              const match = Array.from(section).find((el) => el.getElementsByClassName("shop-list-letter-header")[0].innerText === shop["Coffee Shop Name"][0]);
+              match.innerHTML += `
+                <div class="shop-list-item">
+                  <div class="shop-item-icons">
+                  ${
+                    shop["Wifi"] == "Yes" ? 
+                    ` <span class="material-symbols-outlined">
+                      wifi
+                    </span>`
+                    : ""
+                    }
+
+                  ${
+                    shop['Power Outlet'] == "Yes" ?
+                    `
+                    <span class="material-symbols-outlined">
+                      electrical_services
+                    </span>
+                    ` : ""
+                  }
+
+                  ${
+                    shop["Would I come back?"].toLowerCase().includes("yes")
+                    ? 
+                    `
+                      <span class="shop-heart-icon">
+                        ♡
+                      </span>
+
+                    ` : ""
+                  }
+
+                  </div>
+                  <div>
+                    <h3 class="shop-name" id=${shop["Coffee Shop Name"]}>${shop["Coffee Shop Name"]}</h3>
+                    <br>
+                    ${shop["Address"]}
+                    ${shop["Time Visited"]}
+                    <br>${shop["Vibe"]}
+                    <br>
+                    <span class="coffee-data-line">
+                      What we ordered
+                    </span>
+                    ${shop["What we ordered"]}
+                    <br>
+                    <span class="coffee-data-line">
+                      Seating
+                    </span>
+                    ${shop["Seating"]}
+                    <br>
+                    <span class="coffee-data-line">
+                      Other comments
+                    </span>
+                    ${shop["Comments"]}
+                  </div>
+
+                </div>
+                <br>`;
+
+              // add shop to map
+              L.marker(shop["Coordinates"]).addTo(map)
+                .bindPopup(`
+                <div style="display: flex; justify-content: space-between;">
+                  <a href="#${shop["Coffee Shop Name"].split(" ")[0]}"><b>${shop["Coffee Shop Name"]}</b></a>
+                  <br>
+                  ${shop["Address"]}
+                </div>
+                <br>${shop["Vibe"]}`);
+            });
+
+
+            }
+
+          }
       })
 
     </script>
