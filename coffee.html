@@ -23,23 +23,28 @@
     <main>
       <div id="map"></div>
       <div id="shop-list">
-        <section class="letter-category">
-          <h2 class="shop-list-letter-header">A</h2>
-        </section>
-        <hr>
-        <section class="letter-category">
-          <h2 class="shop-list-letter-header">B</h2>
-        </section>
-        <hr>
-        <section class="letter-category">
-          <h2 class="shop-list-letter-header">C</h2>  
-        </section>
-        <hr>
 
       </div>
     </main>
 
     <script>
+      const shopListContainer = document.getElementById("shop-list");
+      for (let i = 65; i <= 90; i++) {
+        const section = document.createElement("section");
+        section.className = 'letter-category';
+
+        const header = document.createElement('h2');
+        header.className = 'shop-list-letter-header';
+        header.textContent = String.fromCharCode(i);
+
+        section.appendChild(header);
+
+        const hr = document.createElement('hr');
+
+        document.body.appendChild(section);
+        document.body.appendChild(hr);
+      }
+
       var map = L.map('map').setView([53.5461, -113.4938], 12);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -87,7 +92,23 @@
                 <b>${shop["Coffee Shop Name"]}</b>
                 <br>
                 ${shop["Address"]}
+                ${shop["Time Visited"]}
                 <br>${shop["Vibe"]}
+                <br>
+                <span class="coffee-data-line">
+                  What we ordered
+                </span>
+                ${shop["What we ordered"]}
+                <br>
+                <span class="coffee-data-line">
+                  Seating
+                </span>
+                ${shop["Seating"]}
+                <br>
+                <span class="coffee-data-line">
+                  Other comments
+                </span>
+                ${shop["Comments"]}
               </div>
 
             </div>
