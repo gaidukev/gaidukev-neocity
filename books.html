@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Matt & Chai</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="./style-books.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./styles/style-books.css" rel="stylesheet" type="text/css" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_left,arrow_right,moon_stars,star,star_half" />
+
+    <script>
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.media = "all";
+
+      const isNight = (!document.cookie || document.cookie.includes('night'))
+      link.href = isNight ? "./styles/style-night.css" : "./styles/style-day.css";
+
+      document.head.appendChild(link);
+    </script>
   </head>
   <body>
   
