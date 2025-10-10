@@ -83,7 +83,7 @@ class SiteHeader extends HTMLElement {
           margin: 0px;
           padding: 0px;
           position: sticky;
-          z-index: 1000;
+          z-index: 1001;
           top: 0px;
         }
         
@@ -140,8 +140,6 @@ class SiteHeader extends HTMLElement {
           left: 0;
           width: 20vw;
           min-width:300px;
-          
-          z-index: 2000;
         }
         
         
@@ -151,8 +149,6 @@ class SiteHeader extends HTMLElement {
           display: block;  
           position: relative;
           padding-right: 10px;
-
-          z-index: 2000;
           
         }
         
@@ -165,8 +161,6 @@ class SiteHeader extends HTMLElement {
           font-size: 2em;
           color: white;
           position: absolute;
-          
-          z-index: 2000;
         }
 
         
@@ -181,8 +175,6 @@ class SiteHeader extends HTMLElement {
           overflow: hidden;
           display: block;
           width: 100%;
-          position: relative;
-          z-index: 2000;
         }
           
         @keyframes expand {
