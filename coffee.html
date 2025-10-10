@@ -24,7 +24,16 @@
       const isNight = (!document.cookie || document.cookie.includes('night'))
       link.href = isNight ? "./styles/style-night.css" : "./styles/style-day.css";
 
+      const coffeeStyles = document.createElement("link");
+      coffeeStyles.rel = "stylesheet";
+      coffeeStyles.type = "text/css";
+      coffeeStyles.media = "all";
+
+      coffeeStyles.href = isNight ? "./styles/style-coffee-night.css" : "./styles/style-coffee-day.css";
+
+
       document.head.appendChild(link);
+      document.head.appendChild(coffeeStyles);
     </script>
   </head>
   <body>
@@ -112,7 +121,7 @@
                         <span>
                           ${shop["Address"]}
                         </span>
-                        <span>
+                        <span class="quick-data-separator">
                           ⬤
                         </span>
                         <span>
