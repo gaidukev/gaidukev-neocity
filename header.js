@@ -150,16 +150,17 @@ class SiteHeader extends HTMLElement {
       `
 
       const dayStyles = `#header-toggle-container {
-            background: #451952;
+            background: #415585;
         }
 
         header {
-            background-color: #231f20;
+            background-color: #c2c6ff;
         }
 
         h1 {
             color: white;
-            background: url('./misc-assets/colorful-background3.jpg');
+            background: url('./background-images/7.jpg');
+            background-position: 70%;
 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

@@ -2,6 +2,20 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    
+  <script type="text/javascript" src="./Header.js"></script>
+  
+    <script>
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.media = "all";
+
+      const isNight = (!document.cookie || document.cookie.includes('night'))
+      link.href = isNight ? "./styles/style-night.css" : "./styles/style-day.css";
+
+      document.head.appendChild(link);
+    </script>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,16 +32,6 @@
         <img src="misc-assets/plastic-cup.png" style="height: 200px;">
     </div>
 
-
-
-  <script type="text/javascript" src="./Header.js"></script>
-  
-  <script>
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = "styles/style-night.css";
-    
-  </script>
 
 
   </body>
