@@ -13,21 +13,60 @@ class SiteHeader extends HTMLElement {
     const createStyles = (isDay) => {
       const baseStyles = `
 
-      #moon-header-symbol {
-        height: 1.5em;
-        margin-right: 0 10px;
+      .theme-switch-toggled {
+        transform: translateX(-40px);
       }
 
-      #header-toggle-container {
-        width: 80px;
-        height: 40px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        border-radius: 20px;
-        cursor: pointer;
-        margin: 5px;
+        #header-toggle-container::after {
+          content: "";
+          display: block;
+          height: 60%;
+          width: 70px;
+          position: absolute;
+          border-radius: 40px;
+        }
+
+
+        #header-toggle-container {
+          width: 80px;
+          height: 40px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          border-radius: 20px;
+          cursor: pointer;
+          margin: 5px;
       }
+
+      #moon-header-symbol {
+        height: 1.5em;
+        margin: 0 5px;
+        z-index: 500;
+
+        transition: transform 0.3s ease;
+      }
+
+
+        @media (max-width: 550px) {
+          #header-toggle-container::after {
+            width: 40px;
+            height: 20px;
+          }
+
+          #header-toggle-container {
+            width: 50px;
+            height: 30px;
+          }
+
+          .theme-switch-toggled {
+            transform: translateX(-5px);
+          }
+
+          #moon-header-symbol {
+            height: 1rem;
+          }
+        }
+
 
     
         h1 a {
@@ -58,7 +97,8 @@ class SiteHeader extends HTMLElement {
           left: 5px;
           width: 20px;
           height: 20px;
-          z-index: 101;
+          z-index: 1000;
+          padding: 0 5px;
         }
         
         h1 {
@@ -75,6 +115,12 @@ class SiteHeader extends HTMLElement {
         }
 
         @media only screen and (max-width: 520px) {
+            h1 {
+            font-size: 2.5em;
+          }
+        }
+
+        @media only screen and (max-width: 400px) {
             h1 {
             font-size: 2em;
           }
@@ -94,6 +140,8 @@ class SiteHeader extends HTMLElement {
           left: 0;
           width: 20vw;
           min-width:300px;
+          
+          z-index: 2000;
         }
         
         
@@ -103,6 +151,8 @@ class SiteHeader extends HTMLElement {
           display: block;  
           position: relative;
           padding-right: 10px;
+
+          z-index: 2000;
           
         }
         
@@ -115,6 +165,8 @@ class SiteHeader extends HTMLElement {
           font-size: 2em;
           color: white;
           position: absolute;
+          
+          z-index: 2000;
         }
 
         
@@ -129,6 +181,8 @@ class SiteHeader extends HTMLElement {
           overflow: hidden;
           display: block;
           width: 100%;
+          position: relative;
+          z-index: 2000;
         }
           
         @keyframes expand {
@@ -149,8 +203,17 @@ class SiteHeader extends HTMLElement {
         }
       `
 
-      const dayStyles = `#header-toggle-container {
-            background: #415585;
+      const dayStyles = `
+      #header-toggle-container {
+            background: #192252;
+        }
+
+        #header-toggle-container::after {
+          background: #313467;
+        }
+
+        rect {
+          fill: #192252;
         }
 
         header {
@@ -190,6 +253,10 @@ class SiteHeader extends HTMLElement {
 
       const nightStyles = `#header-toggle-container {
             background: #451952;
+        }
+
+        #header-toggle-container::after {
+          background: #784288;
         }
 
         header {
@@ -298,25 +365,24 @@ class SiteHeader extends HTMLElement {
 
       // set toggle with accordance to cookies
         if (isNight) {
-          toggle.style.justifyContent = "flex-end";
+          toggleImage.classList.add("theme-switch-toggled");
           toggleImage.src = "misc-assets/moon-svgrepo.svg"
 
         } else {
-          toggle.style.justifyContent = "flex-start";
+          //toggle.style.justifyContent = "flex-start";
           toggleImage.src = "misc-assets/sun-svgrepo.svg"
 
         }
 
       toggle.addEventListener("click", () => {
         // read current cookie
+        toggleImage.classList.toggle("theme-switch-toggled");
         if (!document.cookie || document.cookie.includes('night')) {
-          toggle.style.justifyContent = "flex-start";
           toggleImage.src = "misc-assets/sun-svgrepo.svg"
           document.cookie = "displaymode=day; path=/; max-age=3600";
 
           style.textContent = createStyles(true);
         } else {
-          toggle.style.justifyContent = "flex-end";
           toggleImage.src = "misc-assets/moon-svgrepo.svg"
           document.cookie = "displaymode=night; path=/; max-age=3600";
 
