@@ -117,6 +117,7 @@ class SiteHeader extends HTMLElement {
         @media only screen and (max-width: 520px) {
             h1 {
             font-size: 2.5em;
+            padding: 10px;
           }
         }
 

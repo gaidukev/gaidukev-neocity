@@ -77,59 +77,60 @@
               const match = Array.from(section).find((el) => el.getElementsByClassName("shop-list-letter-header")[0].innerText === shop["Coffee Shop Name"][0]);
               match.innerHTML += `
                 <div class="shop-list-item">
-                  <div class="shop-item-icons">
-                  ${
-                    shop["Wifi"] == "Yes" ? 
-                    ` <span class="material-symbols-outlined">
-                      wifi
-                    </span>`
-                    : ""
-                    }
-
-                  ${
-                    shop['Power Outlet'] == "Yes" ?
-                    `
-                    <span class="material-symbols-outlined">
-                      electrical_services
-                    </span>
-                    ` : ""
-                  }
-
-                  ${
-                    shop["Would I come back?"].toLowerCase().includes("yes")
-                    ? 
-                    `
-                      <span class="shop-heart-icon">
-                        ♡
+                  <h3 class="shop-name" id=${shop["Coffee Shop Name"]}>${shop["Coffee Shop Name"]}</h3>
+                  <div class="shop-list-item-data">
+                    <div class="shop-item-icons">
+                    ${
+                      shop["Wifi"] == "Yes" ? 
+                      ` <span class="material-symbols-outlined">
+                        wifi
+                      </span>`
+                      : ""
+                      }
+                    ${
+                      shop['Power Outlet'] == "Yes" ?
+                      `
+                      <span class="material-symbols-outlined">
+                        electrical_services
                       </span>
+                      ` : ""
+                    }
+                    ${
+                      shop["Would I come back?"].toLowerCase().includes("yes")
+                      ? 
+                      `
+                        <span class="shop-heart-icon">
+                          ♡
+                        </span>
+                      ` : ""
+                    }
+                    </div>
 
-                    ` : ""
-                  }
+
+                    <div>
+                      <br>
+                      ${shop["Address"]}
+                      ${shop["Time Visited"]}
+                      <br>${shop["Vibe"]}
+                      <br>
+                      <span class="coffee-data-line">
+                        What we ordered
+                      </span>
+                      ${shop["What we ordered"]}
+                      <br>
+                      <span class="coffee-data-line">
+                        Seating
+                      </span>
+                      ${shop["Seating"]}
+                      <br>
+                      <span class="coffee-data-line">
+                        Other comments
+                      </span>
+                      ${shop["Comments"]}
+                    </div>
+
 
                   </div>
-                  <div>
-                    <h3 class="shop-name" id=${shop["Coffee Shop Name"]}>${shop["Coffee Shop Name"]}</h3>
-                    <br>
-                    ${shop["Address"]}
-                    ${shop["Time Visited"]}
-                    <br>${shop["Vibe"]}
-                    <br>
-                    <span class="coffee-data-line">
-                      What we ordered
-                    </span>
-                    ${shop["What we ordered"]}
-                    <br>
-                    <span class="coffee-data-line">
-                      Seating
-                    </span>
-                    ${shop["Seating"]}
-                    <br>
-                    <span class="coffee-data-line">
-                      Other comments
-                    </span>
-                    ${shop["Comments"]}
-                  </div>
-
                 </div>
                 <br>`;
 

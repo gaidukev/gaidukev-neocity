@@ -12,7 +12,33 @@ hr {
 .shop-list-item {
     margin: 10px 20px;
     display: flex;
+    flex-direction: column;
+}
+
+.shop-item-icons {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    min-width: 2em;
+    justify-content: center;
+}
+
+.shop-list-item-data {
+
+    display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 500px) {
+
+    .shop-list-item-data {
+        flex-direction: column;
+    }
+
+    .shop-item-icons {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }
 
 .material-symbols-outlined {
@@ -23,12 +49,9 @@ hr {
   'opsz' 24
 }
 
-.shop-item-icons {
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-    min-width: 2em;
-    justify-content: center;
+
+.shop-item-icons > * {
+    padding: 5px;
 }
 
 .shop-heart-icon {
