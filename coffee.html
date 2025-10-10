@@ -29,7 +29,7 @@
   </head>
   <body>
   
-    <script type="text/javascript" src="./Header.js"></script>
+    <script type="text/javascript" src="./header.js"></script>
     
     <site-header></site-header>
     <h1>Edmonton Coffee Spots</h1>
@@ -108,28 +108,50 @@
 
 
                     <div>
-                      <br>
-                      ${shop["Address"]}
-                      ${shop["Time Visited"]}
-                      <br>${shop["Vibe"]}
-                      <br>
-                      <span class="coffee-data-line">
-                        What we ordered
-                      </span>
-                      ${shop["What we ordered"]}
-                      <br>
-                      <span class="coffee-data-line">
-                        Seating
-                      </span>
-                      ${shop["Seating"]}
-                      <br>
-                      <span class="coffee-data-line">
-                        Other comments
-                      </span>
-                      ${shop["Comments"]}
+                      <div class="shop-quick-data">
+                        <span>
+                          ${shop["Address"]}
+                        </span>
+                        <span>
+                          ⬤
+                        </span>
+                        <span>
+                          ${shop["Time Visited"]}
+                        </span>
+                      </div>
+                      <div class="coffee-data-line-container">
+                        <span class="coffee-data-line">
+                          Vibe
+                        </span>
+                        <span class="coffee-data-line-content">
+                          ${shop["Vibe"]}
+                        </span>
+                      </div>
+                      <div class="coffee-data-line-container">
+                        <span class="coffee-data-line">
+                          What we ordered
+                        </span>
+                        <span class="coffee-data-line-content">
+                          ${shop["What we ordered"]}
+                        </span>
+                      </div>
+                      <div class="coffee-data-line-container">
+                        <span class="coffee-data-line">
+                          Seating
+                        </span>
+                        <span class="coffee-data-line-content">
+                          ${shop["Seating"]}
+                        </span>
+                      </div>
+                      <div class="coffee-data-line-container">
+                        <span class="coffee-data-line">
+                          Other comments
+                        </span>
+                        <span class="coffee-data-line-content">
+                          ${shop["Comments"]}
+                        </span>
+                      </div>
                     </div>
-
-
                   </div>
                 </div>
                 <br>`;
