@@ -90,6 +90,54 @@
   margin: 10px 0;
 }
 
+#chai-passport-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.chai-passport-section {
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#chai-passport-fields-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 60vw;
+  margin: 20px;
+}
+
+#chai-headshot-img {
+  width: 30vw;
+  height: auto;
+  border-radius: 400px;
+  margin: 30px 10px;
+}
+
+.chai-passport-section-title {
+  margin: 0;
+  padding-left: 0;
+  font-size: 1.5em;
+}
+
+#chai-passport-top-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#chai-biometrics-container {
+  padding-right: 100px;
+}
+
+#chai-relevant-info-container {
+  width: 100%;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,

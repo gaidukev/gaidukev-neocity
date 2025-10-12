@@ -17,7 +17,16 @@
       const isNight = (!document.cookie || document.cookie.includes('night'))
       link.href = isNight ? "./styles/style-night.css" : "./styles/style-day.css";
 
+      const chaiLink = document.createElement("link");
+      chaiLink.rel = 'stylesheet';
+      chaiLink.type = 'text/css';
+      chaiLink.media = 'all';
+
+      chaiLink.href = isNight ? './styles/style-chai-night.css' : './styles/style-chai-day.css';
+
       document.head.appendChild(link);
+      document.head.appendChild(chaiLink);
+
     </script>
   </head>
   <body>
@@ -28,95 +37,94 @@
     
 
     <h1 class="chai-header">Chai</h1>
-    <!-- https://codepen.io/Ketan1333/pen/geKVKp -->
-    
-    <div id="chai-info-container">
-    
-      <div class="chai-info">
-        <span class="chai-info-header">
-          Name
-        </span>
-        <span class="chai-info-data">
-          Chai
-        </span>
+
+    <div id="chai-passport-container">
+      <img src="./misc-assets/chai-headshot.png" id="chai-headshot-img">
+
+      <div id="chai-passport-fields-container">
+        <div id="chai-passport-top-section">
+          <div class="chai-passport-section" id="chai-biometrics-container">
+            <h3 class="chai-passport-section-title">
+              Biometrics
+            </h3>
+            <div>
+              Species: Cat
+            </div>
+            <div>
+              Appearance: Striped
+            </div>
+            <div>
+              Weight: 9lbs
+            </div>
+            <div>
+              Adoption: Nov. 2024
+            </div>
+            <div>
+              DOB: 2023-2024
+            </div>
+          </div>
+
+          <div class="chai-passport-section" id="chai-relevant-info-container">
+
+            <h3 class="chai-passport-section-title">
+              Relevant Background
+            </h3>
+            <div>
+              Children: 🐈🐈
+            </div>
+            <div>
+              Origin: Shelter
+            </div>
+            <div>
+              Occupation: housecat
+            </div>
+            <div>
+              Likes:
+              <br>
+              - Birds
+              <br>
+              - Bird TikToks
+              <br>
+              - Meat
+              <br>
+              - String
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="chai-passport-section">
+          <h3 class="chai-passport-section-title">
+            Criminal History
+          </h3>
+          <div>
+            Vices:
+            <br>
+            - biting
+          </div>
+          <div>
+            Taxes filed:
+            <br>
+            ❌2025
+            ❌2024
+          </div>
+
+          <div>
+            Pays rent?
+            <br>
+            Yes ($50)
+          </div>
+        </div>
       </div>
-      
-      
-      <div class="chai-info">
-        <span class="chai-info-header">
-          Origin
-        </span>
-        <span class="chai-info-data">
-          Shelter; maybe the outdoors
-        </span>
-      </div>
-      
-      <div class="chai-info">
-        <span class="chai-info-header">
-          Adopted
-        </span>
-        <span class="chai-info-data">
-          Nov. 2024
-        </span>
-      </div>
-      
-      
-      <div class="chai-info">
-        <span class="chai-info-header">
-          Birth Year
-        </span>
-        <span class="chai-info-data">
-          2023/2024
-        </span>
-      </div>
-      
-      <div class="chai-info">
-        <span class="chai-info-header">
-          Children
-        </span>
-        <span class="chai-info-data">
-          2
-        </span>
-      </div>
-      
-      
-      <div class="chai-info">
-        <span class="chai-info-header">
-          Occupation
-        </span>
-        <span class="chai-info-data">
-          House Cat
-        </span>
-      </div>
-    
-      <div class="chai-info">
-        <span class="chai-info-header">
-          Vices
-        </span>
-        <span class="chai-info-data">
-          Biting
-        </span>
-      </div>
-      
-      <div class="chai-info">
-        <span class="chai-info-header">
-          Likes
-        </span>
-        <span class="chai-info-data">
-          Birds, bird TikToks, meat, string
-        </span>
-      </div>
-    
+
     </div>
-    
+
+
+
     <h1 class="chai-header">Highlights</h1>
 
-    
-
-
-
     <div id="masonry-container">
-
     </div>
     
     <script>
