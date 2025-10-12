@@ -131,7 +131,13 @@
 }
 
 #chai-biometrics-container {
-  padding-right: 100px;
+  min-width: 250px;
+  padding-right: 20px;
+  /* padding-right: 100px; */
+}
+
+.chai-passport-section > div {
+  margin: 5px 0;
 }
 
 #chai-relevant-info-container {
