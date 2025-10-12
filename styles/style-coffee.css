@@ -20,7 +20,7 @@ hr {
     flex-direction: column;
     padding: 0 15px;
     min-width: 2em;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .shop-list-item-data {

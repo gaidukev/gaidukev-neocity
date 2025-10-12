@@ -112,84 +112,68 @@
     <h1 class="chai-header">Highlights</h1>
 
     
-    <div id="chai-carousel">
-    
 
-    
-      <span onclick="decrementCarouselImage()" class="carousel-arrow material-symbols-outlined" id="left-carousel-arrow">
-        arrow_left
-      </span>
 
-      <div id="carousel-content">
-      
-        <img 
-          class="carousel-image"
-          src="./images/chai8.jpg"/>
-        <img 
-          class="carousel-image"
-          src="./images/chai3.webp"/>
-        <img 
-          class="carousel-image"
-          src="./images/chai4.webp"/>
-        <img 
-          class="carousel-image"
-          src="./images/chai7.jpg"/>
-        <img 
-          class="carousel-image"
-          src="./images/chai11.jpg"/>
-        <img 
-          class="carousel-image"
-          src="./images/chai14.jpg"/>
-        <img 
-          class="carousel-image"
-          src="./images/chai17.jpg"/>
-      </div>
 
-      <span  onclick="incrementCarouselImage()" class="carousel-arrow material-symbols-outlined" id="right-carousel-arrow">
-        arrow_right
-      </span>
-      
-              
-
+    <div id="masonry-container">
 
     </div>
     
     <script>
-    
-    
-    
-    const carouselImage = document.getElementById("carousel-content");
-    let selectedImage = 0;
-    
-    if (carouselImage) {
-      for (let i = 0; i < carouselImage.children.length; i++){
-        if (i == selectedImage){
-          carouselImage.children.item(i).style.display = "block";  
-        }  else {
-          carouselImage.children.item(i).style.display = "none";   
-        }
-      } 
-    }
-    
 
+      const images = ['./images/chai8.jpg', './images/chai3.webp', './images/chai4.webp', './images/chai7.jpg',
+        './images/chai11.jpg', './images/chai14.jpg', './images/chai17.jpg'
+      ]
     
-    function incrementCarouselImage() {
-      console.log("test!", carouselImage, selectedImage)
-      if (carouselImage) {
-        carouselImage.children.item(selectedImage).style.display = "none";  
-        selectedImage = (selectedImage + 1) % carouselImage.children.length;   
-        carouselImage.children.item(selectedImage).style.display = "block";  
-      }  
-    }
+      const getColumnCount = () => {
+        if (window.innerWidth < 350) return 1;
+        if (window.innerWidth < 550) return 2;
+        if (window.innerWidth < 800) return 3;
+        return 4;
+      }
+
+      const getColumnImages = (allImages, k, colCount) => {
+
+        const imagesPerCol = Math.floor(allImages.length / colCount);
+        const remainingImages = allImages.length % colCount;
+        const extraImage = remainingImages > 0 && k < remainingImages ? 1 : 0 ;
+
+        const colImages = [];
+
+        for (let i = k; i < allImages.length; i+= colCount) {
+          colImages.push(allImages[i])
+        }
+
+        return colImages;
+      }
     
-    function decrementCarouselImage() {
-      console.log("test!!!!!!")
-      if (carouselImage) {
-        carouselImage.children.item(selectedImage).style.display = "none";  
-        selectedImage = (selectedImage - 1) < 0 ? carouselImage.children.length - 1 : selectedImage - 1;
-        carouselImage.children.item(selectedImage).style.display = "block";  
-      }  
-    }
+      const renderMasonry = (images) => {
+        const colCount = getColumnCount();
+
+        console.log("colCount: ", colCount);
+        const columns = [];
+
+        const masonryContainer = document.getElementById("masonry-container");
+        for (let i = 0; i < colCount; i++) {
+          const newCol = document.createElement("div");
+          newCol.className = "masonry-column";
+
+          const colImages = getColumnImages(images, i, colCount);
+          for (let img of colImages) {
+            const newImg = document.createElement("img");
+            newImg.className = "masonry-img";
+            newImg.src = img;
+            
+            newCol.appendChild(newImg);
+          }
+
+
+          masonryContainer.appendChild(newCol);
+        }
+      }
+
+      renderMasonry(images);
+
     
     </script>
     
