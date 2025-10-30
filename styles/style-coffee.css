@@ -34,18 +34,6 @@ hr {
     gap: 15px;
 }
 
-@media (max-width: 500px) {
-
-    .shop-list-item-data {
-        flex-direction: column;
-    }
-
-    .shop-item-icons {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-}
-
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -75,6 +63,8 @@ hr {
 .coffee-data-line {
     width: 100px;
     font-weight: 600;
+    min-width: 100px;
+    max-width: 100px;
 }
 
 .shop-name {
@@ -82,4 +72,33 @@ hr {
     padding: 15px 10px;
     margin: 0;
     font-size: 1.5em;
+}
+
+@media (max-width:700px) {
+    .coffee-data-line-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .shop-list-item-data {
+        flex-direction: column;
+    }
+
+    .shop-item-icons {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .shop-item-icons span {
+        padding: 5px 0 20px 0;
+    }
+
+    .shop-name {
+        padding-left: 0;
+    }
 }
