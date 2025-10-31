@@ -168,12 +168,44 @@
               // add shop to map
               L.marker(shop["Coordinates"]).addTo(map)
                 .bindPopup(`
-                <div style="display: flex; justify-content: space-between;">
-                  <a href="#${shop["Coffee Shop Name"].split(" ")[0]}"><b>${shop["Coffee Shop Name"]}</b></a>
-                  <br>
-                  ${shop["Address"]}
+                <div style="width:200px;">
+                    <div style="display: flex;">
+                    <a class="map-marker" href="#${shop["Coffee Shop Name"].split(" ")[0]}"><b style="font-weight:800; font-family: Arial Black;">${shop["Coffee Shop Name"]}</b></a>
+                    <div class="marker-icons-container">
+                      ${
+                        shop["Wifi"] == "Yes" ? 
+                        ` <span class="material-symbols-outlined">
+                          wifi
+                        </span>`
+                        : ""
+                        }
+                      ${
+                        shop['Power Outlet'] == "Yes" ?
+                        `
+                        <span class="material-symbols-outlined">
+                          electrical_services
+                        </span>
+                        ` : ""
+                      }
+                      ${
+                        shop["Would I come back?"].toLowerCase().includes("yes")
+                        ? 
+                        `
+                          <span class="shop-heart-icon">
+                            ♡
+                          </span>
+                        ` : ""
+                      }
+                      </div>
+                  </div>
+                  <div class="marker-address">
+                    ${shop["Address"]}
+                  </div>
+                  <div>
+                    ${shop["Vibe"]}
+                  </div>
                 </div>
-                <br>${shop["Vibe"]}`);
+                `);
             });
 
 
