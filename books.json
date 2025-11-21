@@ -697,6 +697,46 @@
     "cover_url": "dont-let-her-stay.jpg",
     "recent_fav": false,
     "tags": ["Hate-read"]
+  },
+  {
+    "title": "Intermezzo",
+    "author": "Sally Rooney",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "intermezzo.jpg",
+    "recent_fav": true,
+    "tags": ["Brothers", "Relationships", "Experimental"]
+  },
+  {
+    "title": "Not Quite Dead Yet",
+    "author": "Holly Jackson",
+    "finished": true,
+    "progress": 100,
+    "rating": 2.5,
+    "cover_url": "not-quite-dead-yet.jpg",
+    "recent_fav": false,
+    "tags": ["YA", "Quirky in a bad way"]
+  },
+  {
+    "title": "These Heathens",
+    "author": "Mia McKenzie",
+    "finished": true,
+    "progress": 100,
+    "rating": 5,
+    "cover_url": "these-heathens.jpg",
+    "recent_fav": true,
+    "tags": ["Humor", "1960s", "Coming of Age"]
+  },
+  {
+    "title": "Wild Dark Shore",
+    "author": "Charlotte McConaghy",
+    "finished": true,
+    "progress": 100,
+    "rating": 4,
+    "cover_url": "wild-dark-shore.jpg",
+    "recent_fav": false,
+    "tags": ["Nature", "Family"]
   }
 ]
 
