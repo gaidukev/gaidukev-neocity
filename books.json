@@ -216,7 +216,7 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "blue-sisters.jpg",
-    "recent_fav": true,
+    "recent_fav": false,
     "tags": ["Grief", "Family", "Bittersweet Humor"]
   },
   {
@@ -336,7 +336,7 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "fox-wife.jpg",
-    "recent_fav": true,
+    "recent_fav": false,
     "tags": ["Magical Realism", "Historical Fiction", "Folklore", "Energetic"]
   },
   {
@@ -376,7 +376,7 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "sorceress-comes-to-call.jpg",
-    "recent_fav": true,
+    "recent_fav": false,
     "tags": ["Horror", "Magic"]
   },
   {
