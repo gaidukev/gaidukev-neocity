@@ -1,0 +1,24 @@
+[
+    {
+        "name": "This Blog",
+        "github": "https://github.com/gaidukev/gaidukev-neocity", 
+        "techstack": ["Vanilla JS", "HTML", "CSS", "Neocities", "Github Actions"],
+        "deployment": "https://gaidukev.neocities.org/"
+    },
+    {
+        "name": "Big Brother: Astro Party Game",
+        "github": "https://github.com/Matt-and-Ethan-Code/big-brother-astro", 
+        "techstack": ["Astro", "Typescript", "GitHub", "CSS", "HTML", "Redis", "Netlify"],
+        "deployment": "https://big-brother-astro.netlify.app/"
+    },
+    {
+        "name": "Water Puzzle: React Native Game",
+        "github": "https://github.com/gaidukev/water-puzzle", 
+        "techstack": ["React Native", "Typescript", "GitHub", "CSS", "HTML"]
+    },
+    {
+        "name": "Wordle Copycat: Svelte.js",
+        "github": "https://github.com/Matt-and-Ethan-Code/wordle", 
+        "techstack": ["Svelte", "Javascript", "GitHub", "CSS", "HTML"]
+    }
+]
