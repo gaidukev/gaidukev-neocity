@@ -23,7 +23,7 @@ jobs:
       - name: Run Hardcover sync script # call the script
         env:
           HARDCOVER_API_KEY: ${{ secrets.HARDCOVER_API_TOKEN }}
-        run: node scripts/sync_books.js
+        run: node scripts/sync_books.mjs
 
       - name: Commit updated books.json # update books.json
         run: |
