@@ -6,6 +6,8 @@
     "progress": 100,
     "rating": 2.5,
     "cover_url": "https://assets.hardcover.app/editions/31222125/8b74afd5-bde6-4d2d-82f3-bdb7d00a928c.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250899575-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250899576-L.jpg",
     "recent_fav": false,
     "tags": [
       "Existential",
@@ -19,7 +21,9 @@
     "finished": true,
     "progress": 100,
     "rating": 0.5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593497227-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/60948723/287a34246f7476713320952c881ff3af339cee38.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593497228-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593497227-L.jpg",
     "recent_fav": false,
     "tags": [
       "Historical fiction",
@@ -33,7 +37,9 @@
     "finished": true,
     "progress": 100,
     "rating": 2.5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593798607-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31222300/ab8588a91b2c41f143a2c0a042bdbe846f188699.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593798600-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593798607-L.jpg",
     "recent_fav": false,
     "tags": [
       "Drama"
@@ -45,7 +51,9 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250831910-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/59788136/e851d9427e9e6cc0bafe70d6f460953051ec668c.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250831911-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250831910-L.jpg",
     "recent_fav": false,
     "tags": [
       "Crime",
@@ -58,7 +66,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780802162175-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61513243/6e3c1584a9a564fa958d733274dc78c1054958a2.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780802162175-L.jpg",
     "recent_fav": false,
     "tags": [
       "Historical Fiction",
@@ -73,7 +83,9 @@
     "finished": true,
     "progress": 100,
     "rating": 2.5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780374616373-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61807417/679b26baf9ca1619085dd6796b53dc46373ba528.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/037461637X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780374616373-L.jpg",
     "recent_fav": false,
     "tags": [
       "Family"
@@ -85,7 +97,9 @@
     "finished": false,
     "progress": 0,
     "rating": null,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780451495167-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/30465514/383b7fc1f175bb47eda20772a0d2f72b6c804f8e.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0451495160-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780451495167-L.jpg",
     "recent_fav": false,
     "tags": []
   },
@@ -96,6 +110,8 @@
     "progress": 100,
     "rating": 4,
     "cover_url": "https://assets.hardcover.app/edition/30558194/6f049e7856c1ebc29bfc5f624a6720eac10e22ac.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
     "recent_fav": false,
     "tags": [
       "Boarding school",
@@ -109,7 +125,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250266019-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/30901494/f434fe6e9107c61bc271c2f6c275191653ed29ac.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250266017-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250266019-L.jpg",
     "recent_fav": false,
     "tags": [
       "Magical realism",
@@ -124,7 +142,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593595459-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31291443/20641afa7c26a70beb70a6da7faa47652d02a782.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593595459-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593595459-L.jpg",
     "recent_fav": true,
     "tags": [
       "HAUNTING!",
@@ -137,7 +157,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781419769153-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/60182828/2b83aea4b258f45d3a8b73edea2955a06ed9b141.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1419769154-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781419769153-L.jpg",
     "recent_fav": true,
     "tags": [
       "Coming-of-age",
@@ -151,7 +173,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9798374567144-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/30889516/8167b45698fe5b6163dc29e19794d494d386eda4.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9798374567144-L.jpg",
     "recent_fav": false,
     "tags": [
       "I Hate It"
@@ -163,7 +187,9 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780063031463-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/2150891/c4817cd4be9e4669baca91e7de630d61195a7861.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0063031469-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780063031463-L.jpg",
     "recent_fav": false,
     "tags": [
       "Motherhood",
@@ -177,7 +203,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593448205-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31501892/b98886fb078da64c9a900b1cfd9fc1a221a54f21.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593448200-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593448205-L.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
@@ -191,7 +219,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781668016138-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/59174872/6f0ce6a7711abca7c6decf84b739e5ebe22b56b6.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781668016138-L.jpg",
     "recent_fav": false,
     "tags": [
       "Serial killer",
@@ -204,7 +234,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781953534927-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31222105/db467038f2a1d9a98efc5851aaec78c7f1faf2e2.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1953534929-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781953534927-L.jpg",
     "recent_fav": false,
     "tags": [
       "Coming-of-age"
@@ -216,7 +248,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593537251-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/60962791/b2a5fe28990bcacb63fede930726ee29cdb4aa05.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593537254-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593537251-L.jpg",
     "recent_fav": false,
     "tags": [
       "Messy",
@@ -230,7 +264,9 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781982179007-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61236779/64eed7a13f07d3d104137029cfdb4bbb395de934.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1982179007-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781982179007-L.jpg",
     "recent_fav": false,
     "tags": [
       "Podcaster",
@@ -243,7 +279,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593243749-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/59799755/9ebe725b9237de563d39f7abc6659dccde89159f.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593243749-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593243749-L.jpg",
     "recent_fav": false,
     "tags": [
       "Romance",
@@ -257,7 +295,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781538725962-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/30559139/13348140-L.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1538725967-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781538725962-L.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
@@ -270,7 +310,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9798800159837-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/30985305/ee8ded7c362b813dc46ee5bb461e43cfe3cdf1ac.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9798800159837-L.jpg",
     "recent_fav": false,
     "tags": [
       "Old lady",
@@ -286,6 +328,8 @@
     "progress": 100,
     "rating": 4,
     "cover_url": "https://assets.hardcover.app/edition/30793259/4ce04b693c8025f739ba67460aaff16f1e417b8a.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
     "recent_fav": false,
     "tags": [
       "Easy read",
@@ -298,7 +342,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781399712590-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61272431/3e9042ff53ec3442057fc428db467fd28e3ec73e.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1399712594-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781399712590-L.jpg",
     "recent_fav": false,
     "tags": [
       "War",
@@ -313,6 +359,8 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "https://assets.hardcover.app/edition/30385435/8e77553e-5aec-4543-846b-4d4372c23dc9.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1982185821-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781982185824-L.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
@@ -327,6 +375,8 @@
     "progress": 100,
     "rating": 2,
     "cover_url": "https://assets.hardcover.app/editions/3030202/2823118527969986.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/153872474X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781538724743-L.jpg",
     "recent_fav": false,
     "tags": [
       "Messy"
@@ -338,7 +388,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780399170928-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61573888/b57b169f812f41adc13cbb94e4f556d4e0ce8745.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0399170928-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780399170928-L.jpg",
     "recent_fav": false,
     "tags": [
       "Thriller",
@@ -351,7 +403,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593321201-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/30535150/2efdfd508a803c89913fd6e987f69048a17c89c6.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593321200-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593321201-L.jpg",
     "recent_fav": false,
     "tags": [
       "Drama",
@@ -365,7 +419,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780063204157-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/59469142/340246db2f5b43b566a8dfc27887bb13301ca4cd.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0063204150-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780063204157-L.jpg",
     "recent_fav": false,
     "tags": [
       "Endearing",
@@ -379,6 +435,8 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "https://assets.hardcover.app/editions/30555005/9830805827943454.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0802158749-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780802158741-L.jpg",
     "recent_fav": false,
     "tags": [
       "Ireland",
@@ -392,6 +450,8 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "https://assets.hardcover.app/edition/30448568/a39e8ab0-6ef7-485e-8a50-c1a70e77b8cf.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593321448-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593321447-L.jpg",
     "recent_fav": false,
     "tags": [
       "Sci-fi",
@@ -404,7 +464,9 @@
     "finished": true,
     "progress": 100,
     "rating": 1,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250622006-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61350707/da4f1422ef272436c66f4cf9538769405500e6d9.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/125062200X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250622006-L.jpg",
     "recent_fav": false,
     "tags": [
       "Historical",
@@ -420,7 +482,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780525637165-L.jpg",
+    "cover_url": "https://assets.hardcover.app/book_mappings/7332392/d168f7fb4cffd49660e3caf0fe382a4d323e59a1.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/034970144X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780525637165-L.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
@@ -434,7 +498,9 @@
     "finished": true,
     "progress": 100,
     "rating": 2,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780786716746-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/30474907/e4bf7d2d86189debd5d0be0bf37e2aa5f576a324.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0786716746-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780786716746-L.jpg",
     "recent_fav": false,
     "tags": []
   },
@@ -444,7 +510,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781984854780-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/60015696/7a8731dc5f1b5910b08c4a73fae0615042f554d0.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1984854798-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781984854780-L.jpg",
     "recent_fav": false,
     "tags": [
       "Grief",
@@ -458,7 +526,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250217325-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/12846449/a82ee96fb437ad83b4ebb215643b7e8d644468f9.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250217326-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250217325-L.jpg",
     "recent_fav": false,
     "tags": [
       "Friendship",
@@ -472,6 +542,8 @@
     "progress": 100,
     "rating": 3,
     "cover_url": "https://assets.hardcover.app/edition/30408097/283e4f71-ecbc-4e2c-8876-6fdfad786456.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250301696-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250301697-L.jpg",
     "recent_fav": false,
     "tags": [
       "Thriller"
@@ -484,6 +556,8 @@
     "progress": 100,
     "rating": 3,
     "cover_url": "https://assets.hardcover.app/external_data/41526575/a81bfe15a6697f16a6438d064372a04bd0830f33.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
     "recent_fav": false,
     "tags": [
       "Abuse",
@@ -498,6 +572,8 @@
     "progress": 100,
     "rating": 4,
     "cover_url": "https://assets.hardcover.app/editions/30399704/4364405759474168-34273236.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0735224293-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780735224292-L.jpg",
     "recent_fav": false,
     "tags": [
       "Coming-of-age",
@@ -510,7 +586,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780451499073-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/26693500/9b243a19e5896591d5416ddb3ae0d3f55725630a.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0451499077-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780451499073-L.jpg",
     "recent_fav": true,
     "tags": [
       "Well-written",
@@ -525,7 +603,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780385551472-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/682422/a7b576d886a5d74f847e55246fc79009254d1682.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0385701403-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780385551472-L.jpg",
     "recent_fav": true,
     "tags": [
       "Love",
@@ -540,7 +620,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780307700155-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/32160797/790cdbdf58c55c32311d34efe29e8f7d00e28ee8.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0307700151-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780307700155-L.jpg",
     "recent_fav": false,
     "tags": [
       "Magical realism",
@@ -556,6 +638,8 @@
     "progress": 100,
     "rating": 3,
     "cover_url": "https://assets.hardcover.app/editions/31873784/7ff9e37d-3c71-41a8-b6ce-a5fd99449890.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593642570-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593642573-L.jpg",
     "recent_fav": false,
     "tags": [
       "Haunted house",
@@ -569,6 +653,8 @@
     "progress": 100,
     "rating": 4,
     "cover_url": "https://assets.hardcover.app/editions/31966178/5dcf3e15-736b-423d-af0f-fcfb64c16e09.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593595033-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593595039-L.jpg",
     "recent_fav": false,
     "tags": [
       "Generational",
@@ -581,7 +667,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593832448-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61527381/697f0d0f3d371b169a9e30e977492016d52aac41.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593832442-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593832448-L.jpg",
     "recent_fav": false,
     "tags": [
       "Murder"
@@ -594,6 +682,8 @@
     "progress": 100,
     "rating": 4,
     "cover_url": "https://assets.hardcover.app/edition/31625541/d80d0f61-d2a6-488f-a93c-a5dfc5a32faa.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593158717-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593158715-L.jpg",
     "recent_fav": false,
     "tags": [
       "Relationships",
@@ -607,6 +697,8 @@
     "progress": 100,
     "rating": 3,
     "cover_url": "https://assets.hardcover.app/edition/32574752/0725514a-87de-4e79-b01f-725e51b60904.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1627290052-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781627290050-L.jpg",
     "recent_fav": false,
     "tags": [
       "Making do"
@@ -618,7 +710,8 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
     "recent_fav": false,
     "tags": [
       "Serial killer",
@@ -633,6 +726,8 @@
     "progress": 100,
     "rating": 2,
     "cover_url": "https://assets.hardcover.app/editions/31592429/db54e5c8-f548-40ea-885c-aa4a3f9eaee3.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/059397705X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593977057-L.jpg",
     "recent_fav": false,
     "tags": [
       "YA",
@@ -646,6 +741,8 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "https://assets.hardcover.app/edition/31766049/2ad672ec-8328-4e21-9e18-54b08ce095dd.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593801121-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593801123-L.jpg",
     "recent_fav": false,
     "tags": [
       "Friendship",
@@ -659,7 +756,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593596944-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/32032203/a6d2084cf2f517dda31b6809738d7837bdce6439.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593596943-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593596944-L.jpg",
     "recent_fav": false,
     "tags": [
       "Humor",
@@ -674,6 +773,8 @@
     "progress": 100,
     "rating": 3,
     "cover_url": "https://assets.hardcover.app/editions/31294953/7284802366378016.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0778368459-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780778368458-L.jpg",
     "recent_fav": false,
     "tags": [
       "COVID-19",
@@ -686,7 +787,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593727058-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/32487464/57018efdd778bbdcf768dc8e84c9cd61e9ec3b3e.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593727053-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593727058-L.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
@@ -700,6 +803,8 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "https://assets.hardcover.app/editions/31849590/6960590066340078.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1464221286-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781464221286-L.jpg",
     "recent_fav": false,
     "tags": [
       "1970s",
@@ -713,7 +818,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781638931478-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31812971/ae66e13a20994fe508bbb3a01e54de57faafe2fb.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/163893147X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781638931478-L.jpg",
     "recent_fav": false,
     "tags": [
       "Finding yourself",
@@ -726,7 +833,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780063433083-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31833489/46937d75b58ac756f2c5dc6df419ce744f0c0f23.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0063433087-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780063433083-L.jpg",
     "recent_fav": false,
     "tags": [
       "Horror",
@@ -740,6 +849,8 @@
     "progress": 100,
     "rating": 4,
     "cover_url": "https://assets.hardcover.app/edition/32249012/a122d79e-45bf-4a80-b7e7-8eb5b3d03a4f.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593595645-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593595640-L.jpg",
     "recent_fav": false,
     "tags": [
       "Slow paced;"
@@ -751,7 +862,9 @@
     "finished": true,
     "progress": 100,
     "rating": 2,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781668078181-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/35964340/43e54f52bb2dbaf781358ac812e033d2984b8ef4.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/166807818X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781668078181-L.jpg",
     "recent_fav": false,
     "tags": [
       "Murder"
@@ -763,7 +876,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593358368-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31707193/7ad3856ea83df2f22c2f0b036f30e66f8f2dced7.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593358368-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593358368-L.jpg",
     "recent_fav": false,
     "tags": [
       "Grief",
@@ -777,6 +892,8 @@
     "progress": 100,
     "rating": 3,
     "cover_url": "https://assets.hardcover.app/edition/31613863/2e3c2d631dd691f59614a330754fd147c81a93ca.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/null-L.jpg",
     "recent_fav": false,
     "tags": [
       "Suburb",
@@ -790,6 +907,8 @@
     "progress": 100,
     "rating": 3,
     "cover_url": "https://assets.hardcover.app/editions/31617319/555887127545573.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593732049-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593732045-L.jpg",
     "recent_fav": false,
     "tags": [
       "Romance",
@@ -803,7 +922,9 @@
     "finished": true,
     "progress": 100,
     "rating": 2,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781662524257-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61576889/70618a29427e91202be9becb73058d6e8a9156cd.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1662524250-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781662524257-L.jpg",
     "recent_fav": false,
     "tags": [
       "Lighthearted",
@@ -818,6 +939,8 @@
     "progress": 100,
     "rating": 1,
     "cover_url": "https://assets.hardcover.app/edition/31996186/a07fa036-052c-49ba-bab5-e4fd72d14560.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/125035434X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250354341-L.jpg",
     "recent_fav": false,
     "tags": [
       "Child",
@@ -830,7 +953,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250827951-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31275879/e846250280dac18cf635a5f038394bb1f03bb0af.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250827957-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250827951-L.jpg",
     "recent_fav": false,
     "tags": [
       "Nature",
@@ -843,7 +968,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780374602635-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31538598/d625279bd52b64a8256798c91f67a45adec382f6.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0374602638-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780374602635-L.jpg",
     "recent_fav": false,
     "tags": [
       "Brothers",
@@ -857,7 +984,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593873359-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/30513794/12f48168-cda6-4a8e-b9a9-1781352d0f65.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593873351-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593873359-L.jpg",
     "recent_fav": false,
     "tags": [
       "Fantasy",
@@ -870,7 +999,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780525558279-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/2559335/430ba559d1d7d5e02bd21a8b20538400f1653b52.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0525558276-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780525558279-L.jpg",
     "recent_fav": false,
     "tags": [
       "Friendship",
@@ -883,7 +1014,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780385353304-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/47671286/cde65e40092722f63a5b9a29a672d12bc75ae19b.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0385353308-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780385353304-L.jpg",
     "recent_fav": false,
     "tags": [
       "Well-written",
@@ -898,6 +1031,8 @@
     "progress": 100,
     "rating": 2,
     "cover_url": "https://assets.hardcover.app/edition/31067702/61006dfc-e242-4f9b-bcbf-74eb4714f90a.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250895669-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250895660-L.jpg",
     "recent_fav": false,
     "tags": [
       "YA",
@@ -912,6 +1047,8 @@
     "progress": 100,
     "rating": 4,
     "cover_url": "https://assets.hardcover.app/editions/31219355/6025608729282055.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1982198788-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781982198787-L.jpg",
     "recent_fav": false,
     "tags": [
       "Horror",
@@ -924,7 +1061,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780063003101-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31107980/7b683f4279a70d7b3e7c03f4eb5bffcc2c720ead.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0063003104-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780063003101-L.jpg",
     "recent_fav": false,
     "tags": [
       "Small town",
@@ -938,6 +1077,8 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "https://assets.hardcover.app/editions/31172530/1691217550745585.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593418913-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593418918-L.jpg",
     "recent_fav": false,
     "tags": [
       "Family secrets",
@@ -950,7 +1091,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780063356580-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31262077/6e09e6ecfd067a065cdd4db5b633d442bff181bc.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0063356589-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780063356580-L.jpg",
     "recent_fav": false,
     "tags": [
       "Motherhood",
@@ -963,7 +1106,9 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593190265-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31242709/bf062459e46e10e5f67665740fc7a5dddc7e115a.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593190262-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593190265-L.jpg",
     "recent_fav": false,
     "tags": [
       "Drama",
@@ -977,6 +1122,8 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "https://assets.hardcover.app/editions/31467004/2586016368117763.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250874653-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250874658-L.jpg",
     "recent_fav": false,
     "tags": [
       "Thriller",
@@ -990,7 +1137,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250244079-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61145943/f6791eab91fe28b2fe7178c1ff55fd240534352e.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250244072-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250244079-L.jpg",
     "recent_fav": false,
     "tags": [
       "Horror",
@@ -1004,7 +1153,9 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250283993-L.jpg",
+    "cover_url": "https://assets.hardcover.app/editions/31107903/5069799981690124-HouseOfGlass.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/125028399X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250283993-L.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
@@ -1017,7 +1168,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593723760-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/30692936/ad424b30db4ac712a73e408cc7ac9b76c449eab0.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593723767-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593723760-L.jpg",
     "recent_fav": false,
     "tags": []
   },
@@ -1027,7 +1180,9 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781668049341-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31669246/c3935a11bfe555129c5f8500571c6a5b417d482e.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1668049341-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781668049341-L.jpg",
     "recent_fav": false,
     "tags": [
       "Thriller",
@@ -1041,6 +1196,8 @@
     "progress": 100,
     "rating": 3,
     "cover_url": "https://assets.hardcover.app/edition/31051139/32996fe7-adda-4fc4-98d1-dece7d29b75d.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1736716840-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781736716847-L.jpg",
     "recent_fav": false,
     "tags": [
       "College"
@@ -1052,7 +1209,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780063244740-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61164388/dcae11f92ecec524a46cb7e32159c443f20032ab.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0063244748-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780063244740-L.jpg",
     "recent_fav": false,
     "tags": [
       "1950s",
@@ -1066,6 +1225,8 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "https://assets.hardcover.app/editions/31073305/e151b508-282f-4c07-9607-7457cde34c69.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1728281547-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781728281544-L.jpg",
     "recent_fav": false,
     "tags": [
       "Horror",
@@ -1080,7 +1241,9 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781594205712-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/30401104/1d528ed9e59df7849b7cafc19f3f74833bca8a39.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/159420571X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781594205712-L.jpg",
     "recent_fav": false,
     "tags": [
       "Drama",
@@ -1093,7 +1256,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780385546874-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61272700/e7bcb6033f14367497becadca466581d7e92122f.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0385546874-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780385546874-L.jpg",
     "recent_fav": false,
     "tags": [
       "Historical fiction",
@@ -1107,7 +1272,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250880314-L.jpg",
+    "cover_url": "https://assets.hardcover.app/edition/31107754/99ed69113dfe07655d1880a95fba10dcc6d05c76.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250880319-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250880314-L.jpg",
     "recent_fav": false,
     "tags": [
       "Mystery",
@@ -1120,7 +1287,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780385550369-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61346674/caff7309b465f9633e166709b0215c12aa392aff.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0385550367-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780385550369-L.jpg",
     "recent_fav": false,
     "tags": [
       "Historical"
@@ -1132,7 +1301,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781501153228-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/965322/66f5ee393568a2e2f697a17adfa044cef24b6722.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1501153226-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781501153228-L.jpg",
     "recent_fav": false,
     "tags": [
       "Thriller",
@@ -1146,7 +1317,9 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9780593492918-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/61196779/fe4b9a50ecc207894616f0770e84cddb74c66f9f.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/0593492919-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9780593492918-L.jpg",
     "recent_fav": false,
     "tags": [
       "Small town",
@@ -1160,6 +1333,8 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "https://assets.hardcover.app/editions/30774097/5279737640186273-ttce1.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1984820702-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781984820709-L.jpg",
     "recent_fav": false,
     "tags": [
       "Drama",
@@ -1172,7 +1347,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250178633-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/60539568/4782256d471ce11f7f32411b1a2fbb6a75c53c11.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250178630-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250178633-L.jpg",
     "recent_fav": false,
     "tags": [
       "War",
@@ -1186,7 +1363,9 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250284525-L.jpg",
+    "cover_url": "https://assets.hardcover.app/editions/30899483/8376704038345315-DarlingGirls.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/125028452X-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250284525-L.jpg",
     "recent_fav": false,
     "tags": [
       "Crime"
@@ -1198,7 +1377,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250236807-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/1643215/1a56169c0ff5db552c0726e997b7c3af8623cbb1.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250236800-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250236807-L.jpg",
     "recent_fav": false,
     "tags": [
       "Adoption",
@@ -1213,7 +1394,9 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781646221950-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/60318889/d581ad152109a7126f1ef34e84893a8993d65eb8.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1646221958-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781646221950-L.jpg",
     "recent_fav": false,
     "tags": [
       "Identity",
@@ -1227,7 +1410,9 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781250280039-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/2086170/51d62fcfb003d3dce7c4670f28ed46878fd7bc5b.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1250280036-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781250280039-L.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
@@ -1241,6 +1426,8 @@
     "progress": 100,
     "rating": 5,
     "cover_url": "https://assets.hardcover.app/editions/31094686/3478860929387235.jpg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1666656895-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781666656893-L.jpg",
     "recent_fav": false,
     "tags": [
       "Haunted house",
@@ -1254,7 +1441,9 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://covers.openlibrary.org/b/isbn/9781668004821-L.jpg",
+    "cover_url": "https://assets.hardcover.app/external_data/60234629/f61f1b2c282285802942e7c4533686570b6d5b01.jpeg",
+    "isbn10_url": "https://covers.openlibrary.org/b/isbn/1668004828-L.jpg",
+    "isbn_13_url": "https://covers.openlibrary.org/b/isbn/9781668004821-L.jpg",
     "recent_fav": false,
     "tags": [
       "Immigrant",
