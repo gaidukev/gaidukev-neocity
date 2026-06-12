@@ -14,10 +14,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout your repo
       - uses: actions/checkout@v4
 
-      # 2. Deploy directly to Neocities (no npm step)
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v3
         with:

@@ -1,0 +1,34 @@
+name: Update Reading List Using Hardcover API
+
+on: 
+  schedule:
+    - cron: "0 6 * * 1" # Runs on Monday at 6 AM UTC
+  workflow_dispatch: # Allows manual triggering from the Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions: 
+      contents: write  # by default, the VM will only have read -- need to give it write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      
+      - name: Run Hardcover sync script
+        env:
+          HARDCOVER_API_KEY: ${{ secrets.HARDCOVER_API_TOKEN }}
+        run: node scripts/sync-hardcover.js
+
+      - name: Commit updated books.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add books.json covers/
+          git diff --staged --quiet || git commit -m "Sync books from Hardcover"
+          git push
