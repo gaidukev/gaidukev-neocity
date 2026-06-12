@@ -23,9 +23,19 @@ const query = `
                     title
                     pages
                     slug
-                    image { url }
+                    image { 
+                        url
+                        height 
+                        width 
+                    }
                     contributions { author { name } }
                 }  
+                edition {
+                    isbn_10
+                    isbn_10_valid
+                    isbn_13
+                    isbn_13_valid
+                }
             }
 
             lists {
@@ -75,19 +85,28 @@ async function main() {
     const me = Array.isArray(json.data?.me) ? json.data.me[0] : json.data?.me;
     // get all books in my list
     const myBooks = me?.user_books ?? [];
+    console.log("editions: ", myBooks[0])
     // get the On My Mind list -- goes in my "favorites"
     const onMyMind = me?.lists?.find((el) => el.name === 'On My Mind')?.list_books;
 
     const outList = myBooks.map((entry) => {
+        // calculate the progress -- the API returns page counts only
+        const bookProgress = entry.status_id === 2 ? (Math.floor(entry.user_book_reads?.[0]?.progress_pages / entry.book.pages ) * 100 ) : 100;
+
+        // create a flag for the image being invalid or too small to display
+        const imageTooSmallOrInvalid = !entry?.book?.image || Math.min(entry?.book?.image?.height, entry?.book?.image?.width) < 450;
+        // prepare to use isbn as fallback. ISBN13 is preferred
+        const isbn = entry?.edition?.isbn_13 && entry?.edition?.isbn_13_valid ? entry.edition.isbn_13 : entry?.edtion?.isbn_10;
+        const imageUrl = isbn ? `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg` : entry?.book?.image?.url;
+
         return {
             title: entry.book.title,
             // if more than one author, comma-separate them
             author: entry.book.contributions.map((contribution) => contribution.author.name).join(", "), 
             finished: entry.status_id !== 2, 
-            // calculate the progress -- the API returns page counts only
-            progress: entry.status_id === 2 ? (Math.floor(entry.user_book_reads?.[0]?.progress_pages / entry.book.pages ) * 100 ) : 100, 
+            progress: bookProgress, 
             rating: entry.rating,
-            cover_url: entry.book?.image?.url ?? "", 
+            cover_url: imageUrl, 
             recent_fav: onMyMind?.find((el) => el.book.id === entry.book.id) ? true : false, 
             // get the reading journal entry with tags 
             // will start with Keywords: 
