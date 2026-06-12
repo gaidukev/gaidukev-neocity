@@ -12,20 +12,20 @@ jobs:
       contents: write  # by default, the VM will only have read -- need to give it write
     
     steps:
-      - name: Checkout repository
+      - name: Checkout repository # the github action will not have access to repository files otherwise
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Set up Node.js # download node to run the script
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22.11.0"
       
-      - name: Run Hardcover sync script
+      - name: Run Hardcover sync script # call the script
         env:
           HARDCOVER_API_KEY: ${{ secrets.HARDCOVER_API_TOKEN }}
-        run: node scripts/sync-hardcover.js
+        run: node scripts/sync_books.js
 
-      - name: Commit updated books.json
+      - name: Commit updated books.json # update books.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
