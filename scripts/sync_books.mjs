@@ -103,7 +103,7 @@ async function main() {
     if (outList && outList.length > 0) {
         // update books.json
         // indent = 2
-        writeFileSync("books.json", json.stringify(outList, null, 2));
+        writeFileSync("books.json", JSON.stringify(outList, null, 2));
     }
 }
 
