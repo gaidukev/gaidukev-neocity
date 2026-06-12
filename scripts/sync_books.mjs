@@ -93,12 +93,6 @@ async function main() {
         // calculate the progress -- the API returns page counts only
         const bookProgress = entry.status_id === 2 ? (Math.floor(entry.user_book_reads?.[0]?.progress_pages / entry.book.pages ) * 100 ) : 100;
 
-        // create a flag for the image being invalid or too small to display
-        const imageTooSmallOrInvalid = !entry?.book?.image || Math.min(entry?.book?.image?.height, entry?.book?.image?.width) < 450;
-        // prepare to use isbn as fallback. ISBN13 is preferred
-        const isbn = entry?.edition?.isbn_13 && entry?.edition?.isbn_13_valid ? entry.edition.isbn_13 : entry?.edition?.isbn_10_valid ? entry.edition.isbn_10 : null;
-        const imageUrl = imageTooSmallOrInvalid && isbn ? `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg` : entry?.book?.image?.url ?? "";
-
         return {
             title: entry.book.title,
             // if more than one author, comma-separate them
@@ -106,7 +100,9 @@ async function main() {
             finished: entry.status_id !== 2, 
             progress: bookProgress, 
             rating: entry.rating,
-            cover_url: imageUrl, 
+            cover_url: entry?.book?.image?.url, 
+            isbn10_url: `https://covers.openlibrary.org/b/isbn/${entry?.edition?.isbn_10}-L.jpg`, 
+            isbn_13_url: `https://covers.openlibrary.org/b/isbn/${entry?.edition?.isbn_13}-L.jpg`,
             recent_fav: onMyMind?.find((el) => el.book.id === entry.book.id) ? true : false, 
             // get the reading journal entry with tags 
             // will start with Keywords: 
@@ -115,7 +111,7 @@ async function main() {
                 ?.find((el) => el.entry && el.entry.toLowerCase().includes("keywords"))
                 ?.entry
                 ?.split("Keywords: ")[1]
-                .split("; ") ?? []
+                ?.split("; ") ?? []
         }
     }) 
 
