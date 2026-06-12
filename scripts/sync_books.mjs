@@ -96,8 +96,8 @@ async function main() {
         // create a flag for the image being invalid or too small to display
         const imageTooSmallOrInvalid = !entry?.book?.image || Math.min(entry?.book?.image?.height, entry?.book?.image?.width) < 450;
         // prepare to use isbn as fallback. ISBN13 is preferred
-        const isbn = entry?.edition?.isbn_13 && entry?.edition?.isbn_13_valid ? entry.edition.isbn_13 : entry?.edtion?.isbn_10;
-        const imageUrl = isbn ? `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg` : entry?.book?.image?.url;
+        const isbn = entry?.edition?.isbn_13 && entry?.edition?.isbn_13_valid ? entry.edition.isbn_13 : entry?.edition?.isbn_10_valid ? entry.edition.isbn_10 : null;
+        const imageUrl = imageTooSmallOrInvalid && isbn ? `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg` : entry?.book?.image?.url ?? "";
 
         return {
             title: entry.book.title,
