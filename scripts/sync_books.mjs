@@ -29,12 +29,27 @@ const query = `
                         width 
                     }
                     contributions { author { name } }
-                }  
-                edition {
-                    isbn_10
-                    isbn_10_valid
-                    isbn_13
-                    isbn_13_valid
+                    
+                    allEditions: editions(
+                        where: { image: { url: { _is_null: false } } }
+                        order_by: [{ image: { height: desc } }]
+                        limit: 10
+                    ) {
+                        image { url height width }
+                        language { language }
+                    }
+                    englishEdition: editions(
+                        where: { 
+                            image: { url: { _is_null: false } }
+                            language: { language: { _eq: "English" } }
+                        }
+                        order_by: [{ image: { height: desc } }]
+                        limit: 1
+                    ) {
+                        image { url height width }
+                        language { language }
+                    }
+
                 }
             }
 
@@ -85,13 +100,16 @@ async function main() {
     const me = Array.isArray(json.data?.me) ? json.data.me[0] : json.data?.me;
     // get all books in my list
     const myBooks = me?.user_books ?? [];
-    console.log("editions: ", myBooks[0])
     // get the On My Mind list -- goes in my "favorites"
     const onMyMind = me?.lists?.find((el) => el.name === 'On My Mind')?.list_books;
 
     const outList = myBooks.map((entry) => {
         // calculate the progress -- the API returns page counts only
         const bookProgress = entry.status_id === 2 ? (Math.floor(entry.user_book_reads?.[0]?.progress_pages / entry.book.pages ) * 100 ) : 100;
+        const largestImage = entry?.book?.allEditions?.[0]?.image;
+        const largestEnglishImage = entry?.book?.englishEdition?.[0]?.image;
+        const imgUrl = largestEnglishImage && largestEnglishImage?.height > 450 ? largestEnglishImage?.url : largestImage?.url ?? '';
+        console.log("img url: ", imgUrl);
 
         return {
             title: entry.book.title,
@@ -100,9 +118,7 @@ async function main() {
             finished: entry.status_id !== 2, 
             progress: bookProgress, 
             rating: entry.rating,
-            cover_url: entry?.book?.image?.url, 
-            isbn10_url: `https://covers.openlibrary.org/b/isbn/${entry?.edition?.isbn_10}-L.jpg`, 
-            isbn_13_url: `https://covers.openlibrary.org/b/isbn/${entry?.edition?.isbn_13}-L.jpg`,
+            cover_url: imgUrl,//entry?.book?.image?.url, 
             recent_fav: onMyMind?.find((el) => el.book.id === entry.book.id) ? true : false, 
             // get the reading journal entry with tags 
             // will start with Keywords: 

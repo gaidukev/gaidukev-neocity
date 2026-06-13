@@ -28,6 +28,7 @@
   <body>
   
     <script type="text/javascript" src="./header.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
     
     <site-header></site-header>
     <!--https://codepen.io/mimoduo/pen/VYwamv-->
@@ -81,299 +82,137 @@
 
     <script type="module">
     
+    function createBookCard(book, slideClass = "slide") {
+      const slide = document.createElement("div");
+      slide.className = slideClass;
 
-    function generateCard(book) {
-      return '<div class="slide">' + '' + '</div>'
-    }
-    
-    function generateCarouselHTML(bookRecords, content_div_name) {
-      
-      let cards = [];
-      
-      const content_div = document.getElementById(content_div_name);
-      
-      for (let record of bookRecords) {
-        const new_slide = document.createElement("div");
-        new_slide.className = "slide";
-        cards.push(new_slide);
-        
-        const new_cover = document.createElement("div");
-        new_cover.className = "cover";
-        
-        const cover_image = document.createElement("img");
-        cover_image.src = record.cover_url;
-        
-        
-        new_cover.appendChild(cover_image);
-        
-        new_slide.appendChild(new_cover);
-        
-        const details = document.createElement("div");
-        
+      const cover = document.createElement("div");
+      cover.className = "cover";
+      const img = document.createElement("img");
+      img.src = book.cover_url;
+      cover.appendChild(img);
+      slide.appendChild(cover);
 
-        details.className = "details";
-        
-        const title = document.createElement("h3");
-        title.className="title";
-        const title_content = document.createTextNode(record.title);
-        title.appendChild(title_content);
-        
-        details.appendChild(title);
-        const author = document.createElement("h3");
-        author.className="author";
-        const author_content = document.createTextNode(record.author);
-        author.appendChild(author_content);
-        
-        details.appendChild(author);
-        
-        const rating_spans = []
-        if (record.rating) {
-          
-          
-    
-          const rating = document.createElement("div");
-          rating.className = "rating";
-          
+      const title = document.createElement("h3");
+      title.className = "title";
+      title.appendChild(document.createTextNode(book.title));
 
-          let remainder = record.rating;
-          while (remainder >= 1) {
-            remainder -= 1;
-            const new_span = document.createElement("span");
-            new_span.className = "material-symbols-outlined"
-            const span_content = document.createTextNode("star");
-            new_span.appendChild(span_content);
-            rating.appendChild(new_span);
-            
-            rating_spans.push(new_span);
-  
-          }
-          
-          if (remainder == 0.5) {
-            const new_span = document.createElement("span");
-            new_span.className = "material-symbols-outlined"
-            const span_content = document.createTextNode("star_half");
-            new_span.appendChild(span_content);
-            rating.appendChild(new_span);
-            
-            rating_spans.push(new_span);
-            
-          }
-          
-          const rating_span = document.createElement("span");
-          const rating_text = document.createTextNode(record.rating);
-          rating_span.appendChild(rating_text);
-          
-          rating.appendChild(rating_span);
-          
-          details.appendChild(rating);
+      const author = document.createElement("h3");
+      author.className = "author";
+      author.appendChild(document.createTextNode(book.author));
 
+      const rating_spans = [];
+      let ratingEl = null;
+      if (book.rating) {
+        ratingEl = document.createElement("div");
+        ratingEl.className = "rating";
+        let remainder = book.rating;
+        while (remainder >= 1) {
+          remainder -= 1;
+          const span = document.createElement("span");
+          span.className = "material-symbols-outlined";
+          span.appendChild(document.createTextNode("star"));
+          ratingEl.appendChild(span);
+          rating_spans.push(span);
         }
-        
-        const tags_reference = [];
-        
-        const tags_div = document.createElement("div");
-        tags_div.className = "tags";
-        for (let tag of record.tags) {
-          const new_span = document.createElement("span");
-          new_span.className = "tag";
-          const tag_text  = document.createTextNode(tag);
-          tags_reference.push(new_span);
-          
-          new_span.appendChild(tag_text);
-          tags_div.appendChild(new_span);
+        if (remainder === 0.5) {
+          const span = document.createElement("span");
+          span.className = "material-symbols-outlined";
+          span.appendChild(document.createTextNode("star_half"));
+          ratingEl.appendChild(span);
+          rating_spans.push(span);
         }
-        
-      let colors = getColors(record.cover_url).then(lightestColor => {
-          console.log("lightest color: ", lightestColor);  
-          details.style.backgroundColor =  `rgba(${lightestColor.darkestTriplet[0]}, ${lightestColor.darkestTriplet[1]}, ${lightestColor.darkestTriplet[2]}, 0.8)`
-          
-          author.style.color =  `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
-          for (let reference of tags_reference) {
-            
-            reference.style.borderColor = `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
-          }
-          
-          if (record.rating) {
-            
-            for (let rating_span of rating_spans) {
-              rating_span.style.color =   `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
-            }
-          }
-        });
-        
-        details.appendChild(tags_div);
-        new_slide.appendChild(details);
-        content_div.appendChild(new_slide);
-        
       }
 
-      
-      console.log("CARDS: ", cards);
-      return cards;
-      
+      const tags_reference = [];
+      const tagsEl = document.createElement("div");
+      tagsEl.className = "tags";
+      for (const tag of book.tags) {
+        const span = document.createElement("span");
+        span.className = "tag";
+        span.appendChild(document.createTextNode(tag));
+        tags_reference.push(span);
+        tagsEl.appendChild(span);
+      }
+
+      return { slide, title, author, ratingEl, rating_spans, tagsEl, tags_reference };
     }
-    
 
-    
+    function generateCarouselHTML(bookRecords, content_div_name) {
+      const cards = [];
+      const content_div = document.getElementById(content_div_name);
+
+      for (const record of bookRecords) {
+        const { slide, title, author, ratingEl, rating_spans, tagsEl, tags_reference } = createBookCard(record);
+
+        const details = document.createElement("div");
+        details.className = "details";
+        details.appendChild(title);
+        details.appendChild(author);
+        if (ratingEl) {
+          const rating_span = document.createElement("span");
+          rating_span.appendChild(document.createTextNode(record.rating));
+          ratingEl.appendChild(rating_span);
+          details.appendChild(ratingEl);
+        }
+        details.appendChild(tagsEl);
+        slide.appendChild(details);
+
+        getColors(record.cover_url).then(({ darkestTriplet: d, lightestTriplet: l }) => {
+          details.style.backgroundColor = `rgba(${d[0]}, ${d[1]}, ${d[2]}, 0.8)`;
+          author.style.color = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
+          for (const ref of tags_reference) ref.style.borderColor = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
+          for (const span of rating_spans) span.style.color = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
+        });
+
+        content_div.appendChild(slide);
+        cards.push(slide);
+      }
+
+      return cards;
+    }
+
     function generateAllBooksHTML(allBooks, content_div_name) {
-      let cards = [];
-      
+      const cards = [];
       const favorites_div = document.getElementById(content_div_name);
-      
-      for (let favorite of allBooks) {
-        const new_slide = document.createElement("div");
-        new_slide.className = "slide slide-allbooks";
-        cards.push(new_slide);
-        
-        const new_cover = document.createElement("div");
-        new_cover.className = "cover";
-        
-        const cover_image = document.createElement("img");
-        cover_image.src = favorite.cover_url;
-        
-        
-        new_cover.appendChild(cover_image);
-        
-        new_slide.appendChild(new_cover);
-        
 
-        
+      for (const favorite of allBooks) {
+        const { slide, title, author, ratingEl, rating_spans, tagsEl, tags_reference } = createBookCard(favorite, "slide slide-allbooks");
+
         const tooltip = document.createElement("div");
-        tooltip.className = "tooltip"
-        
-        new_slide.addEventListener('mouseenter', () => {
-            console.log("showing tooltip");
-            tooltip.classList.add('tooltip-show');  
-          })
-          
-        new_slide.addEventListener('mouseleave', () => {
-            console.log("hiding tooltip");
-            tooltip.classList.remove('tooltip-show');  
-          })
+        tooltip.className = "tooltip";
+        slide.addEventListener('mouseenter', () => tooltip.classList.add('tooltip-show'));
+        slide.addEventListener('mouseleave', () => tooltip.classList.remove('tooltip-show'));
+        slide.appendChild(tooltip);
 
-      
-        new_slide.appendChild(tooltip);
-        
-        // tooltip.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${cover_image.src})`;
-        
-        
-        // const details = document.createElement("div");
-        
-
-        // tooltip.className = "details";
-        
-        const title = document.createElement("h3");
-        title.className="title";
-        const title_content = document.createTextNode(favorite.title);
-        title.appendChild(title_content);
-        
         tooltip.appendChild(title);
-        const author = document.createElement("h3");
-        author.className="author";
-        const author_content = document.createTextNode(favorite.author);
-        author.appendChild(author_content);
-        
         tooltip.appendChild(author);
-        
-        const rating_spans = []
-        let rating_div_container;
-        if (favorite.rating) {
-          
-          
-    
-          const rating = document.createElement("div");
-          rating.className = "rating";
-          
 
-          let remainder = favorite.rating;
-          while (remainder >= 1) {
-            remainder -= 1;
-            const new_span = document.createElement("span");
-            new_span.className = "material-symbols-outlined"
-            const span_content = document.createTextNode("star");
-            new_span.appendChild(span_content);
-            rating.appendChild(new_span);
-            
-            rating_spans.push(new_span);
-  
-          }
-          
-          if (remainder == 0.5) {
-            const new_span = document.createElement("span");
-            new_span.className = "material-symbols-outlined"
-            const span_content = document.createTextNode("star_half");
-            new_span.appendChild(span_content);
-            rating.appendChild(new_span);
-            
-            rating_spans.push(new_span);
-            
-          }
-          
-          //const rating_span = document.createElement("span");
+        let rating_div_container;
+        if (ratingEl) {
           rating_div_container = document.createElement("div");
           rating_div_container.className = "rating-div-container";
-          
-          const rating_text = document.createTextNode(favorite.rating);
-          //rating_span.appendChild(rating_text);
-          rating_div_container.appendChild(rating_text);
-          
-          //rating.appendChild(rating_span);
-          
-          tooltip.appendChild(rating);
+          rating_div_container.appendChild(document.createTextNode(favorite.rating));
+          tooltip.appendChild(ratingEl);
           tooltip.appendChild(rating_div_container);
-            
-            
-            
-            
         }
-        
-        const tags_reference = [];
-        
-        const tags_div = document.createElement("div");
-        tags_div.className = "tags";
-        for (let tag of favorite.tags) {
-          const new_span = document.createElement("span");
-          new_span.className = "tag";
-          const tag_text  = document.createTextNode(tag);
-          tags_reference.push(new_span);
-          
-          new_span.appendChild(tag_text);
-          tags_div.appendChild(new_span);
-        }
-        
-        
-        let colors = getColors(favorite.cover_url).then(lightestColor => {
-          console.log("lightest color: ", lightestColor);  
-          tooltip.style.backgroundColor =  `rgba(${lightestColor.darkestTriplet[0]}, ${lightestColor.darkestTriplet[1]}, ${lightestColor.darkestTriplet[2]},1)`
-          
-          author.style.color =  `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
-          for (let reference of tags_reference) {
-            
-            reference.style.borderColor = `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
-          }
-          
-          if (favorite.rating) {
-            
-            for (let rating_span of rating_spans) {
-              rating_span.style.color =   `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
-              
-            }
-            rating_div_container.style.color =  `rgb(${lightestColor.lightestTriplet[0]}, ${lightestColor.lightestTriplet[1]}, ${lightestColor.lightestTriplet[2]})`;
-          }
+        tooltip.appendChild(tagsEl);
+
+        getColors(favorite.cover_url).then(({ darkestTriplet: d, lightestTriplet: l }) => {
+          tooltip.style.backgroundColor = `rgba(${d[0]}, ${d[1]}, ${d[2]}, 1)`;
+          author.style.color = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
+          for (const ref of tags_reference) ref.style.borderColor = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
+          for (const span of rating_spans) span.style.color = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
+          if (rating_div_container) rating_div_container.style.color = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
         });
-        
-      tooltip.appendChild(tags_div);
-      //   new_slide.appendChild(details);
-        favorites_div.appendChild(new_slide);
-        
+
+        favorites_div.appendChild(slide);
+        cards.push(slide);
       }
 
-      
-      console.log("CARDS: ", cards);
       return cards;
     }
 
-    
     function linearize(x) {
       let linearized = x/ 255;
       linearized = linearized <= 0.03928 ? linearized / 12.92 : ((linearized + 0.055) / (1.055)) ** 2.4;
@@ -408,7 +247,6 @@
         
       }
     }
-    
     
     function getLightestColorInImage(pixels) {
       let lightestTriplet = null;
@@ -622,9 +460,6 @@
     }
     
 
-    
-
-    
 
     fetch('./books.json').then((res) => res.json()).then((res) => {
 

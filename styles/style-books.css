@@ -81,8 +81,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  background-image: url('https://i.sstatic.net/8Jeyb.png');
   opacity: 0;
 }
 
