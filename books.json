@@ -5,12 +5,24 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/editions/31276284/3584154905017170.jpg",
+    "cover_url": "book-covers\\3584154905017170.jpg",
     "recent_fav": false,
     "tags": [
       "Serial killer",
       "Coming-of-age",
       "Romance"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Emotional",
+      "Dark",
+      "Sad",
+      "Reflective",
+      "Tense",
+      "Challenging",
+      "Hopeful",
+      "Adventurous",
+      "Inspiring"
     ]
   },
   {
@@ -19,12 +31,24 @@
     "finished": true,
     "progress": 100,
     "rating": 2.5,
-    "cover_url": "https://assets.hardcover.app/editions/31780358/43977080-e6a7-4d83-a3df-2513943f1194.jpeg",
+    "cover_url": "book-covers\\43977080-e6a7-4d83-a3df-2513943f1194.jpeg",
     "recent_fav": false,
     "tags": [
       "Existential",
       "Lighthearted",
       "Mental health"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Funny",
+      "Reflective",
+      "Hopeful",
+      "Inspiring",
+      "Lighthearted",
+      "Adventurous",
+      "Sad",
+      "Challenging",
+      "Dark"
     ]
   },
   {
@@ -33,12 +57,17 @@
     "finished": true,
     "progress": 100,
     "rating": 0.5,
-    "cover_url": "https://assets.hardcover.app/book/1194415/b2e41d3e-72a8-4c4e-a638-8e2d5f77d902.jpg",
+    "cover_url": "book-covers\\b2e41d3e-72a8-4c4e-a638-8e2d5f77d902.jpg",
     "recent_fav": false,
     "tags": [
       "Historical fiction",
       "Frustrating",
       "Conspiracy theory"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Informative",
+      "Reflective"
     ]
   },
   {
@@ -47,10 +76,20 @@
     "finished": true,
     "progress": 100,
     "rating": 2.5,
-    "cover_url": "https://assets.hardcover.app/edition/31497472/3350d5ff-7567-43cb-985f-b2771620ffce.jpg",
+    "cover_url": "book-covers\\3350d5ff-7567-43cb-985f-b2771620ffce.jpg",
     "recent_fav": false,
     "tags": [
       "Drama"
+    ],
+    "hardcover_mood": [
+      "Reflective",
+      "Emotional",
+      "Inspiring",
+      "Hopeful",
+      "Lighthearted",
+      "Dark",
+      "Funny",
+      "Challenging"
     ]
   },
   {
@@ -59,11 +98,23 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/book/669164/fd19c264-3713-4383-99dc-8fe04b138aac.jpg",
+    "cover_url": "book-covers\\fd19c264-3713-4383-99dc-8fe04b138aac.jpg",
     "recent_fav": false,
     "tags": [
       "Crime",
       "Serial killer"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Tense",
+      "Mysterious",
+      "Emotional",
+      "Challenging",
+      "Sad",
+      "Adventurous",
+      "Reflective",
+      "Unnerving",
+      "Suspenseful"
     ]
   },
   {
@@ -72,13 +123,25 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31867676/5516256112144102.jpg",
+    "cover_url": "book-covers\\5516256112144102.jpg",
     "recent_fav": false,
     "tags": [
       "Historical Fiction",
       "India",
       "Family",
       "Expansive"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Sad",
+      "Reflective",
+      "Adventurous",
+      "Hopeful",
+      "Inspiring",
+      "Challenging",
+      "Informative",
+      "Dark",
+      "Tense"
     ]
   },
   {
@@ -87,34 +150,66 @@
     "finished": true,
     "progress": 100,
     "rating": 2.5,
-    "cover_url": "https://assets.hardcover.app/edition/32403098/7f78da7e-d477-4352-9453-7754334a6ba1.jpg",
+    "cover_url": "book-covers\\7f78da7e-d477-4352-9453-7754334a6ba1.jpg",
     "recent_fav": false,
     "tags": [
       "Family"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Sad",
+      "Tense",
+      "Dark",
+      "Mysterious",
+      "Reflective",
+      "Challenging"
     ]
   },
   {
     "title": "Our Share of Night",
-    "author": "Mariana Enriquez, Pablo Gerardo Camacho, Megan McDowell",
+    "author": "Mariana Enriquez",
     "finished": false,
     "progress": 0,
     "rating": null,
-    "cover_url": "https://assets.hardcover.app/editions/30677887/2263355040282140-our-share-of-night-648x1000.jpeg.webp",
+    "cover_url": "book-covers\\2263355040282140-our-share-of-night-648x1000.jpeg.webp",
     "recent_fav": false,
-    "tags": []
+    "tags": [],
+    "hardcover_mood": [
+      "Dark",
+      "Mysterious",
+      "Tense",
+      "Challenging",
+      "Emotional",
+      "Sad",
+      "Adventurous",
+      "Reflective",
+      "Slow-paced"
+    ]
   },
   {
     "title": "I Have Some Questions for You",
-    "author": "Rebecca Makkai, Julia Whelan, J.D. Jackson",
+    "author": "Rebecca Makkai",
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/edition/30745454/9f6ef2d8ef7c3f293df9f39640311712fa7f16da.jpeg",
+    "cover_url": "book-covers\\9f6ef2d8ef7c3f293df9f39640311712fa7f16da.jpeg",
     "recent_fav": false,
     "tags": [
       "Boarding school",
       "Mystery",
       "Podcaster"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Mysterious",
+      "Reflective",
+      "Tense",
+      "Challenging",
+      "Sad",
+      "Emotional",
+      "Adventurous",
+      "Medium-paced",
+      "Hopeful"
     ]
   },
   {
@@ -123,26 +218,42 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/30901496/f35081c06a9de1cf6ba556f0221f7993892f202d.jpeg",
+    "cover_url": "book-covers\\f35081c06a9de1cf6ba556f0221f7993892f202d.jpeg",
     "recent_fav": false,
     "tags": [
       "Magical realism",
       "Historical fiction",
       "Fast read",
       "Charming characters"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Adventurous",
+      "Dark",
+      "Lighthearted"
     ]
   },
   {
     "title": "We Do Not Part",
-    "author": "Han Kang, e. yaewon, Paige Aniyah Morris",
+    "author": "Han Kang",
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/31291443/20641afa7c26a70beb70a6da7faa47652d02a782.jpeg",
+    "cover_url": "book-covers\\20641afa7c26a70beb70a6da7faa47652d02a782.jpeg",
     "recent_fav": true,
     "tags": [
       "HAUNTING!",
-      "Well-written;"
+      "Well-written"
+    ],
+    "hardcover_mood": [
+      "Sad",
+      "Dark",
+      "Emotional",
+      "Informative",
+      "Reflective",
+      "Mysterious",
+      "Challenging",
+      "Tense"
     ]
   },
   {
@@ -151,12 +262,20 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/books/880445/f81ed968-1238-481e-81b0-b0bad9a18e85.jpg",
+    "cover_url": "book-covers\\f81ed968-1238-481e-81b0-b0bad9a18e85.jpg",
     "recent_fav": true,
     "tags": [
       "Coming-of-age",
       "Messy",
       "High school"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Reflective",
+      "Sad",
+      "Adventurous",
+      "Funny",
+      "Challenging"
     ]
   },
   {
@@ -165,10 +284,19 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/edition/32215936/fce7ed97-3082-40f2-b036-2e623bf2c4d0.jpg",
+    "cover_url": "book-covers\\fce7ed97-3082-40f2-b036-2e623bf2c4d0.jpg",
     "recent_fav": false,
     "tags": [
       "I Hate It"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Dark",
+      "Tense",
+      "Challenging",
+      "Fast-paced",
+      "Sad",
+      "Emotional"
     ]
   },
   {
@@ -177,12 +305,19 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/edition/32859840/95713501-a6b7-4f49-aac7-cbc87c55ea9b.jpg",
+    "cover_url": "book-covers\\95713501-a6b7-4f49-aac7-cbc87c55ea9b.jpg",
     "recent_fav": false,
     "tags": [
       "Motherhood",
       "Romance",
       "Mystery"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Adventurous",
+      "Reflective",
+      "Medium-paced",
+      "Hopeful"
     ]
   },
   {
@@ -191,12 +326,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/31501892/b98886fb078da64c9a900b1cfd9fc1a221a54f21.jpeg",
+    "cover_url": "book-covers\\b98886fb078da64c9a900b1cfd9fc1a221a54f21.jpeg",
     "recent_fav": false,
     "tags": [
       "Family",
       "Death",
       "Communication"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Emotional",
+      "Reflective",
+      "Sad",
+      "Informative",
+      "Tense",
+      "Dark",
+      "Challenging",
+      "Medium-paced"
     ]
   },
   {
@@ -205,11 +351,23 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/editions/31937328/8918851184928365.jpg",
+    "cover_url": "book-covers\\8918851184928365.jpg",
     "recent_fav": false,
     "tags": [
       "Serial killer",
       "Crime"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Mysterious",
+      "Tense",
+      "Emotional",
+      "Adventurous",
+      "Challenging",
+      "Sad",
+      "Reflective",
+      "Hopeful",
+      "Informative"
     ]
   },
   {
@@ -218,11 +376,12 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/31222105/db467038f2a1d9a98efc5851aaec78c7f1faf2e2.jpeg",
+    "cover_url": "book-covers\\db467038f2a1d9a98efc5851aaec78c7f1faf2e2.jpeg",
     "recent_fav": false,
     "tags": [
       "Coming-of-age"
-    ]
+    ],
+    "hardcover_mood": []
   },
   {
     "title": "Real Americans",
@@ -230,12 +389,24 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31486931/6932048377997471.jpg",
+    "cover_url": "book-covers\\6932048377997471.jpg",
     "recent_fav": false,
     "tags": [
       "Messy",
       "Family",
       "Odd"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Reflective",
+      "Mysterious",
+      "Challenging",
+      "Informative",
+      "Sad",
+      "Tense",
+      "Dark",
+      "Inspiring",
+      "Hopeful"
     ]
   },
   {
@@ -244,25 +415,49 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/editions/31901475/1328593474178266.jpg",
+    "cover_url": "book-covers\\1328593474178266.jpg",
     "recent_fav": false,
     "tags": [
       "Podcaster",
       "Mystery"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Mysterious",
+      "Tense",
+      "Sad",
+      "Challenging",
+      "Emotional",
+      "Reflective",
+      "Adventurous",
+      "Unhinged",
+      "Unsettling"
     ]
   },
   {
     "title": "Hello Beautiful",
-    "author": "Ann Napolitano, Maura Tierney",
+    "author": "Ann Napolitano",
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/edition/31592686/b6edbab5-ed91-46eb-9701-f9c3ad0dbaea.jpg",
+    "cover_url": "book-covers\\b6edbab5-ed91-46eb-9701-f9c3ad0dbaea.jpg",
     "recent_fav": false,
     "tags": [
       "Romance",
       "Drama",
       "Family"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Sad",
+      "Reflective",
+      "Hopeful",
+      "Funny",
+      "Inspiring",
+      "Adventurous",
+      "Tense",
+      "Dark",
+      "Challenging"
     ]
   },
   {
@@ -271,12 +466,13 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/30559139/13348140-L.jpg",
+    "cover_url": "book-covers\\13348140-L.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
       "Trauma"
-    ]
+    ],
+    "hardcover_mood": []
   },
   {
     "title": "The Haar",
@@ -284,13 +480,25 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/30985305/ee8ded7c362b813dc46ee5bb461e43cfe3cdf1ac.jpeg",
+    "cover_url": "book-covers\\ee8ded7c362b813dc46ee5bb461e43cfe3cdf1ac.jpeg",
     "recent_fav": false,
     "tags": [
       "Old lady",
       "Grief",
       "Monster",
       "Ostracism"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Emotional",
+      "Mysterious",
+      "Funny",
+      "Tense",
+      "Sad",
+      "Reflective",
+      "Inspiring",
+      "Adventurous",
+      "Hopeful"
     ]
   },
   {
@@ -299,11 +507,23 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/editions/30463744/506505909713595.jpg",
+    "cover_url": "book-covers\\506505909713595.jpg",
     "recent_fav": false,
     "tags": [
       "Easy read",
       "Suspense"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Tense",
+      "Dark",
+      "Emotional",
+      "Adventurous",
+      "Challenging",
+      "Sad",
+      "Reflective",
+      "Funny",
+      "Hopeful"
     ]
   },
   {
@@ -312,12 +532,18 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/external_data/61272431/3e9042ff53ec3442057fc428db467fd28e3ec73e.jpeg",
+    "cover_url": "book-covers\\3e9042ff53ec3442057fc428db467fd28e3ec73e.jpeg",
     "recent_fav": false,
     "tags": [
       "War",
       "Spy",
       "Frustrating"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Emotional",
+      "Sad",
+      "Challenging"
     ]
   },
   {
@@ -326,12 +552,24 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/30385435/8e77553e-5aec-4543-846b-4d4372c23dc9.jpg",
+    "cover_url": "book-covers\\8e77553e-5aec-4543-846b-4d4372c23dc9.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
       "Abuse",
       "Recovery"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Sad",
+      "Reflective",
+      "Dark",
+      "Funny",
+      "Challenging",
+      "Inspiring",
+      "Hopeful",
+      "Informative",
+      "Tense"
     ]
   },
   {
@@ -340,10 +578,22 @@
     "finished": true,
     "progress": 100,
     "rating": 2,
-    "cover_url": "https://assets.hardcover.app/editions/3030202/2823118527969986.jpg",
+    "cover_url": "book-covers\\2823118527969986.jpg",
     "recent_fav": false,
     "tags": [
       "Messy"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Mysterious",
+      "Tense",
+      "Emotional",
+      "Sad",
+      "Challenging",
+      "Adventurous",
+      "Reflective",
+      "Shocking",
+      "Fast-paced"
     ]
   },
   {
@@ -352,11 +602,18 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31848968/3534636063250372.jpg",
+    "cover_url": "book-covers\\3534636063250372.jpg",
     "recent_fav": false,
     "tags": [
       "Thriller",
       "Crime"
+    ],
+    "hardcover_mood": [
+      "Tense",
+      "Mysterious",
+      "Dark",
+      "Adventurous",
+      "Inspiring"
     ]
   },
   {
@@ -365,12 +622,24 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/30886682/6924556899959875.jpg",
+    "cover_url": "book-covers\\6924556899959875.jpg",
     "recent_fav": false,
     "tags": [
       "Drama",
       "Coming-of-age",
       "Game development!"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Reflective",
+      "Sad",
+      "Hopeful",
+      "Inspiring",
+      "Funny",
+      "Challenging",
+      "Dark",
+      "Adventurous",
+      "Lighthearted"
     ]
   },
   {
@@ -379,11 +648,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/30601330/8a533de5-0dc3-4ec5-9fb9-4e7d56fd1d7d.jpg",
+    "cover_url": "book-covers\\8a533de5-0dc3-4ec5-9fb9-4e7d56fd1d7d.jpg",
     "recent_fav": false,
     "tags": [
       "Endearing",
       "Friendship"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Hopeful",
+      "Reflective",
+      "Lighthearted",
+      "Inspiring",
+      "Funny",
+      "Sad",
+      "Mysterious",
+      "Relaxing",
+      "Adventurous"
     ]
   },
   {
@@ -392,11 +673,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31796781/2146051465703507.jpg",
+    "cover_url": "book-covers\\2146051465703507.jpg",
     "recent_fav": false,
     "tags": [
       "Ireland",
       "Christmas"
+    ],
+    "hardcover_mood": [
+      "Reflective",
+      "Emotional",
+      "Sad",
+      "Hopeful",
+      "Inspiring",
+      "Dark",
+      "Challenging",
+      "Informative",
+      "Mysterious",
+      "Tense"
     ]
   },
   {
@@ -405,11 +698,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/30636011/b6b97791-832b-42ba-b0e2-21b037235894.jpg",
+    "cover_url": "book-covers\\b6b97791-832b-42ba-b0e2-21b037235894.jpg",
     "recent_fav": false,
     "tags": [
       "Sci-fi",
       "Job drama"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Reflective",
+      "Adventurous",
+      "Emotional",
+      "Sad",
+      "Challenging",
+      "Hopeful",
+      "Tense",
+      "Funny",
+      "Dark"
     ]
   },
   {
@@ -418,7 +723,7 @@
     "finished": true,
     "progress": 100,
     "rating": 1,
-    "cover_url": "https://assets.hardcover.app/edition/30446976/7c655972-5206-4fc2-b92a-9237c92e9ae9.jpg",
+    "cover_url": "book-covers\\7c655972-5206-4fc2-b92a-9237c92e9ae9.jpg",
     "recent_fav": false,
     "tags": [
       "Historical",
@@ -426,6 +731,17 @@
       "Ostracism",
       "DNF",
       "Rough read"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Tense",
+      "Mysterious",
+      "Adventurous",
+      "Emotional",
+      "Sad",
+      "Reflective",
+      "Challenging",
+      "Hopeful"
     ]
   },
   {
@@ -434,12 +750,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31887380/4771004861205872.jpg",
+    "cover_url": "book-covers\\4771004861205872.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
       "Drama",
       "Social commentary"
+    ],
+    "hardcover_mood": [
+      "Reflective",
+      "Emotional",
+      "Challenging",
+      "Sad",
+      "Inspiring",
+      "Dark",
+      "Hopeful",
+      "Mysterious",
+      "Tense"
     ]
   },
   {
@@ -448,9 +775,17 @@
     "finished": true,
     "progress": 100,
     "rating": 2,
-    "cover_url": "https://assets.hardcover.app/edition/30474907/e4bf7d2d86189debd5d0be0bf37e2aa5f576a324.jpeg",
+    "cover_url": "book-covers\\e4bf7d2d86189debd5d0be0bf37e2aa5f576a324.jpeg",
     "recent_fav": false,
-    "tags": []
+    "tags": [],
+    "hardcover_mood": [
+      "Dark",
+      "Tense",
+      "Sad",
+      "Emotional",
+      "Challenging",
+      "Mysterious"
+    ]
   },
   {
     "title": "Dear Edward",
@@ -458,12 +793,16 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/edition/31533164/41c8f9e121d43b94ffbf44aa3fd6c80eac160383.jpeg",
+    "cover_url": "book-covers\\41c8f9e121d43b94ffbf44aa3fd6c80eac160383.jpeg",
     "recent_fav": false,
     "tags": [
       "Grief",
       "Coming-of-age",
       "Romance"
+    ],
+    "hardcover_mood": [
+      "Reflective",
+      "Sad"
     ]
   },
   {
@@ -472,11 +811,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/30402618/427dd131-9ffb-45ad-ba1e-c1d80c80167b.jpg",
+    "cover_url": "book-covers\\427dd131-9ffb-45ad-ba1e-c1d80c80167b.jpg",
     "recent_fav": false,
     "tags": [
       "Friendship",
       "Endearing"
+    ],
+    "hardcover_mood": [
+      "Hopeful",
+      "Emotional",
+      "Funny",
+      "Lighthearted",
+      "Inspiring",
+      "Adventurous",
+      "Reflective",
+      "Relaxing",
+      "Mysterious",
+      "Challenging"
     ]
   },
   {
@@ -485,10 +836,22 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/editions/17111838/7606856278928167.jpg",
+    "cover_url": "book-covers\\7606856278928167.jpg",
     "recent_fav": false,
     "tags": [
       "Thriller"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Dark",
+      "Tense",
+      "Emotional",
+      "Sad",
+      "Challenging",
+      "Reflective",
+      "Adventurous",
+      "Informative",
+      "Fast-paced"
     ]
   },
   {
@@ -497,12 +860,24 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/edition/32221307/e4933392-5c2f-4c77-8c01-42b672c48f05.jpg",
+    "cover_url": "book-covers\\e4933392-5c2f-4c77-8c01-42b672c48f05.jpg",
     "recent_fav": false,
     "tags": [
       "Abuse",
       "Isolation",
       "Coming-of-age"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Sad",
+      "Hopeful",
+      "Adventurous",
+      "Challenging",
+      "Dark",
+      "Tense",
+      "Reflective",
+      "Inspiring",
+      "Informative"
     ]
   },
   {
@@ -511,11 +886,23 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/editions/30399704/4364405759474168-34273236.jpeg",
+    "cover_url": "book-covers\\4364405759474168-34273236.jpeg",
     "recent_fav": false,
     "tags": [
       "Coming-of-age",
       "Drama"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Mysterious",
+      "Reflective",
+      "Challenging",
+      "Tense",
+      "Dark",
+      "Sad",
+      "Hopeful",
+      "Adventurous",
+      "Inspiring"
     ]
   },
   {
@@ -524,13 +911,25 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/30443585/2200452922666842.jpg",
+    "cover_url": "book-covers\\2200452922666842.jpg",
     "recent_fav": true,
     "tags": [
       "Well-written",
       "Europe",
       "Drama",
       "Relationships"
+    ],
+    "hardcover_mood": [
+      "Reflective",
+      "Emotional",
+      "Sad",
+      "Challenging",
+      "Funny",
+      "Tense",
+      "Dark",
+      "Lighthearted",
+      "Informative",
+      "Moving"
     ]
   },
   {
@@ -539,13 +938,22 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/32632574/f52e0b22d469b4ef3c6b9ce32bd8c10fae267018.jpeg",
+    "cover_url": "book-covers\\f52e0b22d469b4ef3c6b9ce32bd8c10fae267018.jpeg",
     "recent_fav": true,
     "tags": [
       "Love",
       "Magical realism",
       "Death",
       "Curses"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Sad",
+      "Dark",
+      "Emotional",
+      "Medium-paced",
+      "Reflective",
+      "Mysteruous"
     ]
   },
   {
@@ -554,14 +962,15 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/edition/32160797/790cdbdf58c55c32311d34efe29e8f7d00e28ee8.jpeg",
+    "cover_url": "book-covers\\790cdbdf58c55c32311d34efe29e8f7d00e28ee8.jpeg",
     "recent_fav": false,
     "tags": [
       "Magical realism",
       "Abuse",
       "Family",
       "Expansive"
-    ]
+    ],
+    "hardcover_mood": []
   },
   {
     "title": "Play Nice",
@@ -569,11 +978,19 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/editions/31873784/7ff9e37d-3c71-41a8-b6ce-a5fd99449890.jpg",
+    "cover_url": "book-covers\\7ff9e37d-3c71-41a8-b6ce-a5fd99449890.jpg",
     "recent_fav": false,
     "tags": [
       "Haunted house",
       "Humor"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Tense",
+      "Mysterious",
+      "Reflective",
+      "Emotional",
+      "Funny"
     ]
   },
   {
@@ -582,11 +999,14 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/editions/32042847/0e5079c6-49d4-4eae-8049-af8e4491b590.jpg",
+    "cover_url": "book-covers\\0e5079c6-49d4-4eae-8049-af8e4491b590.jpg",
     "recent_fav": false,
     "tags": [
       "Generational",
       "Drama"
+    ],
+    "hardcover_mood": [
+      "Emotional"
     ]
   },
   {
@@ -595,10 +1015,16 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/books/1764193/f838bb0d-414c-4494-b25c-29986790716b.jpg",
+    "cover_url": "book-covers\\f838bb0d-414c-4494-b25c-29986790716b.jpg",
     "recent_fav": false,
     "tags": [
       "Murder"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Mysterious",
+      "Sad",
+      "Tense"
     ]
   },
   {
@@ -607,11 +1033,23 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/edition/31625541/d80d0f61-d2a6-488f-a93c-a5dfc5a32faa.jpg",
+    "cover_url": "book-covers\\d80d0f61-d2a6-488f-a93c-a5dfc5a32faa.jpg",
     "recent_fav": false,
     "tags": [
       "Relationships",
       "Space"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Hopeful",
+      "Adventurous",
+      "Inspiring",
+      "Tense",
+      "Sad",
+      "Reflective",
+      "Informative",
+      "Challenging",
+      "Funny"
     ]
   },
   {
@@ -620,10 +1058,13 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/edition/32731716/fb75d8be-f24c-4f6f-af4c-27a2b86b3749.jpg",
+    "cover_url": "book-covers\\fb75d8be-f24c-4f6f-af4c-27a2b86b3749.jpg",
     "recent_fav": false,
     "tags": [
       "Making do"
+    ],
+    "hardcover_mood": [
+      "Dark"
     ]
   },
   {
@@ -632,11 +1073,23 @@
     "finished": true,
     "progress": 100,
     "rating": 2,
-    "cover_url": "https://assets.hardcover.app/edition/31873791/2d48b8da-5919-4967-9ef9-cb32648ec0f9.jpg",
+    "cover_url": "book-covers\\2d48b8da-5919-4967-9ef9-cb32648ec0f9.jpg",
     "recent_fav": false,
     "tags": [
       "YA",
       "\"Quirky\""
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Dark",
+      "Sad",
+      "Mysterious",
+      "Tense",
+      "Funny",
+      "Adventurous",
+      "Challenging",
+      "Hopeful",
+      "Fast-paced"
     ]
   },
   {
@@ -645,12 +1098,17 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/32163681/96f1401d-e2aa-4dd5-9921-b26323fd73c7.jpg",
+    "cover_url": "book-covers\\96f1401d-e2aa-4dd5-9921-b26323fd73c7.jpg",
     "recent_fav": false,
     "tags": [
       "Friendship",
       "Support",
       "Making do"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Reflective",
+      "Sad"
     ]
   },
   {
@@ -659,12 +1117,19 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/book/1890978/77ee41ee-931a-4480-ae1c-75d251c991b7.png",
+    "cover_url": "book-covers\\77ee41ee-931a-4480-ae1c-75d251c991b7.png",
     "recent_fav": false,
     "tags": [
       "Humor",
       "1960s",
       "Coming-of-age"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Funny",
+      "Reflective",
+      "Inspiring",
+      "Hopeful"
     ]
   },
   {
@@ -673,11 +1138,23 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/editions/31294953/7284802366378016.jpg",
+    "cover_url": "book-covers\\7284802366378016.jpg",
     "recent_fav": false,
     "tags": [
       "COVID-19",
       "Trauma"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Tense",
+      "Mysterious",
+      "Sad",
+      "Emotional",
+      "Challenging",
+      "Reflective",
+      "Funny",
+      "Adventurous",
+      "Informative"
     ]
   },
   {
@@ -686,11 +1163,14 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/edition/31501803/3ee1da6238ff828182c90f8a5058f888534bcf04.jpeg",
+    "cover_url": "book-covers\\3ee1da6238ff828182c90f8a5058f888534bcf04.jpeg",
     "recent_fav": false,
     "tags": [
       "Family",
       "Drama"
+    ],
+    "hardcover_mood": [
+      "Funny"
     ]
   },
   {
@@ -699,12 +1179,20 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31657597/281318020973862.jpg",
+    "cover_url": "book-covers\\281318020973862.jpg",
     "recent_fav": false,
     "tags": [
       "1970s",
       "Family",
       "Murder"
+    ],
+    "hardcover_mood": [
+      "Tense",
+      "Mysterious",
+      "Dark",
+      "Emotional",
+      "Sad",
+      "Challenging"
     ]
   },
   {
@@ -713,24 +1201,43 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/31812971/ae66e13a20994fe508bbb3a01e54de57faafe2fb.jpeg",
+    "cover_url": "book-covers\\ae66e13a20994fe508bbb3a01e54de57faafe2fb.jpeg",
     "recent_fav": false,
     "tags": [
       "Finding yourself",
       "Community"
+    ],
+    "hardcover_mood": [
+      "Hopeful",
+      "Emotional",
+      "Reflective",
+      "Inspiring",
+      "Sad",
+      "Funny",
+      "Tense"
     ]
   },
   {
     "title": "Strange Pictures",
-    "author": "Uketsu, Jim Rion",
+    "author": "Uketsu",
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/book/1570320/321a4bcc-4da0-4f41-aaae-ab3867f97735.jpeg",
+    "cover_url": "book-covers\\321a4bcc-4da0-4f41-aaae-ab3867f97735.jpeg",
     "recent_fav": false,
     "tags": [
       "Horror",
       "Mystery"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Dark",
+      "Tense",
+      "Emotional",
+      "Sad",
+      "Challenging",
+      "Informative",
+      "Reflective"
     ]
   },
   {
@@ -739,22 +1246,39 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/edition/32249012/a122d79e-45bf-4a80-b7e7-8eb5b3d03a4f.jpg",
+    "cover_url": "book-covers\\a122d79e-45bf-4a80-b7e7-8eb5b3d03a4f.jpg",
     "recent_fav": false,
     "tags": [
-      "Slow paced;"
+      "Slow paced"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Challenging",
+      "Reflective",
+      "Funny",
+      "Lighthearted",
+      "Tense",
+      "Sad",
+      "Dark"
     ]
   },
   {
     "title": "West of Eden",
-    "author": "Harry Harrison, Bill Sanderson",
+    "author": "Harry Harrison",
     "finished": true,
     "progress": 100,
     "rating": 2,
-    "cover_url": "https://assets.hardcover.app/edition/31658654/1ee98053-df4d-4c6c-998c-7c005d13d18d.jpg",
+    "cover_url": "book-covers\\1ee98053-df4d-4c6c-998c-7c005d13d18d.jpg",
     "recent_fav": false,
     "tags": [
       "Murder"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Reflective",
+      "Sad",
+      "Tense",
+      "Mysterious"
     ]
   },
   {
@@ -763,11 +1287,22 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/32247841/fbafce92479a3cf29691aa86ecf54c2532007e0f.jpeg",
+    "cover_url": "book-covers\\fbafce92479a3cf29691aa86ecf54c2532007e0f.jpeg",
     "recent_fav": false,
     "tags": [
       "Grief",
       "History"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Inspiring",
+      "Reflective",
+      "Hopeful",
+      "Informative",
+      "Sad",
+      "Adventurous",
+      "Mysterious",
+      "Challenging"
     ]
   },
   {
@@ -776,11 +1311,17 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/edition/31613863/2e3c2d631dd691f59614a330754fd147c81a93ca.jpeg",
+    "cover_url": "book-covers\\2e3c2d631dd691f59614a330754fd147c81a93ca.jpeg",
     "recent_fav": false,
     "tags": [
       "Suburb",
       "Thriller"
+    ],
+    "hardcover_mood": [
+      "Tense",
+      "Mysterious",
+      "Challenging",
+      "Dark"
     ]
   },
   {
@@ -789,12 +1330,24 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/editions/31617319/555887127545573.jpg",
+    "cover_url": "book-covers\\555887127545573.jpg",
     "recent_fav": false,
     "tags": [
       "Romance",
       "Skating",
       "Toxic"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Tense",
+      "Challenging",
+      "Adventurous",
+      "Sad",
+      "Dark",
+      "Inspiring",
+      "Reflective",
+      "Mysterious",
+      "Hopeful"
     ]
   },
   {
@@ -803,13 +1356,14 @@
     "finished": true,
     "progress": 100,
     "rating": 2,
-    "cover_url": "https://assets.hardcover.app/external_data/61576889/70618a29427e91202be9becb73058d6e8a9156cd.jpeg",
+    "cover_url": "book-covers\\70618a29427e91202be9becb73058d6e8a9156cd.jpeg",
     "recent_fav": false,
     "tags": [
       "Lighthearted",
       "Romance",
       "Character growth"
-    ]
+    ],
+    "hardcover_mood": []
   },
   {
     "title": "When the Wolf Comes Home",
@@ -817,11 +1371,23 @@
     "finished": true,
     "progress": 100,
     "rating": 1,
-    "cover_url": "https://assets.hardcover.app/edition/31996186/a07fa036-052c-49ba-bab5-e4fd72d14560.jpg",
+    "cover_url": "book-covers\\a07fa036-052c-49ba-bab5-e4fd72d14560.jpg",
     "recent_fav": false,
     "tags": [
       "Child",
       "Fairy Tale Inspired"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Emotional",
+      "Tense",
+      "Mysterious",
+      "Challenging",
+      "Funny",
+      "Violent",
+      "Adventurous",
+      "Sad",
+      "Reflective"
     ]
   },
   {
@@ -830,11 +1396,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/31866479/e40a0912-aba4-48fb-8545-79d3ab6ca72f.jpg",
+    "cover_url": "book-covers\\e40a0912-aba4-48fb-8545-79d3ab6ca72f.jpg",
     "recent_fav": false,
     "tags": [
       "Nature",
       "Family"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Emotional",
+      "Mysterious",
+      "Sad",
+      "Tense",
+      "Reflective",
+      "Adventurous",
+      "Challenging",
+      "Informative",
+      "Hopeful"
     ]
   },
   {
@@ -843,12 +1421,24 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/31664902/b650a9e7-1acd-4e46-ad33-476c37058229.jpg",
+    "cover_url": "book-covers\\b650a9e7-1acd-4e46-ad33-476c37058229.jpg",
     "recent_fav": false,
     "tags": [
       "Brothers",
       "Finding yourself",
       "Relationships"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Reflective",
+      "Sad",
+      "Challenging",
+      "Dark",
+      "Tense",
+      "Hopeful",
+      "Inspiring",
+      "Relaxing",
+      "Funny"
     ]
   },
   {
@@ -857,11 +1447,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/book/554760/27d0e4bd-dcb3-425e-86d8-74a176333ca0.jpeg",
+    "cover_url": "book-covers\\27d0e4bd-dcb3-425e-86d8-74a176333ca0.jpeg",
     "recent_fav": false,
     "tags": [
       "Fantasy",
       "Scholar"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Emotional",
+      "Tense",
+      "Adventurous",
+      "Sad",
+      "Reflective",
+      "Hopeful",
+      "Challenging",
+      "Inspiring",
+      "Mysterious"
     ]
   },
   {
@@ -870,11 +1472,16 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/books/1175663/0ed6a399-2d69-4878-9a98-03309c5c87e7.jpg",
+    "cover_url": "book-covers\\0ed6a399-2d69-4878-9a98-03309c5c87e7.jpg",
     "recent_fav": false,
     "tags": [
       "Friendship",
       "Magical Realism"
+    ],
+    "hardcover_mood": [
+      "Adventurous",
+      "Emotional",
+      "Mysterious"
     ]
   },
   {
@@ -883,12 +1490,24 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/1370372/d9568de3-8552-4b66-8763-d2e001219044.jpg",
+    "cover_url": "book-covers\\d9568de3-8552-4b66-8763-d2e001219044.jpg",
     "recent_fav": false,
     "tags": [
       "Well-written",
       "Literary",
       "Dystopian"
+    ],
+    "hardcover_mood": [
+      "Reflective",
+      "Adventurous",
+      "Dark",
+      "Emotional",
+      "Sad",
+      "Hopeful",
+      "Tense",
+      "Mysterious",
+      "Challenging",
+      "Inspiring"
     ]
   },
   {
@@ -897,12 +1516,21 @@
     "finished": true,
     "progress": 100,
     "rating": 2,
-    "cover_url": "https://assets.hardcover.app/edition/31067702/61006dfc-e242-4f9b-bcbf-74eb4714f90a.jpg",
+    "cover_url": "book-covers\\61006dfc-e242-4f9b-bcbf-74eb4714f90a.jpg",
     "recent_fav": false,
     "tags": [
       "YA",
       "Monsters",
       "Boarding school"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Tense",
+      "Mysterious",
+      "Emotional",
+      "Sad",
+      "Challenging",
+      "Adventurous"
     ]
   },
   {
@@ -911,11 +1539,23 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/editions/31650163/8854221892956418.jpg",
+    "cover_url": "book-covers\\8854221892956418.jpg",
     "recent_fav": false,
     "tags": [
       "Horror",
       "Supernatural"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Mysterious",
+      "Tense",
+      "Challenging",
+      "Emotional",
+      "Sad",
+      "Adventurous",
+      "Suspenseful",
+      "Ominous",
+      "Hopeful"
     ]
   },
   {
@@ -924,11 +1564,21 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/book/1083944/fa4c19dc-4a15-4258-a4cc-022b7887ede5.jpg",
+    "cover_url": "book-covers\\fa4c19dc-4a15-4258-a4cc-022b7887ede5.jpg",
     "recent_fav": false,
     "tags": [
       "Small town",
       "Mystery"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Dark",
+      "Tense",
+      "Emotional",
+      "Adventurous",
+      "Challenging",
+      "Sad",
+      "Reflective"
     ]
   },
   {
@@ -937,11 +1587,22 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/31516896/b127d639-f5ae-41bc-a857-d6e5884b5bc8.jpeg",
+    "cover_url": "book-covers\\b127d639-f5ae-41bc-a857-d6e5884b5bc8.jpeg",
     "recent_fav": false,
     "tags": [
       "Family secrets",
       "Crime"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Dark",
+      "Tense",
+      "Sad",
+      "Emotional",
+      "Adventurous",
+      "Reflective",
+      "Challenging",
+      "Hopeful"
     ]
   },
   {
@@ -950,11 +1611,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/32582557/59f977b506fc5455a0359d781f60b75abad5880a.jpeg",
+    "cover_url": "book-covers\\59f977b506fc5455a0359d781f60b75abad5880a.jpeg",
     "recent_fav": false,
     "tags": [
       "Motherhood",
       "Humor"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Funny",
+      "Hopeful",
+      "Reflective",
+      "Informative",
+      "Lighthearted",
+      "Challenging",
+      "Dark",
+      "Sad",
+      "Inspiring"
     ]
   },
   {
@@ -963,11 +1636,23 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/edition/31242709/bf062459e46e10e5f67665740fc7a5dddc7e115a.jpeg",
+    "cover_url": "book-covers\\bf062459e46e10e5f67665740fc7a5dddc7e115a.jpeg",
     "recent_fav": false,
     "tags": [
       "Drama",
       "Finding yourself"
+    ],
+    "hardcover_mood": [
+      "Reflective",
+      "Emotional",
+      "Funny",
+      "Challenging",
+      "Adventurous",
+      "Tense",
+      "Inspiring",
+      "Sad",
+      "Dark",
+      "Mysterious"
     ]
   },
   {
@@ -976,12 +1661,24 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/31467005/e9babf42-e4e2-426f-8252-7ad7d0771cc6.jpg",
+    "cover_url": "book-covers\\e9babf42-e4e2-426f-8252-7ad7d0771cc6.jpg",
     "recent_fav": false,
     "tags": [
       "Thriller",
       "Community",
       "Sci-fi"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Tense",
+      "Mysterious",
+      "Funny",
+      "Emotional",
+      "Reflective",
+      "Hopeful",
+      "Adventurous",
+      "Inspiring",
+      "Lighthearted"
     ]
   },
   {
@@ -990,12 +1687,24 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31474221/1532642105051332.jpg",
+    "cover_url": "book-covers\\1532642105051332.jpg",
     "recent_fav": false,
     "tags": [
       "Horror",
       "Magic",
       "Fairy tale inspired"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Mysterious",
+      "Adventurous",
+      "Tense",
+      "Emotional",
+      "Funny",
+      "Hopeful",
+      "Lighthearted",
+      "Sad",
+      "Inspiring"
     ]
   },
   {
@@ -1004,11 +1713,16 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/editions/31107903/5069799981690124-HouseOfGlass.jpg",
+    "cover_url": "book-covers\\5069799981690124-HouseOfGlass.jpg",
     "recent_fav": false,
     "tags": [
       "Family",
       "Thriller"
+    ],
+    "hardcover_mood": [
+      "Tense",
+      "Dark",
+      "Emotional"
     ]
   },
   {
@@ -1017,9 +1731,21 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/31521408/69e72866-c34d-46f5-989f-1317b0c947d4.jpg",
+    "cover_url": "book-covers\\69e72866-c34d-46f5-989f-1317b0c947d4.jpg",
     "recent_fav": false,
-    "tags": []
+    "tags": [],
+    "hardcover_mood": [
+      "Emotional",
+      "Reflective",
+      "Sad",
+      "Hopeful",
+      "Dark",
+      "Inspiring",
+      "Challenging",
+      "Funny",
+      "Tense",
+      "Informative"
+    ]
   },
   {
     "title": "Kill For Me Kill For You",
@@ -1027,11 +1753,20 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/books/965811/7743305545742025.jpeg",
+    "cover_url": "book-covers\\7743305545742025.jpeg",
     "recent_fav": false,
     "tags": [
       "Thriller",
       "Crime"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Tense",
+      "Dark",
+      "Emotional",
+      "Challenging",
+      "Sad",
+      "Adventurous"
     ]
   },
   {
@@ -1040,11 +1775,12 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/edition/32748004/9593fa62-dd9c-4eeb-84ad-f45bdbadc4d5.jpg",
+    "cover_url": "book-covers\\9593fa62-dd9c-4eeb-84ad-f45bdbadc4d5.jpg",
     "recent_fav": false,
     "tags": [
       "College"
-    ]
+    ],
+    "hardcover_mood": []
   },
   {
     "title": "The Briar Club",
@@ -1052,11 +1788,20 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/books/1197498/7362106730826310.jpg",
+    "cover_url": "book-covers\\7362106730826310.jpg",
     "recent_fav": false,
     "tags": [
       "1950s",
       "Friendship"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Informative",
+      "Tense",
+      "Mysterious",
+      "Reflective",
+      "Sad",
+      "Funny"
     ]
   },
   {
@@ -1065,13 +1810,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31073305/e151b508-282f-4c07-9607-7457cde34c69.jpg",
+    "cover_url": "book-covers\\e151b508-282f-4c07-9607-7457cde34c69.jpg",
     "recent_fav": false,
     "tags": [
       "Horror",
       "1950s",
       "Cynical",
       "Hopeless"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Mysterious",
+      "Tense",
+      "Emotional",
+      "Sad",
+      "Reflective",
+      "Hopeful",
+      "Funny"
     ]
   },
   {
@@ -1080,11 +1835,23 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/edition/30545712/31a975fa-ebcf-4c28-8c5c-9892a3b12a40.jpg",
+    "cover_url": "book-covers\\31a975fa-ebcf-4c28-8c5c-9892a3b12a40.jpg",
     "recent_fav": false,
     "tags": [
       "Drama",
       "Family"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Sad",
+      "Reflective",
+      "Tense",
+      "Mysterious",
+      "Dark",
+      "Challenging",
+      "Hopeful",
+      "Medium-paced",
+      "Inspiring"
     ]
   },
   {
@@ -1093,25 +1860,49 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/32145560/65972b57bbdbaba7f694247b37801e52a8a1f6e6.jpeg",
+    "cover_url": "book-covers\\65972b57bbdbaba7f694247b37801e52a8a1f6e6.jpeg",
     "recent_fav": false,
     "tags": [
       "Historical fiction",
       "Small town",
       "Diary"
+    ],
+    "hardcover_mood": [
+      "Adventurous",
+      "Mysterious",
+      "Emotional",
+      "Challenging",
+      "Tense",
+      "Informative",
+      "Dark",
+      "Funny",
+      "Inspiring",
+      "Sad"
     ]
   },
   {
     "title": "Listen for the Lie",
-    "author": "Amy Tintera, January LaVoy, Will Damron",
+    "author": "Amy Tintera",
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31486951/7880003376097746.jpg",
+    "cover_url": "book-covers\\7880003376097746.jpg",
     "recent_fav": false,
     "tags": [
       "Mystery",
       "Humor"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Dark",
+      "Tense",
+      "Funny",
+      "Emotional",
+      "Sad",
+      "Reflective",
+      "Adventurous",
+      "Challenging",
+      "Lighthearted"
     ]
   },
   {
@@ -1120,10 +1911,22 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/31572111/9d607f2e-63e7-45f2-beef-8f581934ec81.jpg",
+    "cover_url": "book-covers\\9d607f2e-63e7-45f2-beef-8f581934ec81.jpg",
     "recent_fav": false,
     "tags": [
       "Historical"
+    ],
+    "hardcover_mood": [
+      "Adventurous",
+      "Dark",
+      "Emotional",
+      "Tense",
+      "Sad",
+      "Challenging",
+      "Funny",
+      "Reflective",
+      "Inspiring",
+      "Hopeful"
     ]
   },
   {
@@ -1132,12 +1935,24 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/32457147/c9b859d58a441340631dae95f70a75cb64e1f263.jpeg",
+    "cover_url": "book-covers\\c9b859d58a441340631dae95f70a75cb64e1f263.jpeg",
     "recent_fav": false,
     "tags": [
       "Thriller",
       "1970s",
       "Serial killer"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Emotional",
+      "Reflective",
+      "Tense",
+      "Sad",
+      "Challenging",
+      "Mysterious",
+      "Informative",
+      "Adventurous",
+      "Inspiring"
     ]
   },
   {
@@ -1146,11 +1961,23 @@
     "finished": true,
     "progress": 100,
     "rating": 3,
-    "cover_url": "https://assets.hardcover.app/editions/31488432/9075842447596108.jpg",
+    "cover_url": "book-covers\\9075842447596108.jpg",
     "recent_fav": false,
     "tags": [
       "Small town",
       "Suspense"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Tense",
+      "Adventurous",
+      "Dark",
+      "Challenging",
+      "Reflective",
+      "Funny",
+      "Emotional",
+      "Lighthearted",
+      "Fast-paced"
     ]
   },
   {
@@ -1159,11 +1986,23 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31163162/2787442747851803-9781399725385.jpg",
+    "cover_url": "book-covers\\2787442747851803-9781399725385.jpg",
     "recent_fav": false,
     "tags": [
       "Drama",
       "Fantasy"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Adventurous",
+      "Funny",
+      "Tense",
+      "Dark",
+      "Challenging",
+      "Reflective",
+      "Lighthearted",
+      "Relaxing",
+      "Hopeful"
     ]
   },
   {
@@ -1172,12 +2011,24 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/edition/32018670/f413441fd2f37cf9dc1764d2f96c7229104f592d.jpeg",
+    "cover_url": "book-covers\\f413441fd2f37cf9dc1764d2f96c7229104f592d.jpeg",
     "recent_fav": false,
     "tags": [
       "War",
       "Trauma",
       "Family"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Sad",
+      "Informative",
+      "Challenging",
+      "Inspiring",
+      "Tense",
+      "Reflective",
+      "Dark",
+      "Adventurous",
+      "Hopeful"
     ]
   },
   {
@@ -1186,10 +2037,20 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/editions/31214458/2683910739053401.jpg",
+    "cover_url": "book-covers\\2683910739053401.jpg",
     "recent_fav": false,
     "tags": [
       "Crime"
+    ],
+    "hardcover_mood": [
+      "Tense",
+      "Dark",
+      "Mysterious",
+      "Emotional",
+      "Sad",
+      "Adventurous",
+      "Hopeful",
+      "Reflective"
     ]
   },
   {
@@ -1198,13 +2059,18 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/external_data/1643215/1a56169c0ff5db552c0726e997b7c3af8623cbb1.jpeg",
+    "cover_url": "book-covers\\1a56169c0ff5db552c0726e997b7c3af8623cbb1.jpeg",
     "recent_fav": false,
     "tags": [
       "Adoption",
       "Family",
       "Lighthearted",
       "Drama"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Challenging",
+      "Funny"
     ]
   },
   {
@@ -1213,12 +2079,21 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31181607/7096456470017083-The%20Berry%20Pickers.jpg",
+    "cover_url": "book-covers\\7096456470017083-The Berry Pickers.jpg",
     "recent_fav": false,
     "tags": [
       "Identity",
       "Indigenous",
       "Family"
+    ],
+    "hardcover_mood": [
+      "Emotional",
+      "Sad",
+      "Reflective",
+      "Hopeful",
+      "Challenging",
+      "Dark",
+      "Funny"
     ]
   },
   {
@@ -1227,11 +2102,21 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/external_data/2086170/51d62fcfb003d3dce7c4670f28ed46878fd7bc5b.jpeg",
+    "cover_url": "book-covers\\51d62fcfb003d3dce7c4670f28ed46878fd7bc5b.jpeg",
     "recent_fav": false,
     "tags": [
       "Family",
       "Mystery"
+    ],
+    "hardcover_mood": [
+      "Mysterious",
+      "Dark",
+      "Tense",
+      "Relaxing",
+      "Sad",
+      "Challenging",
+      "Emotional",
+      "Adventurous"
     ]
   },
   {
@@ -1240,12 +2125,20 @@
     "finished": true,
     "progress": 100,
     "rating": 5,
-    "cover_url": "https://assets.hardcover.app/editions/31094686/3478860929387235.jpg",
+    "cover_url": "book-covers\\3478860929387235.jpg",
     "recent_fav": false,
     "tags": [
       "Haunted house",
       "Family",
       "Supernatural"
+    ],
+    "hardcover_mood": [
+      "Dark",
+      "Tense",
+      "Mysterious",
+      "Sad",
+      "Funny",
+      "Emotional"
     ]
   },
   {
@@ -1254,12 +2147,13 @@
     "finished": true,
     "progress": 100,
     "rating": 4,
-    "cover_url": "https://assets.hardcover.app/external_data/60234629/f61f1b2c282285802942e7c4533686570b6d5b01.jpeg",
+    "cover_url": "book-covers\\f61f1b2c282285802942e7c4533686570b6d5b01.jpeg",
     "recent_fav": false,
     "tags": [
       "Immigrant",
       "Isolation",
       "Loneliness"
-    ]
+    ],
+    "hardcover_mood": []
   }
 ]

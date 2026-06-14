@@ -171,7 +171,8 @@ div.rating > span {
   position: relative;
   margin-bottom: 15px;
   display: flex;
-  gap: .25em;
+  gap: .25em; 
+  padding: 10px 20px;
 }
 
 .tooltip .rating, .tooltip .rating-div-container, .tooltip .tags {
@@ -186,7 +187,7 @@ div.rating > span {
 }
 
 .details .rating span, .tooltip .rating span, .tooltip .tags {
-  margin-left: 0.25em;  
+  margin-right: 0.25em;  
 }
 
 .details .tags, .tooltip .tags {
@@ -194,8 +195,8 @@ div.rating > span {
   gap: 0.375em;
   margin-bottom: 0.875em;
   font-size: 0.85em;
-  
   flex-wrap: wrap;
+  padding: 10px 20px;
 }
   
 .details .tags span, .tooltip .tags span {
