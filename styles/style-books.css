@@ -222,7 +222,12 @@ div.rating > span {
   display: flex;
   justify-content: space-around;
   position: absolute;
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   /*flex-wrap: wrap;*/
+}
+
+[x-cloak] {
+  display: none !important;
 }
 
 .arrow {
@@ -316,7 +321,7 @@ body {
     max-width: 100%;
   }
 
-  .scrollable-content .slide, .slide.slide-allbooks {
+  .scrollable-content .slide {
     height: 341px;
     width: 226px;
     min-height: 341px;
@@ -326,6 +331,11 @@ body {
   .scrollable-content {
     height: 360px;
     min-height: 360px;
+  }
+
+  .slide.slide-allbooks {
+    height: 60vw;
+    width: 40vw;
   }
 }
 

@@ -28,492 +28,152 @@
   <body>
   
     <script type="text/javascript" src="./header.js"></script>
+    <script type="module" src="./books.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
-    
+
     <site-header></site-header>
-    <!--https://codepen.io/mimoduo/pen/VYwamv-->
-    <!--https://codepen.io/mimoduo/pen/VYwamv-->
-    <!--https://codepen.io/Alca/pen/VByeJd-->
-    <section>
-      <div class="content">
-        <h1>Recent Favorites</h1> 
-        <canvas id="canvas" width="150" height="150" style="display: none;"></canvas>
-        <div class="scrollable-content">
-        
-          <span class="material-symbols-outlined left-arrow arrow" id="favorites-left-arrow">
-            arrow_left
-          </span>
-          <div id="favorites-content"></div>
-          <span class="material-symbols-outlined right-arrow arrow" id="favorites-right-arrow">
-            arrow_right
-          </span>
-        
-        </div>
-          
-      </div>
-    </section>
-    <section>
-      <div class="content">
-          <h1>Reading Now</h1>
-          <canvas id="canvas" width="150" height="150" style="display: none;"></canvas>
+
+    <div x-data="booksPage()" x-cloak>
+      <canvas x-ref="colorCanvas" width="150" height="150" style="display: none;"></canvas>
+
+      <section>
+        <div class="content">
+          <h1>Recent Favorites</h1>
           <div class="scrollable-content">
-          
-            <span class="material-symbols-outlined left-arrow arrow" id="reading-now-left-arrow">
-              arrow_left
-            </span>
-            <div id="reading-now-content"></div>
-            <span class="material-symbols-outlined right-arrow arrow" id="reading-now-right-arrow">
-              arrow_right
-            </span>
-          
+            <span
+              class="material-symbols-outlined left-arrow arrow"
+              id="favorites-left-arrow"
+              :style="{ opacity: arrowOpacity(favoritesIndex, recentFavorites, 'left') }"
+              @click="scrollLeft('favorites')"
+            >arrow_left</span>
+
+            <div id="favorites-content">
+              <template x-for="(book, i) in recentFavorites" :key="book.title + book.author">
+                <div class="slide"  :style="carouselStyle(favoritesIndex, i)">
+                  <div class="cover">
+                    <img :src="book.cover_url" :alt="book.title">
+                  </div>
+                  <div class="details" :style="detailsBgStyle(book)">
+                    <h3 class="title" x-text="book.title"></h3>
+                    <h3 class="author" :style="accentStyle(book)" x-text="book.author"></h3>
+                    <template x-if="book.rating">
+                      <div class="rating">
+                        <template x-for="(star, i) in ratingStars(book.rating)" :key="i">
+                          <span class="material-symbols-outlined" :style="accentStyle(book)" x-text="star"></span>
+                        </template>
+                        <span x-text="book.rating"></span>
+                      </div>
+                    </template>
+                    <div class="tags">
+                      <template x-for="tag in book.tags" :key="tag">
+                        <span class="tag" :style="tagStyle(book)" x-text="tag"></span>
+                      </template>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+
+            <span
+              class="material-symbols-outlined right-arrow arrow"
+              id="favorites-right-arrow"
+              :style="{ opacity: arrowOpacity(favoritesIndex, recentFavorites, 'right') }"
+              @click="scrollRight('favorites', recentFavorites)"
+            >arrow_right</span>
           </div>
-        
         </div>
-    </section>
-    <section>
-      <div class="content">
+      </section>
+
+      <section>
+        <div class="content">
+          <h1>Reading Now</h1>
+          <div class="scrollable-content">
+            <span
+              class="material-symbols-outlined left-arrow arrow"
+              id="reading-now-left-arrow"
+              :style="{ opacity: arrowOpacity(readingIndex, currentlyReading, 'left') }"
+              @click="scrollLeft('reading')"
+            >arrow_left</span>
+
+            <div id="reading-now-content">
+              <template x-for="(book, i) in currentlyReading" :key="book.title + book.author">
+                <div class="slide"  :style="carouselStyle(readingIndex, i)">
+                  <div class="cover">
+                    <img :src="book.cover_url" :alt="book.title">
+                  </div>
+                  <div class="details" :style="detailsBgStyle(book)">
+                    <h3 class="title" x-text="book.title"></h3>
+                    <h3 class="author" :style="accentStyle(book)" x-text="book.author"></h3>
+                    <template x-if="book.rating">
+                      <div class="rating">
+                        <template x-for="(star, i) in ratingStars(book.rating)" :key="i">
+                          <span class="material-symbols-outlined" :style="accentStyle(book)" x-text="star"></span>
+                        </template>
+                        <span x-text="book.rating"></span>
+                      </div>
+                    </template>
+                    <div class="tags">
+                      <template x-for="tag in book.tags" :key="tag">
+                        <span class="tag" :style="tagStyle(book)" x-text="tag"></span>
+                      </template>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+
+            <span
+              class="material-symbols-outlined right-arrow arrow"
+              id="reading-now-right-arrow"
+              :style="{ opacity: arrowOpacity(readingIndex, currentlyReading, 'right') }"
+              @click="scrollRight('reading', currentlyReading)"
+            >arrow_right</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
           <h1>All Books I've Read</h1>
           <div class="unscrollable-content">
-              <div id="books-read-content"></div>
+            <div id="books-read-content">
+              <template x-for="book in allBooks" :key="book.title + book.author">
+                <div
+                  class="slide slide-allbooks"
+                  @mouseenter="book.showTooltip = true"
+                  @mouseleave="book.showTooltip = false"
+                >
+                  <div class="cover">
+                    <img :src="book.cover_url" :alt="book.title">
+                  </div>
+                  <div
+                    class="tooltip"
+                    :class="{ 'tooltip-show': book.showTooltip }"
+                    :style="tooltipBgStyle(book)"
+                  >
+                    <h3 class="title" x-text="book.title"></h3>
+                    <h3 class="author" :style="accentStyle(book)" x-text="book.author"></h3>
+                    <template x-if="book.rating">
+                      <div class="rating">
+                        <template x-for="(star, i) in ratingStars(book.rating)" :key="i">
+                          <span class="material-symbols-outlined" :style="accentStyle(book)" x-text="star"></span>
+                        </template>
+                      </div>
+                      <div class="rating-div-container" :style="accentStyle(book)" x-text="book.rating"></div>
+                    </template>
+                    <div class="tags">
+                      <template x-for="tag in book.tags" :key="tag">
+                        <span class="tag" :style="tagStyle(book)" x-text="tag"></span>
+                      </template>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
           </div>
-      </div>
-    </section>
-    
-
-    <script type="module">
-    
-    function createBookCard(book, slideClass = "slide") {
-      const slide = document.createElement("div");
-      slide.className = slideClass;
-
-      const cover = document.createElement("div");
-      cover.className = "cover";
-      const img = document.createElement("img");
-      img.src = book.cover_url;
-      cover.appendChild(img);
-      slide.appendChild(cover);
-
-      const title = document.createElement("h3");
-      title.className = "title";
-      title.appendChild(document.createTextNode(book.title));
-
-      const author = document.createElement("h3");
-      author.className = "author";
-      author.appendChild(document.createTextNode(book.author));
-
-      const rating_spans = [];
-      let ratingEl = null;
-      if (book.rating) {
-        ratingEl = document.createElement("div");
-        ratingEl.className = "rating";
-        let remainder = book.rating;
-        while (remainder >= 1) {
-          remainder -= 1;
-          const span = document.createElement("span");
-          span.className = "material-symbols-outlined";
-          span.appendChild(document.createTextNode("star"));
-          ratingEl.appendChild(span);
-          rating_spans.push(span);
-        }
-        if (remainder === 0.5) {
-          const span = document.createElement("span");
-          span.className = "material-symbols-outlined";
-          span.appendChild(document.createTextNode("star_half"));
-          ratingEl.appendChild(span);
-          rating_spans.push(span);
-        }
-      }
-
-      const tags_reference = [];
-      const tagsEl = document.createElement("div");
-      tagsEl.className = "tags";
-      for (const tag of book.tags) {
-        const span = document.createElement("span");
-        span.className = "tag";
-        span.appendChild(document.createTextNode(tag));
-        tags_reference.push(span);
-        tagsEl.appendChild(span);
-      }
-
-      return { slide, title, author, ratingEl, rating_spans, tagsEl, tags_reference };
-    }
-
-    function generateCarouselHTML(bookRecords, content_div_name) {
-      const cards = [];
-      const content_div = document.getElementById(content_div_name);
-
-      for (const record of bookRecords) {
-        const { slide, title, author, ratingEl, rating_spans, tagsEl, tags_reference } = createBookCard(record);
-
-        const details = document.createElement("div");
-        details.className = "details";
-        details.appendChild(title);
-        details.appendChild(author);
-        if (ratingEl) {
-          const rating_span = document.createElement("span");
-          rating_span.appendChild(document.createTextNode(record.rating));
-          ratingEl.appendChild(rating_span);
-          details.appendChild(ratingEl);
-        }
-        details.appendChild(tagsEl);
-        slide.appendChild(details);
-
-        getColors(record.cover_url).then(({ darkestTriplet: d, lightestTriplet: l }) => {
-          details.style.backgroundColor = `rgba(${d[0]}, ${d[1]}, ${d[2]}, 0.8)`;
-          author.style.color = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
-          for (const ref of tags_reference) ref.style.borderColor = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
-          for (const span of rating_spans) span.style.color = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
-        });
-
-        content_div.appendChild(slide);
-        cards.push(slide);
-      }
-
-      return cards;
-    }
-
-    function generateAllBooksHTML(allBooks, content_div_name) {
-      const cards = [];
-      const favorites_div = document.getElementById(content_div_name);
-
-      for (const favorite of allBooks) {
-        const { slide, title, author, ratingEl, rating_spans, tagsEl, tags_reference } = createBookCard(favorite, "slide slide-allbooks");
-
-        const tooltip = document.createElement("div");
-        tooltip.className = "tooltip";
-        slide.addEventListener('mouseenter', () => tooltip.classList.add('tooltip-show'));
-        slide.addEventListener('mouseleave', () => tooltip.classList.remove('tooltip-show'));
-        slide.appendChild(tooltip);
-
-        tooltip.appendChild(title);
-        tooltip.appendChild(author);
-
-        let rating_div_container;
-        if (ratingEl) {
-          rating_div_container = document.createElement("div");
-          rating_div_container.className = "rating-div-container";
-          rating_div_container.appendChild(document.createTextNode(favorite.rating));
-          tooltip.appendChild(ratingEl);
-          tooltip.appendChild(rating_div_container);
-        }
-        tooltip.appendChild(tagsEl);
-
-        getColors(favorite.cover_url).then(({ darkestTriplet: d, lightestTriplet: l }) => {
-          tooltip.style.backgroundColor = `rgba(${d[0]}, ${d[1]}, ${d[2]}, 1)`;
-          author.style.color = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
-          for (const ref of tags_reference) ref.style.borderColor = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
-          for (const span of rating_spans) span.style.color = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
-          if (rating_div_container) rating_div_container.style.color = `rgb(${l[0]}, ${l[1]}, ${l[2]})`;
-        });
-
-        favorites_div.appendChild(slide);
-        cards.push(slide);
-      }
-
-      return cards;
-    }
-
-    function linearize(x) {
-      let linearized = x/ 255;
-      linearized = linearized <= 0.03928 ? linearized / 12.92 : ((linearized + 0.055) / (1.055)) ** 2.4;
-      
-      return linearized;
-    }
-    
-    function getLuminance(r, g, b) {
-        return 0.2126 * linearize(r) + 0.7152 * linearize(g) + 0.0722 * linearize(b);
-    }
-    
-    function getContrast(lightTriplet, darkTriplet) { //(l1, l2) {
-    if (lightTriplet && darkTriplet) {
-      
-      let [r1, g1, b1] = lightTriplet;
-      let [r2, g2, b2] = darkTriplet;
-      r2 = linearize(r2);
-      g2 = linearize(g2);
-      b2 = linearize(b2);
-      
-      r1 = linearize(r1);
-      g1 = linearize(g1);
-      b1 = linearize(b1);
-      
-      let l1 = getLuminance(r1, g1, b1);
-      let l2 = getLuminance(r2, g2, b2);
-      
-      
-      return (l1 + 0.05)  / (l2 + 0.05);
-      } else {
-        return 0.1;  
-        
-      }
-    }
-    
-    function getLightestColorInImage(pixels) {
-      let lightestTriplet = null;
-      let maxLightness = -1;
-      
-      let darkestTriplet = null;
-      let minLightness = Infinity;
-      
-      let contrast = 0;
-      
-      
-      
-      
-      
-        for (let i = 0; i < pixels.length; i+=4){
-          const r = pixels[i];
-          const g = pixels[i+1];
-          const b = pixels[i+2];
-          
-          const lightness = (Math.max(r, g, b) + Math.min(r, g, b)) / 2;
-          if (lightness > maxLightness && lightness < 200) {
-            
-            let newContrast = getContrast([r, g, b], darkestTriplet);
-            if (newContrast > contrast) {
-              lightestTriplet  = [r, g, b];
-              contrast = newContrast;
-              maxLightness = lightness;
-              
-            }
-
-            // if (darkestTriplet) {
-                
-            //   let darkestLuminance= getLuminance(darkestTriplet[0], darkestTriplet[1], darkestTriplet[2]);
-            //   let currentLuminance = getLuminance(r, g, b);
-            
-            // console.log("contrast: ", getContrast(currentLuminance, darkestLuminance))
-            //   if (getContrast(currentLuminance, darkestLuminance) > 4) {
-                  
-            //     maxLightness = lightness;
-            //     lightestTriplet = [r, g, b];
-            // } else {
-            //     maxLightness = lightness;
-            //     lightestTriplet = [r, g, b];
-              
-            //   }
-                
-            // }
-          }
-          
-          if (lightness < minLightness && lightness > 45) {
-            let newContrast = getContrast(lightestTriplet, [r, g, b]);
-            if (newContrast > contrast) {
-              minLightness = lightness;
-              darkestTriplet = [r, g, b];
-              contrast = newContrast;
-            }
-            
-
-          }
-        }
-        
-        console.log("lightestTriplet: ", lightestTriplet, "darkestTriplet: ", darkestTriplet);
-        
-        return {lightestTriplet, darkestTriplet};
-    }
-
-    
-    function getColors(link) {
-      
-      return new Promise((resolve, reject) => {
-      
-      
-            
-          const img = new Image();
-          img.src = link;
-    
-          const canvas = document.getElementById("canvas");
-          // canvas.width = img.width;
-          // canvas.height = img.height;
-          if (canvas.getContext) {
-            const ctx = canvas.getContext("2d");
-            img.addEventListener("load", () => {
-              ctx.drawImage(img, 0, 0, 150, 150);
-              const imageData = ctx.getImageData(0, 0, 150, 150);
-        
-              const pixels = imageData.data;
-              const lightestColor = getLightestColorInImage(pixels);
-              resolve(lightestColor);
-            })
-          } else {
-          
-              reject(new Error("Canvas context not available"));  
-            
-          }
-        
-        
-      })
-
-    }
-
-
-    let allBooks;
-    let recentFavorites;
-    let currentlyReading;
-    
-    let favoritesDivs = []
-    let readingNowDivs = []
-    let allBooksDivs = []
-    
-    
-    let min_visible_index_favorites = 0;
-    let min_visible_index_reading_now = 0;
-    const scroll_amount = 1;
-    const visible_in_carousel = 3;
-    
-    
-    let visible_index_favorites = 0;
-    let visible_index_reading_now = 0;
-    const scroll_index = 1;
-    
-    const infer_scroll_pixel_amount = (card_div) => {
-      
-      const style = window.getComputedStyle(card_div);
-      const marginLeft = parseFloat(style.marginLeft) || 0;
-      const marginRight = parseFloat(style.marginRight) || 0;
-    
-      const width = card_div.getBoundingClientRect().width; 
-    
-      return width + marginLeft + marginRight;
-      
-      
-    }
-    
-    
-    const infer_scroll_x_amount = (card_div) => {
-      const cardStyle = window.getComputedStyle(card_div);
-      const transform = cardStyle.transform;
-
-          
-      
-    if (transform && transform !== 'none') {
-        const matrix = transform.match(/^matrix(3d)?\((.+)\)$/);
-        if (matrix) {
-          const is3d = matrix[1] === '3d';
-          const values = matrix[2].split(', ').map(parseFloat);
-          if (is3d) {
-            // matrix3d: translateX is at index 12
-            return values[12];
-          } else {
-            // matrix: translateX is at index 4
-            return values[4];
-          }
-        }
-      }  
-      
-      return 0;
-    }
-    
-    
-  
-    
-    const scroll_left = (start_visible_index, card_divs, arrow, other_arrow) => {
-      
-      let updated_start_visible_index = Math.max(0, start_visible_index - scroll_amount);
-      console.log(`Scrolling left. Updated start view index: ${updated_start_visible_index} Prevous start visible index: ${start_visible_index}`);
-      
-      if (updated_start_visible_index != start_visible_index) {
-        console.log("Scrolling left. If statement.");
-        for (let card_div of card_divs) {
-          
-          const scroll_amount = infer_scroll_x_amount(card_div);
-          card_div.style.transform = `translateX(${scroll_amount + infer_scroll_pixel_amount(card_div)}px)`;   
-        }  
-        
-        other_arrow.style.opacity = 1;
-      }
-      
-      if (updated_start_visible_index == 0) {
-        arrow.style.opacity = 0.5;  
-      } else {
-        
-        arrow.style.opacity = 1;  
-      }
-      
-      return updated_start_visible_index;
-    }
-    
-    const scroll_right = (start_visible_index, card_divs, arrow, other_arrow) => {
-      let updated_start_visible_index = Math.min(card_divs.length - visible_in_carousel, start_visible_index + scroll_amount);
-      console.log(`Scrolling right. Updated start view index: ${updated_start_visible_index} Prevous start visible index: ${start_visible_index}`);
-      if (updated_start_visible_index != start_visible_index) {
-        console.log("Scrolling right. If statement.");
-        for (let card_div of card_divs) {
-          // get translate amount
-
-          const scroll_amount = infer_scroll_x_amount(card_div);
-          card_div.style.transform = `translateX(${scroll_amount - infer_scroll_pixel_amount(card_div)}px)`;  
-        } 
-        
-        other_arrow.style.opacity = 1;
-      }
-      
-      if (updated_start_visible_index == card_divs.length - visible_in_carousel) {
-        arrow.style.opacity = 0.5;  
-      } else {
-        
-        arrow.style.opacity = 1;  
-      }
-      
-      return updated_start_visible_index;
-    }
-    
-
-
-    fetch('./books.json').then((res) => res.json()).then((res) => {
-
-      allBooks = res.reverse();
-      recentFavorites = res.filter((el) => el.recent_fav);
-      currentlyReading = res.filter((el) => el.progress < 100);
-      console.log("all books: ", allBooks, "recentFavorites: ", recentFavorites, "currentlyReading: ", currentlyReading);
-      
-
-      favoritesDivs = generateCarouselHTML(recentFavorites, "favorites-content");
-      //console.log("favoritesDivs: ", favoritesDivs);
-
-      //const readingNowDiv = document.getElementById("reading-now-content")
-      readingNowDivs = generateCarouselHTML(currentlyReading, "reading-now-content");
-      // readingNowDiv.innerHTML = generateReadingHTML(currentlyReading);
-      
-      allBooksDivs = generateAllBooksHTML(allBooks, "books-read-content");
-      // allBooksDiv.innerHTML = generateAllBooksHTML(allBooks);
-      
-
-    });
-    
-    
-      const left_arrow_reading = document.getElementById("reading-now-left-arrow");
-      const right_arrow_reading = document.getElementById("reading-now-right-arrow");
-      
-      left_arrow_reading.addEventListener("click", () => {
-        visible_index_reading_now = scroll_left(visible_index_reading_now, readingNowDivs, left_arrow_reading, right_arrow_reading);
-      })
-      
-      right_arrow_reading.addEventListener("click", () => {
-        
-        visible_index_reading_now = scroll_right(visible_index_reading_now, readingNowDivs, right_arrow_reading, left_arrow_reading);
-      })
-    
-    
-    
-      const left_arrow_favorites = document.getElementById("favorites-left-arrow");
-      const right_arrow_favorites = document.getElementById("favorites-right-arrow");
-      
-      left_arrow_favorites.addEventListener("click", () => {
-        visible_index_favorites = scroll_left(visible_index_favorites, favoritesDivs, left_arrow_favorites, right_arrow_favorites);
-      })
-      
-
-      right_arrow_favorites.addEventListener("click", () => {
-        
-        visible_index_favorites = scroll_right(visible_index_favorites, favoritesDivs, right_arrow_favorites, left_arrow_favorites);
-      })
-      
-
-    
-    </script>
-
+        </div>
+      </section>
+    </div>
 
   </body>
 </html>
