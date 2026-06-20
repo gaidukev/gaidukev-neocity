@@ -1,0 +1,24 @@
+name: Update Wordle Word
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # Runs daily at midnight MDT (UTC-6)
+  workflow_dispatch: # Allows manual triggering from the Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.11.0"
+
+      - name: Run wordle word sync script
+        env:
+          NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_KEY }}
+        run: node scripts/get_news.mjs
