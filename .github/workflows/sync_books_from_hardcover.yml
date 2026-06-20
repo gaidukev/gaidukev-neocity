@@ -23,5 +23,5 @@ jobs:
       - name: Run Hardcover sync script # call the script
         env:
           HARDCOVER_API_KEY: ${{ secrets.HARDCOVER_API_KEY }}
-          NEOCITIES_API_KEY: ${{ sections.NEOCITIES_API_KEY }}
+          NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_KEY }}
         run: node scripts/sync_books.mjs
