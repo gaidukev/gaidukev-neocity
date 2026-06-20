@@ -160,7 +160,7 @@ async function main() {
 
     if (outList && outList.length > 0) {
         const booksBlob = new Blob([JSON.stringify(outList, null, 2)], { type: 'application/json' });
-        formData.append('books.json', booksBlob, 'books.json');
+        formData.append('data/books/books.json', booksBlob, 'data/books/books.json');
 
         const res = await fetch('https://neocities.org/api/upload', {
             method: 'POST',
