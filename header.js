@@ -38,7 +38,7 @@ class SiteHeader extends HTMLElement {
       navLink1: "#690089",
       navLink2: "#b40064",
       navLink3: "#EE3C61",
-      navLink4: "#F39F5A"
+      navLink4: "#ffb980"
     };
 
     const colorVariables = (colors) => `
@@ -318,6 +318,8 @@ class SiteHeader extends HTMLElement {
           document.cookie = "displaymode=night; path=/; max-age=3600";
           style.textContent = createStyles(false);
         }
+        // reload the page to make the styles apply
+        window.location.reload();
       });
     }
 

@@ -11,7 +11,7 @@ document.addEventListener("alpine:init", () => {
     visibleCount: 3,
 
     async init() {
-      const res = await fetch("../books.json").then((r) => r.json());
+      const res = await fetch("../data/books/books.json").then((r) => r.json());
       this.allBooks = res.reverse();
       this.recentFavorites = this.allBooks.filter((el) => el.recent_fav);
       this.currentlyReading = this.allBooks.filter((el) => el.progress < 100);

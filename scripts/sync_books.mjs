@@ -1,4 +1,3 @@
-import { writeFileSync, rmSync, mkdirSync } from "fs";
 import path from "path";
 
 // get the books I've read / reading, including reading progress and notes I've made
@@ -70,24 +69,26 @@ const query = `
 `
 const endpoint = "https://api.hardcover.app/v1/graphql";
 
-async function downloadImage(url) {
+async function fetchImage(url) {
     const filename = decodeURIComponent(path.basename(new URL(url).pathname));
-    const dest = path.join("book-covers", filename);
+    const neocitiesPath = `misc-assets/book-covers/${filename}`;
 
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
     const buffer = await res.arrayBuffer();
-    writeFileSync(dest, Buffer.from(buffer));
-    console.log(`Saved: ${dest}`);
 
-    return String(dest);
+    return { neocitiesPath, blob: new Blob([buffer]) };
 }
 
 async function main() {
-    // the token to access the API.
     const token = process.env.HARDCOVER_API_KEY;
+    const neocitiesKey = process.env.NEOCITIES_API_KEY;
     if (!token) {
         console.error("Token not found.")
+        process.exit(1);
+    }
+    if (!neocitiesKey) {
+        console.error("Neocities API key not found.")
         process.exit(1);
     }
 
@@ -122,9 +123,7 @@ async function main() {
     // get the On My Mind list -- goes in my "favorites"
     const onMyMind = me?.lists?.find((el) => el.name === 'On My Mind')?.list_books;
 
-    // delete image covers that were prevoiously downloaded
-    rmSync("book-covers", { recursive: true, force: true });
-    mkdirSync("book-covers", { recursive: true });
+    const formData = new FormData();
 
     const outList = await Promise.all(myBooks.map(async (entry) => {
         // calculate the progress -- the API returns page counts only
@@ -133,34 +132,43 @@ async function main() {
         const largestEnglishImage = entry?.book?.englishEdition?.[0]?.image;
         const imgUrl = largestEnglishImage && largestEnglishImage?.height > 450 ? largestEnglishImage?.url : largestImage?.url ?? '';
 
-        const downloadedImagePath = await downloadImage(imgUrl);
+        const { neocitiesPath, blob } = await fetchImage(imgUrl);
+        formData.append(neocitiesPath, blob, neocitiesPath);
+
         return {
             title: entry.book.title,
             // if more than one author, comma-separate them
-            author: entry.book.contributions.map((contribution) => contribution.author.name).join(", "), 
-            finished: entry.status_id !== 2, 
-            progress: bookProgress, 
+            author: entry.book.contributions.map((contribution) => contribution.author.name).join(", "),
+            finished: entry.status_id !== 2,
+            progress: bookProgress,
             rating: entry.rating,
-            cover_url: downloadedImagePath, 
-            recent_fav: onMyMind?.find((el) => el.book.id === entry.book.id) ? true : false, 
-            // get the reading journal entry with tags 
-            // will start with Keywords: 
+            cover_url: neocitiesPath,
+            recent_fav: onMyMind?.find((el) => el.book.id === entry.book.id) ? true : false,
+            // get the reading journal entry with tags
+            // will start with Keywords:
             // example: Keywords: A; B; C
             tags: (entry.reading_journals
                     ?.find((el) => el.entry && el.entry.toLowerCase().includes("keywords"))
                     ?.entry
                     ?.split("Keywords: ")[1]
                     ?.split("; ") ?? []
-                ).map((tag) => tag.replace(';', '').trim()), 
+                ).map((tag) => tag.replace(';', '').trim()),
             hardcover_mood: entry.book.cached_tags?.Mood?.map(
                     (el) => el.tag.charAt(0).toUpperCase() + el.tag.slice(1) ) ?? []
         }
-    })); 
+    }));
 
     if (outList && outList.length > 0) {
-        // update books.json
-        // indent = 2
-        writeFileSync("books.json", JSON.stringify(outList, null, 2));
+        const booksBlob = new Blob([JSON.stringify(outList, null, 2)], { type: 'application/json' });
+        formData.append('books.json', booksBlob, 'books.json');
+
+        const res = await fetch('https://neocities.org/api/upload', {
+            method: 'POST',
+            headers: { Authorization: `Bearer ${neocitiesKey}` },
+            body: formData
+        });
+        const result = await res.json();
+        console.log("Upload result:", result);
     }
 }
 

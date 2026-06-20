@@ -24,11 +24,3 @@ jobs:
         env:
           HARDCOVER_API_KEY: ${{ secrets.HARDCOVER_API_KEY }}
         run: node scripts/sync_books.mjs
-
-      - name: Commit updated books.json # update books.json
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add books.json
-          git diff --staged --quiet || git commit -m "Sync books from Hardcover"
-          git push

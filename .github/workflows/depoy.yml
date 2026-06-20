@@ -4,10 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_run:
-    workflows: ["Update Reading List Using Hardcover API"]  # must match name: exactly
-    types: [completed]
-
+      
 concurrency:
   group: deploy-to-neocities
   cancel-in-progress: true
@@ -22,7 +19,7 @@ jobs:
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v3
         with:
-          api_key: ${{ secrets.NEOCITIES_API_KEY }} # <- make sure secret name matches
+          api_key: ${{ secrets.NEOCITIES_API_KEY }} 
           dist_dir: .                              # deploy root folder
           cleanup: false
           preview_before_deploy: true
